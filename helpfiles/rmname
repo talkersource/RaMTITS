@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rmname
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rmname [a name for your room]
+  
+Synopsis:
+  Providing that the user has a room, this command allows the user to
+  change the name of it. The user may change the name of their room at
+  any time, and colours may be included in the room's name.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS tphone
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .tphone
+  
+Synopsis:
+  Toggles the telnet phone on or off.  If it is on, then whatever the user
+  inputs into the talker, it is then sent into the telnet connection in
+  which they have opened, unless they use the ~CW'~CR.local~CW'~RS option.  If you have
+  telnet phone on, and want to do something on the local talker use the
+  ~CW'~CR.local~CW'~RS option followed by whatever you want to do on the local talker.
+  ~FGFor example~CB:~CR .local .w
+    This would show who is on the local talker.  At any time you can
+    toggle the telnet phone off again by typing ~CW'~CR.tphone~CW'~RS once more.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

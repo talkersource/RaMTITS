@@ -1,0 +1,10 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS saveusers
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .saveusers
+  
+Synopsis:
+  Saves the user details of every user who is currently logged onto the
+  talker.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

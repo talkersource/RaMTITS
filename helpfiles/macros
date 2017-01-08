@@ -1,0 +1,32 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS macros
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .macros
+Command Usage: .macros # -delete
+Command Usage: .macros # [search pattern] = [replace pattern]
+  
+Synopsis:
+  When the command is used alone, it prints out a listing of all the
+  macros that the user has set.
+  
+  To set a macro:
+~CR    .macro # ~CB[~CRsearch pattern~CB]~CR = ~CB[~CRreplace pattern~CB]
+    To set a macro you must specify the macro number that you would like
+    to set, followed by the pattern you want to search for, followed by
+    the ~CW'~CR=~CW'~RS sign, followed by the pattern you would like to be replaced.
+  For example:
+~CR    .macro 1 squ = SquirT
+    That would set your number 1 macro to replace all instances of ~CW'~CRsqu~CW'
+    with ~CW'~CRSquirT~CW'~RS.  So whenever you type something speech related, it
+    searches for the ~CW'~CRsqu~CW'~RS pattern and if found, it will replace it with
+    ~CW'~CRSquirT~CW'~RS. You cannot have duplicate macros, and it will only parse
+    20 macros in one line. If you have more then 20, it won't replace
+    any of them.
+  
+  To delete a macro:
+    Simply just type:
+~CR    .macro # -delete
+    Where the number sign is replaced with the number of the macro that
+    you would like deleted. (You can find out the number of the macros
+    by using the command with no extra arguments.)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

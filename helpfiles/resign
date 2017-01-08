@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS resign
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .resign
+  
+Synopsis:
+  Allows a user to resign from being a staff member, upon resignation,
+  the user is then demoted to the highest user level.  It will also remove
+  the user from the staff list, so that they won't retain the level.
+  Once a user resigns from being a staff member, then the only way they
+  may become a staff member again is to be re-promoted.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

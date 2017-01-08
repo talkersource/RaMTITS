@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS getname
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .getname [user]
+  
+Synopsis:
+   This command will only give valid data if the specified user's ISP
+   is running an ident daemon.  What this command does, is fetches that
+   information from the user's ISP, and attempts to get their real login
+   name on that server.  This is good if you suspect a user of 'cracking'
+   into your talker, or anything else of importance, so that you may
+   contact that user's ISP to let them know what they've been up to using
+   their services.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS unsilence
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .unsilence [user]
+  
+Synopsis:
+  Allows a user to partake in conversations and everything again. Lets
+  their speech and stuff get shown to whoever it's directed to, or the
+  room it's supposed to go to, instead of just the user.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

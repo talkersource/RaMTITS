@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS uninvite
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .uninvite [male|female|all]
+Command Usage: .uninvite [user]
+  
+Synopsis:
+   When the 'male' option is used, then this will uninvite all of the
+   male users that are currently invited into the room that the user is
+   currently in.  If the 'female' option is used, then it will uninvite
+   all of the female users that are currently invited into the room. If
+   the 'all' option is used, then it uninvites any user who currently has
+   an invite to that room.  If a user is specified, and that user is
+   invited to the room, then it will remove that invitation.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

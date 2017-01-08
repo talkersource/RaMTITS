@@ -1,0 +1,6 @@
+~CT%s ~FTis nodding $G1 affirmative!
+~CT%s~FT starts nodding at $G2self like some sort of wierdo!
+~CB::~CT %s ~FTnods $G1 affirmative at you!
+~CB::~FT You nod your affirmative at ~CT%s~FT!
+~CT%s~FT nods $G1 affirmative at ~CT%s~FT!
+

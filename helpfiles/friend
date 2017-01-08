@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS friend
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .friend [<user>]
+  
+Synopsis:
+  If a user isn't specified, then this command will print out a list of
+  the user's current friends.  Otherwise, if the specified user isn't on
+  the user's friend list, it will add that user to the list.  Otherwise,
+  if the specified user is in the user's friend list, then it will
+  remove that user from their friend list.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

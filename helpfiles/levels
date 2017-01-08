@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS levels
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .levels
+  
+Synopsis:
+  Displays a listing of the talker's levels as well as brief explanation
+  of each level. (Or at least it should, it basically just calls a text
+  file, and it's up to the owner of the talker to decide what is in that
+  text file.)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

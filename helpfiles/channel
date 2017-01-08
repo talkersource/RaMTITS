@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS channel
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .channel [your message]
+  
+Synopsis:
+  Sends a message across the users channel, so that users may converse
+  to each other this way, instead of through .shouts, or .tells. If you
+  wish to ignore the channel, please type ~CW'~CR.ignore channel~CW'~RS, and you will
+  ignore anything that goes on in the user channel.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

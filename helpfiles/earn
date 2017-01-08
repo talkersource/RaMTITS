@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS earn
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .earn
+  
+Synopsis:
+  Lets the user start earning money so that they can buy all sorts of
+  cool stuff in the store.  If they are already earning money when they
+  use this command, then it stops them from earning.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS alarm
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .alarm [hours minutes seconds]
+Command Usage: .alarm [-reset]
+  
+Synopsis:
+  If the command is used by itself, and the user has their alarm set,
+  and the user has their alarm set, it will notify the user how long they
+  have before their alarm will go off. If the -reset flag is used, then
+  it will turn their alarm clock off. To set the alarm clock, you must
+  specify the amount of hours minutes and seconds. For example:
+      ~CW'~FR.alarm 0 10 0~CW'~RS
+  will set the alarm to go off in ten minutes. After the alarm time is
+  up, it will beep the user and notify them that their alarm has gone off.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

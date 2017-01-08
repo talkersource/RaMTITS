@@ -1,0 +1,23 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS afk
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .afk [<message>]
+Command Usage: .afk <-lock> [<message>]
+Command Usage: .afk <-cls> [<message>]
+  
+Synopsis:
+   When used by itself, it randomly picks out one of the talker's afk
+   messages, and lets everyone know that the user has gone 'away from
+   keyboard'. (Unless the user is invisible.) The user may enter their
+   own AFK message by entering the message after the command.  If the
+   '-lock' option is used,  then the user may not 'return to keyboard'
+   unless they enter their password.  If the '-cls' option is used, then
+   it clears the users screen, which is ideal or hiding whatever you're
+   doing from your boss ;-)  Also, when a user goes afk.. they will
+   be placed in 'away mode'. Which means they will start to ignore
+   anything that goes on either in shouts, tells, and normal says in
+   their current room. When they come back from AFK, there will be a
+   review buffer that will be displayed, showing what the user has missed
+   while they were AFK.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS hatcolour
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .hatcolour [<# of hat you want>]
+  
+Synopsis:
+  If a user has a hat (which you buy in the store), this allows the user
+  to trade in their hat for a different coloured one.  Once exchanged,
+  whatever the user says will be the colour of the hat that they have.
+  When the command is used alone, it displays the #'s and colours of each
+  of the hats.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

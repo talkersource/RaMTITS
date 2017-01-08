@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS reset
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .reset [user] [newpassword]
+  
+Synopsis:
+  Due to the fact that the user files as of RaMTITS version 2 are in
+  a binary mode, their is a small chance of userfiles being corrupted,
+  moreso if someone attempts to edit the user file manually, and saves
+  it, not knowing that they seriously screwed up the userfile.
+  This command will basically delete the old userfile, and make
+  a new one with all values nullified, except for their password which
+  must be specified at the command line. A userfile can NOT be reset
+  unless it is corrupted (the talker will know if it is or not).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

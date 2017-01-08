@@ -1,0 +1,21 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS fight
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .fight [user]
+Command Usage: .fight [yes|no|-reset]
+  
+Synopsis:
+  If if a fight has not been issued yet, and another user is specified,
+  then it issues the challenge to the other user, providing that the
+  other user isn't ignoring fights.  If a fight has been issued, and
+  the command has been used with no extra arguments, then it will show
+  who the current challenger and defender are.  If you are the defender,
+  you may accept the fight by passing the 'yes' flag at the command line.
+  If you want to reject the fight, you may do so by passing the 'no' flag
+  at the command line (.fight yes or .fight no). The -reset flag resets
+  the current fighting state, so other users may be able to fight one
+  another. In the older version of RaMTITS odds were sorted by levels,
+  but plenty of users complained about that, so now one has a 50/50
+  chance of winning, no matter the other users level.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS join
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .join [user]
+  
+Synopsis:
+   This command allows you to be moved to the same room as the specified
+   user, providing that you are either 1) invited to the room that the
+   user is in, or 2) That the room that the user is in is public, or
+   unlocked.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

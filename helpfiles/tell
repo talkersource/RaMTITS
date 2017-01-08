@@ -1,0 +1,31 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS tell
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .tell [user<,user2,user3,...>] [your message]
+  
+Synopsis:
+  Sends a private tell to up to 10 different people. (Or just one person,
+  if only one user is specified.) The format for sending a multiple
+  tell is:
+    ~CW'~FR.tell user1,user2,... message~CW'~RS
+  When sending multiple users a .tell, one must seperate each user
+  name with a ~CW'~FR,~CW'~RS. For example:
+    ~CW'~FR.tell squirt,marius hihi guys :-)~CW'~RS
+  and it would send the message to Squirt and Marius. The tell will
+  fail to send to a user if:
+    a) The user isn't logged on,
+    b) The user is A.F.K,
+    c) The user is ignoring tells,
+    d) The user is in the editor,
+    e) The user is an enemy of the user using the command,
+    f) The user has the user using the command on their enemy list,
+    g) The user is ignoring everything.
+  If a user is busy doing other things (reading a file, editing something,
+  AFK, in a menu, or playing a game) then the message will be sent to
+  their buffer, and they will be prompted to review their tells when
+  they are no longer busy.
+  
+  If no user is specified, then it will review the users tell buffer
+  for them.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

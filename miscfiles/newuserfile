@@ -1,0 +1,99 @@
+~FT -==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-
+~FY                 Welcome to this talker running ~CRRaMTITS ~FYversion 2
+~FT -==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-
+~FG      Hopefully this file will give you a brief synopsis of the different types
+~FG  of things that users can do here. As this code offers a wide variety of
+~FG  things that should attract pretty much anyone. With a wide variety of games,
+~FG  such as battleship, poker, trivia, blackjack, tic tac toe, connect 4, and
+~FG  quite a few others. What this file is going to attempt to do is give you
+~FG  a brief understanding of the major commands, as well as how such things
+~FG  as the pager (the thing at the bottom of your screen that says something
+~FG  like):
+    ~CB[~CR50%~CB]:[~CR1~CW/~CR3~CB] ~FGYour command: ~CB[~CRENTER~CW/~CRh~CW/~CRq~CW/~CRr~CW/~CRp~CW/~CRt~CW/~CRb~CW/~CR#~CB]: 
+~FT                 --==--==--==--==--==--==--==--==--==--==--
+~FY                       The most widely used commands:
+~FT                 --==--==--==--==--==--==--==--==--==--==--
+~FG      For starters, if you're used to ew-too, I would advise after reading this
+~FG  file to type ~CW'~CR.set mode ewtoo~CW'~FG as you might find that style to be a bit more
+~FG  to your liking. Or, if you're used to IRC, and all your commands starting
+~FG  with a "/" then try ~CW'~CR.set mode irc~CW'~FG. I've tried to set this up so that people
+~FG  used to different things can all feel familiar with something.
+
+~CT      Private Messages:
+~CB      -----------------
+~FG        To send a private message to someone, you can either use ~CW'~CR.tell~CW'~FG or
+~FG      ~CW'~CR.pemote~CW'~FG. The latter sends it in an emotion. The way you send the
+~FG      message would be ~CW'~CR.tell <user> <message>~CW'~FG. So, if a user named Squirt,
+~FG      wanted to send a message to Rob, telling them hi, you would just have
+~FG      to type ~CW'~CR.t rob hi there :)~CW'~FG and it would write the message out to Rob,
+~FG      and only Rob.
+
+~CT      Normal Speech:
+~CB      --------------
+~FG        To just say something normally, providing you're in NUTS, or IRC mode,
+~FG      (NUTS is default) then you would just have to type in what you want to
+~FG      say, and hit enter. This will write out to the room that you're in
+~FG      what you just entered. You can also send things in a possesive way,
+~FG      by using the ~CW'~CR.emote~CW'~FG command. For example, if Squirt just logged on,
+~FG      and wanted to say hi to everyone in the room, he would just have to type
+~FG      ~CW'~CR.emote waves hihi all~CW'~FG and it would write to the room:
+~FG      ~CW'~CRSquirt waves hihi all~CW'~FG.
+
+~CT      Colours:
+~CB      --------
+~FG        Some people find a lot of colours offensive and that's why you are
+~FG      prompted when you first connect whether you would like to have colour
+~FG      on or off. However, once you log on, if you change your mind, you can
+~FG      always type ~CW'~CR.set colour on/off~CW'~FG and toggle whether or not you want it
+~FG      on or off.  For a full list of colours and how to use them, read
+~FG      ~CW'~CR.text colours~CW'~FG or ask a staff member for help.
+
+~CT      S-mail:
+~CB      -------
+~FG        Sometimes when you log onto the talker, you might get a message
+~FG      telling you that you have new s-mail. If you find that you do, you
+~FG      can type ~CW'~CR.rmail -new~CW'~FG to read all of your NEW s-mail, or optionally,
+~FG      just ~CW'~CR.rmail~CW'~FG to read all your messages, including your new s-mail.
+~FG      If you find that you only want to read a certain message number,
+~FG      you can type ~CW'~CR.rmail #~CW'~FG (You can see the numbers of the message with
+~FG      the ~CW'~CR.from~CW'~FG command).  Due to the fact that quite a few users let their
+~FG      s-mail boxes fill up, users are only allowed a limited amount of s-mail,
+~FG      a maximum of 25,000 bytes. Whenever you log on, or read your s-mail,
+~FG      it will tell you how much you're using. You can also have new s-mail
+~FG      forwarded to your e-mail address. To learn how, type ~CW'~CR.help fsmail~CW'
+~FG      after you're done reading this file.
+
+~CT      Editors:
+~CB      --------
+~FG        As of RaMTITS version 2, users have the choice between the old NUTS
+~FG      style editor, or the new RaMTITS editor (the RaMTITS editor is default).
+~FG      if you would like to change the editor, you just simply have to type:
+~FG      ~CW'~CR.set editor nuts~CW/~CRramtits~CW'~FG to toggle which editor you would like to use.
+~FG      Features of the RaMTITS editor include, 1) Being able to jump to certain
+~FG      line numbers. 2) Deleting a line if you decide you don't want it there
+~FG      any more. 3) Re-doing a line instead of having to re-start the whole
+~FG      message again. For more help with the RaMTITS editor, when you're
+~FG      in the editor, type ~CW'~CR.h~CW'~FG and it should display the help and the different
+~FG      commands in which you may use.
+
+~CT      Pager:
+~CB      ------
+~FG        Due to the fact that I got upset everytime I was reading a file, and
+~FG      a bunch of people were talking, I decided to re-do it completely, so
+~FG      not only will you ignore any outside speech while you're reading the file
+~FG      but you have more options, such as if you want to jump to the bottom of
+~FG      the file, you would just have to hit ~CW'~CRB~CW'~FG, or if you want to a certain
+~FG      page number, you just have to enter the number of the page. To see all
+~FG      the options there are, type ~CW'~CRH~CW'~FG now. (Don't worry.. after you read the
+~FG      help, you can type ~CW'~CRR~CW'~FG to redraw the screen).
+~FT -==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-
+~FG      If you find yourself needing more help, and perhaps more of an overview
+~FG  of what exactly you can do here, then ask a staff member, you can see the
+~FG  ones logged on by typing ~CW'~CR.wizwho~CW'~FG or you can ask for express help
+~FG  immediately providing that a staff member is online, by typing ~CW'~CR.helpme~CW'~FG. If
+~FG  for any reason you need to contact me directly, as chances are I don't run
+~FG  this talker, or have any ties with it, you can contact me at squirt@talker.org
+~FG  via e-mail. Thanks for your time, and may you have an enjoyable time.
+
+~FY  Rob Melhuish ~CW(~FYsquirt~CW)
+~FT -==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-

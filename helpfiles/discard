@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS discard
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .discard [<# # #>]
+  
+Synopsis:
+  Allows a user to discard their cards in poker.  If a user has an ace
+  in their hand, then they are able to discard up to four cards,
+  otherwise, they may only discard three.  If you don't want to discard
+  any of your cards, then you just have to use the command by itself,
+  and the game will pass the turn onto the next user.  To get the number
+  of the cards you want to discard, type ~CW'~FR.hand~CW'~RS.
+  The labels below the cards are the numbers of the cards you can discard.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

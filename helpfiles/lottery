@@ -1,0 +1,19 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS lottery
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .lottery [-buy|-jackpot|-mytickets]
+  
+Synopsis:
+  The lottery is based on one of the Canadian lotteries.. except instead
+  of 49 numbers.. there are 75.  Lottery tickets cost 20 dollars a piece
+  and the draw for the lottery is every Thursday at about 6:49 p.m.
+  If you win the lottery, it will let you know via s-mail, as well as
+  let you know how much you've one.
+  To buy a ticket, use the -buy option, and the talker will generate
+  6 random numbers for you.  If you forget your tickets, you can use
+  the -mytickets option to see what numbers your tickets have.
+  If the -jackpot option is used.. it displays what the jackpot is
+  currently up to. If noone wins the jackpot, another $500 will be added
+  to it for the next draw.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

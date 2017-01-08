@@ -1,0 +1,21 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS reboot
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .reboot [<seconds to reboot>]
+Command Usage: .reboot -cancel
+  
+Synopsis:
+  If a time in seconds is not given, then it will prompt the user to if
+  they actually DO want to reboot the talker and the user must respond
+  with YES, or NO. If the user chooses to reboot it, then it will save
+  all the data within the talker, including userfiles, and disconnect
+  everyone and reboot as it should. If a time in seconds IS given, then it
+  again will prompt the user, to which if they choose yes, it will start
+  a countdown, and reboot the talker after the time is up. If the time
+  in seconds is over a minute, it will display a warning every minute
+  otherwise, it will display the warning every ten seconds.
+  If the -cancel flag is used, and the countdown is currently active for
+  the REBOOT (not to be confused with shutdown, or seamless reboot) it
+  will cancel the reboot, and things will operate as per normal.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

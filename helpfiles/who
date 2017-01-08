@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS who
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .who
+  
+Synopsis:
+  
+  Shows the user who is currently on the talker and, unless their who-style
+  is set to 'short who', also displays the rooms everyone are in, how long
+  they've been on the talker, if they are active or idle, and their ranking.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

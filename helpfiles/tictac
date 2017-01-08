@@ -1,0 +1,23 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS tictac
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .tictac [user]
+Command Usage: .tictac [-accept|-reject]
+  
+Synopsis:
+  When another user is specified, providing that you are not currently
+  playing a game, it offers a challenge to the given user. If you are
+  the one being challenged, you can enter ~CW'~CR.tictac -reject~CW'~RS to reject
+  the game, or ~CW'~CR.tictac -accept~CW'~RS to accept it. If the challenge is
+  accepted, then the person whose turn it is first, is given a prompt.
+  At the prompt, the user may enter any one of the following things:
+    ~CW'~CRboard~CW'~RS, ~CW'~CRquit~CW'~RS, or a # corresponding to the tictactoe grid.
+  Anything other than those options is treated as a normal command.
+  If the ~CW'~CRboard~CW'~RS option is used, then it shows the user what the
+  current tic tac toe board looks like.  If ~CW'~CRquit~CW'~RS is chosen at the
+  prompt, then it resets both players tic tac toe game. If a number is
+  chosen, then it places an 'X' or 'O' into the corresponding number.
+  The object of tic tac toe is to match 3 of your pieces in a row, either
+  horizontal, vertical or diaganol.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

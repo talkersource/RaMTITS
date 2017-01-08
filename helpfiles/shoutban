@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS shoutban
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .shoutban
+  
+Synopsis:
+  This command works as a toggle, if used, and you turn the shout ban on,
+  then it disables shout commands for all users.  If used, and you turn
+  it off, then it allows shout commands to be used again.  This is good in
+  case a bunch of people are abusing the shout commands and you just don't
+  want to ignore them.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

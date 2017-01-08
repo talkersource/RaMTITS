@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS read
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .read [<room name|message number>]
+  
+Synopsis:
+  
+  If used by itself, allows a user to read all the messages that are
+  currently on the message board that the user is in.  If a room is given,
+  then the user can read the message board in the specified room, providing
+  that they are of a high enough user level (rank).  If a message number is
+  given, such as '.read 5', it would show the user the 5th message on the
+  message board.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

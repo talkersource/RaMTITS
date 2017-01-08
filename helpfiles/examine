@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS examine
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .examine [<user>]
+  
+Synopsis:
+  If used by itself, then the command displays some information about
+  the user using the command, as well as their profile.  If a user is
+  specified, then it shows that user's profile, as well as a bit of
+  other information.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

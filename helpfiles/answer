@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS answer
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .answer
+  
+Synopsis:
+  If someone has called someone with the '.phone' command, then this
+  allows them to answer the call. Which creates a link between the
+  two users, so that all their says and emotes get sent to one another,
+  instead of being displayed to the whole room.
+  
+  This is good if your getting tired of using .tell to talk to each
+  other, but don't want to miss the conversation in the room that you
+  are currently in.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

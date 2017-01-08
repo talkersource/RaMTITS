@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS from
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .from
+  
+Synopsis:
+  Allows a user to see who they have s-mail from, without having to read
+  all of it. If a user has new mail, it shows the user who their new
+  s-mail is from.  This is ideal if you don't want to read your whole
+  s-mail box, and would just like to specify a certain s-mail message
+  to read.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

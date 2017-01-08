@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS figlet
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .figlet [<-font>] [message]
+  
+Synopsis:
+  Shows the message given in big bubbly type letters. (depending on the
+  font) To view a list of fonts, '.text figfonts'. The figlets get
+  displayed to everyone, unless they are ignoring figlets. In which case
+  it just displays the figlet message in plain text.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

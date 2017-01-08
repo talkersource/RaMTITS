@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS silence
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .silence [user]
+  
+Synopsis:
+  What this command does, is basically shuts another user up. Not so
+  much like muzzling the user, but makes it so that the user still thinks
+  that he/she is still into conversations and everything, but everything
+  they type gets displayed to only them, appearing as tho they actually
+  said/did something.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

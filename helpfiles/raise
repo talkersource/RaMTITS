@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS raise
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .raise [amount to raise]
+  
+Synopsis:
+  Allows a user to raise the current bet to whatever they specify,
+  providing they are in a poker game, and their raise doesn't go over the
+  table limit.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

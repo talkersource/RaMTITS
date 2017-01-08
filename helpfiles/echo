@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS echo
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .echo [message to echo]
+  
+Synopsis:
+  Echoes the given message to the screen of every user whom is in the
+  same room as the user echoing a message. The only one who knows who has
+  sent the echoed text are staff members.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

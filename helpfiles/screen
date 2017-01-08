@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS screen
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .screen [-list|site.to.screen]
+  
+Synopsis:
+  This command screens certain sites from showing up in pre-pre logins,
+  such as when a user first connects to the talker. Which is good in case
+  you've added your talker to a talker list, and that list checks every
+  so often to see if your talker is still up and running.  I you use
+  the ~CW'~CR-list~CW'~RS option, it displays a list of the sites that are currently
+  screened.  To screen a site, is basically just like banning a site,
+  just use ~CW'~RS.screen whatever.com~CW'~RS.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

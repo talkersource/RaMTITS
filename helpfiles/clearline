@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS clearline
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .clearline [line to clear]
+  
+Synopsis:
+  Clears up a hung socket if a user is at the login stage.  For a list
+  of current sockets/lines use the command '.sites' and it will display
+  a list of everyone online, and all of the people who are at the login
+  stage.  The third column in the '.sites' command is the socket/line
+  you would use corresponding with this command.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

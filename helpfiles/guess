@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS guess
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .guess [-play|-quit]
+Command Usage: .guess #
+  
+  To start the game, you must start with the -play flag, in which it will
+  then pick a random number between one and ten that the user has three
+  tries to guess. If you decide you don't want to play anymore, use the
+  -quit flag at the command line, and it will reset the guess flags.
+  To guess a number, just enter a number at the command line, and it will
+  tell you if the number you guessed is higher or lower then the actual
+  number, as well as how many guesses you have left.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

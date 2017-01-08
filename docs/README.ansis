@@ -1,0 +1,63 @@
+--==--                                                                    --==--
+
+  README : ansis
+
+  OUTLINE:
+    This readme is to let the user be aware of the different way files can
+    be paged to users.
+
+  Last Updated: August 3rd, 2001
+--==--                                                                    --==--
+
+	For the second release in a row, I've made this document the last one
+to write. Maybe I figure it'll be easy... Anyways... If you want your talker
+to contain full ansi support (well... not full, but somewhat. (Remember the
+BBS days?)  Unlike the last version, this version you can get ansi editors
+for the ramtits download page, for both windows, and linux. They're in the
+utilities section of the downloads page. I'm making a mental note that
+when I get home I'll download one for windows ;) Allright, now... let's
+figure out how to add the ansi's.
+
+	First off, in ~/ramtits-2.2/src/include/custom1.h there are three
+things labelled ansi_line, ansi_tline, and ansi_bline, Use the ascii.c utility
+in the ramtits utitlites directory (~/ramtits-2.2/utils/) to generate
+help you figure just what kind of ansi lines you like.
+
+	Next go into the screens directory (~/ramtits-2.2/screens), and take
+note that all of those files you see with a .ASC file extension can have an
+ANSI counterpart. (You CAN'T USE RaMTITS colour codes in these files, only
+the ANSI colours. (See how to get an ansi editor above).  Once you've made
+your ansi, you can view it with the viewansi.c utility found it the utils
+directory. (gcc viewansi.c -o viewansi  then ./viewansi [filename]). If it
+looks all gibberish, then you need to get yourself a telnet client that
+supports ansi screens, (gMud doesn't as far as I know) but the majority
+of clients do, it's just up to you to find one that does. Play with your
+current clients settings, such as font types, etc.  To know what each of
+the files in the talker are supposed to contain, refer to the README.dirs
+file, as that gives an explanation of each of the files in this directory.
+
+	Also be aware, that room descriptions can no longer contain ansi's,
+it appears I took that out of the code, I forget when. But if the demand
+for it is high, I'll put it back in.  Anyways, that's generally how to set
+up the ansi's for your talker, just think you could have your talker looking
+like Legend of the Red Dragon (now I'm sure you remember bbs' ;p). Anyways,
+have fun with it, and enjoy :)
+
+--==--                                                                    --==--
+
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+
+	squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+	http://forum.ramtits.ca
+
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+        ramtits.ca 6980
+
+--==--                                                                    --==--

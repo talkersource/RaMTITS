@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS speech
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .speech [# of speech type|-list]
+  
+Synopsis:
+  If the -list option is used, it prints out all the current types of
+  speech that the talker has to offer.  To set your speech type to a
+  different one, you would use .speech # replacing the # with the choice
+  you like.  The numbers can be seen when the -list option is used.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS monitor
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .monitor
+  
+Synopsis:
+  This command works as a toggle. If a user is currently monitoring,
+  then it turns it off, otherwise if a user isn't monitoring, then it
+  will turn it on. While monitoring, the user can see who echoes things,
+  as well as sees who is .greet'ing something, as well as other things.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

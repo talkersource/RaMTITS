@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS atmos
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .atmos list
+Command Usage: .atmos # [new atmospheric]
+  
+Synopsis:
+  If the ~CW'~CRlist~CW'~RS option is used, it will display a list of the atmospherics
+  of the room that the user is currently in.  Providing that the user has
+  bought atmospherics from the store, they can also enter atmospherics
+  for their room by typing something such as:
+  ~CW'~CR.atmos 1 A thick fog floats throughout the room....~CW'
+  and that would set atmospheric number 1 to the user's room's atmosphere,
+  which is good for helping customize your room.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS hidice
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .hidice [your bet]
+  
+Synopsis:
+  Allows a user to play their odds against the talker's dealer. Both
+  the dealer and the user roll two dice, the one who rolls the highest
+  total of both dice is the winner.  If you win, you win your original
+  bet times two.. so double your original bet. The max bet is 250 chips,
+  and the minimum bet is 5 chips.  The bet goes to the dealer if the
+  totals are equal to each other as well.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

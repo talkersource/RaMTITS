@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rename
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rename [user] [new login name]
+  
+Synopsis:
+  Allows a staff member to change the login name of the specified user.
+  This should only be done if the user requests a name change. It no
+  longer matters if the user is logged on or off the talker, so you can
+  now rename someone who is currently logged on.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

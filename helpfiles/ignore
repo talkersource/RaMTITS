@@ -1,0 +1,36 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ignore
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ignore [tells|shouts|logons|beeps|channel]
+Command Usage: .ignore [pic|atmos|friends|swears]
+Command Usage: .ignore [figlets|blinkies|alert|execall|quotd]
+  
+Synopsis:
+  
+  tells     : Allows the user to block private messages to them.
+              (i.e. .tell, .pemote...etc)
+  shouts    : Allows the user to block all shouted messages.
+              (i.e. .shout, .semote, .shecho...etc)
+  logons    : Allows the user to block logons/logouts.
+  beeps     : Allows the user to block beeped messages to them.
+              (i.e. .beep)
+  channel   : Allows the user to ignore the users' channel.
+  pic       : Allows users to block pictures, whether sent via .ptell or
+              publicly shown in a room.
+  atmos     : Allows a user to ignore all room atmos.
+  friends   : Allows a user to block the friend messages such as .ftell,
+              .femote, and the 'Friend Alert' that is shown when a friend
+              logs onto the talker.
+  swears    : Allows a user to ignore the swears defined by the talker's
+              owner.
+  figlets   : Like the 'pic' option, this allows a user to ignore figlet
+              messages shown by other users.
+  blinkies  : Allows a user to ignore blinking characters.
+  alert     : Allows a user to block the 'Friend Alert' messages only.
+  execall   : Allows a user to exempt themselves from when someone uses
+              the .execall command.
+  quotd     : Allows a user to ignore the Quote Of The Day upon logging in.
+  
+If there is no given field, it displays the user's current .ignore settings
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

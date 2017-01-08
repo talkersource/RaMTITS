@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS clone
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .clone [<room name>]
+  
+Synopsis:
+  Allows a user to create a copy of themself either in the room they
+  are currently in, or in the specified room (providing the room exists).
+  Once the clone is created, the user may choose what they would like
+  the clone to hear with the ~CW'~CR.chear~CW'~RS command.  The clone command
+  is ideal if you're talking with someone in a private room, and a new
+  user comes on, so that you might be able to help them without having
+  to leave the room.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

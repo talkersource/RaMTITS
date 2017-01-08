@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS lynx
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .lynx [www url|home]
+  
+Synopsis:
+  Allows a user to check out a webpage (text only). Please note that this
+  command calls a system command so it may fail. If you see no activity
+  for about 5-10 seconds, hit enter a couple of times and it should
+  display to you.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,84 @@
+--==--                                                                    --==--
+
+  README : webpages
+
+  OUTLINE:
+    This readme, is just to let you know of the availability to create
+    webpages for users, as well as updates an accurate who listing so
+    people visiting your talker's website will be able to see who's logged
+    onto the talker at that time.  Please note, if your website is stored
+    on a different site, this webpage generator won't work for you. It
+    assumes that you have not only a shell account, webspace on that shell
+    as well. More on that below.
+   
+  Last Updated: August 3rd, 2001
+--==--                                                                    --==--
+
+	First of all, if you wish to use the generator, you must turn this
+  option on in the config file. (Use the .change command on the talker
+  with: ".change -webpage on".)
+
+	Next, (this assumes you know some basic html) you have to go in
+  and edit manually the file ~/ramtits-2.2/src/include/custom1.h.  There
+  are two things you want to change here. The 'char *html_header="...";'
+  and the 'char *html_footer="...";'.  The html already in there is just
+  basic stuff.  Replace code inside with your own, so you customize
+  the way the webpages look, so they may suit your websites theme a bit
+  more.
+
+	After you've finished off and saved your html settings, go into:
+  ~/ramtits-2.2/src/include/defines.h, search for 'WWWDir' and replace
+  the "/home/name/public_html" with the FULL path to the web dir. (ie:
+  if your shell name is 'john' the dir to your webpage directory would
+  probably be: 
+
+	/home/john/mywebdir
+
+  If you find this directory doesn't exist, then you can use:
+
+	mkdir ~/mywebdir
+
+  To create the directory. (Please note, I use ~/mywebdir as only an
+  example, to find out what directory you need, you should contact the
+  system administrator of the shell that you plan on running the talker
+  on.) Anyway, after you've created that directory, create a directory
+  inside of that directory called 'users'. For example:
+
+	mkdir ~/mywebdir/users
+
+  As this is the directory that all generated userfiles are stored.
+
+	Please note as well.. There is a standard users 'index.php'
+along with a header.php and footer.php found in the directory:
+
+	~/ramtits-2.2/utils/webpage
+
+  If you're shell account can handle php web scripts (I'm fairly sure
+  php3 will work as it was written on a system with php4).  If the server
+  can't handle them, then it's up to you to create your own index file
+  to allow the users to browse one another via the web.  All of the other
+  files are plain html, so nothing is required to make them work.
+
+	The talker also generates a 'whofile.html' which gets stored in
+  the users directory in your webspace. (The same place that the users
+  html files get stored.)  Which is an active counter of who is currently
+  logged onto the talker.
+
+--==--                                                                    --==--
+
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+
+	squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+	http://forum.ramtits.ca
+
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+        ramtits.ca 6980
+
+--==--                                                                    --==--

@@ -1,0 +1,203 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS set
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .set [<item>] [<value>]
+  
+Synopsis:
+  Depending on the setup menu option chosen by the user it either displays
+  a listing of available "settable" options -OR- allows the user to enter
+  into a number-by-option mode where the user can choose the number of the
+  option they wish to configure, or 'set'.
+  .set item value
+       /      `-- Value in which they want the item changed to.
+      |
+       `-- Specific item which the user wishes to change.
+
+  Items you can set:
+
+  desc      : Usage: .set desc [new description]
+                Allows a user to change their 'description' (thelittle
+                phrase that appears after their name on the '.who' list.
+
+  recap     : Usage: .set recap [new recapped name]
+                Allows a user to 'recapitalize' their name. So if a
+                user named 'Squirt' wanted to change his name to
+                'SqUiRt' he would use this option to do so. Colour
+                codes (.text colours) are allowed to be used in the
+                recap.
+
+  pdesc     : Usage: .set pdesc [new pre-description|-none]
+                This allows you to set a 'title' for yourself.. such as
+                'Mr' or 'Mrs' or whatever you choose. This mainly gets
+                displayed on the '.who' but shows up other places as
+                well. If you don't want your pre-description any more, then
+                using the '-none' flag will remove it for you.
+
+  lalias    : Usage: .set lalias [new level alias|-none]
+                This allows you to basically set your own alias for whatever
+                level you are. So instead of seeing the talker defined level
+                alias, your level alias gets displayed.
+
+  email     : Usage: .set email [new e-mail address]
+                Allows you to set your e-mail address, so that you might use
+                the talker's e-mail auto-forwarding function.
+
+  www       : Usage: .set www [new webpage address]
+                Allows you to set a webpage URL for whereever you're webpage
+                might be. (Please note.. the http:// is added automatically
+                so you don't need to add it when setting it.)
+
+  bday      : Usage: .set bday [new birthday] (MM/DD format)
+                Allows you to set your birthday, so others might know when
+                to wish you a happy birthday and what not.
+
+  age       : Usage: .set age [your age]
+                Allows you to set your age so that others might see how old
+                you are.
+
+  icq       : Usage: .set icq [your ICQ UIN]
+                Lets you set your ICQ number.  If this is set, then other
+                people can send you messages on ICQ with the 'icqpage'
+                command.
+
+  inphr     : Usage: .set inphr [a phrase when you enter a room]
+                Lets you set a phrase that will get displayed when you
+                enter a room.
+
+  outphr    : Usage: .set outphr [a phrase when you leave a room]
+                Lets you set a phrase that will get displayed when you
+                leave a room.
+
+  loginmsg  : Usage: .set loginmsg [a message when you login to the talker]
+                Lets you set a small message that gets displayed when you
+                log into the talker.
+
+  logoutmsg : Usage: .set logoutmsg [a message when you leave the talker]
+                Lets you set a small message that gets displayed when you
+                leave the talker.
+
+  gender    : Usage: .set gender [male|female]
+                Allows you to set your gender to either male or female.
+
+  colour    : Usage: .set colour [on|off|-test]
+                If you specified the wrong option when you first logged on
+                the talker, then you can turn the colour on or off with this
+                option. If the 'test' option is used, then it will show a
+                small test using all of the colour codes.
+
+  ansi      : Usage: .set ansi [on|off|-test]
+                Allows you to set whether or not you see ANSI screens.
+                Note, in order to see ansi screens, you need a client
+                that supports them, or set your client to a font that
+                supports them. Also.. you may not notice a difference
+                because it is up to the owner of the talker to make the
+                ansi screens.
+
+  who       : Usage: .set who [# of who style|-list]
+                Allows you to change the style of the '.who' listing to
+                one that may suit you better. For a list of different who
+                styles, use the 'list' option.
+
+  help      : Usage: .set help [# of help style|-list]
+                Allows you to change the style of the '.help' command list.
+                For a list of different help styles, use the 'list' option.
+
+  hemail    : Usage: .set hemail
+                Allows you to change whether or not you want your e-mail
+                address visible to noone (except staff) or everyone. If
+                you're e-mail address is hidden, then the only people that
+                can see it are staff members, and yourself.
+
+  columns   : Usage: .set columns [# of columns|off]
+                Allows you to change your columns before text is wrapped.
+                It's default at 81 columns, but depending on your telnet
+                client, you should change it.  This option is good if you
+                use a client that doesn't naturally wrap text.
+
+  charecho  : Usage: .set charecho
+                Allows you to turn on or off character mode echoing, for
+                clients that don't echo text back. (So you can actually see
+                what you're typing while you type it.)
+
+  prompt    : Usage: .set prompt
+                Allows you to toggle the prompt on or off. (A prompt that
+                displays the time, and other stuff.)
+
+  mode      : Usage: .set mode [nuts|irc|ewtoo]
+                Allows you to set the mode that you want. (The way you
+                execute commands.) The NUTS mode, all commands start with
+                a '.' or ','. In the IRC mode, all commands start with a
+                '/'.  In EWToo mode, you can just type out the command, 
+                and it will execute it.
+
+  editor    : Usage: .set editor [ramtits|nuts]
+              Usage: .set editor -visual
+                Using the 'ramtits' or 'nuts' options allows you to set the
+                type of editor you want to use. The normal NUTS editor, which
+                you might have seen on other talkers, or the advanced RaMTITS
+                editor which allows you to delete lines, jump to lines, and
+                other things.  If the '-visual' option is used, it will toggle
+                on/off the visualization (the window that shows what you have
+                typed into your message so far).
+
+  rmhide    : Usage: .set rmhide
+                Allows you to toggle your room being hidden on or off.
+
+  sstyle    : Usage: .set sstyle [new say style]
+                Allows you to change the way that your message comes out in
+                says, tells, channels, etc. (ie: Squirt says: ) You can change
+                it so that it looks like: Squirt says ->  Or however you might
+                want it too look.
+
+  wspace    : Usage: .set wspace
+                Allows you to toggle on/off white space removal (extra spaces
+                before a command).
+
+  tzone     : Usage: .set tzone [+/- hours from the system time]
+                Allows you to set how many hours +/- your time is from the
+                system time, which gets displayed with the '.time' command.
+
+  quit      : Usage: .set quit
+                Allows you to toggle on/off having to type '.qu' in order to
+                log off. (This is good in case you find yourself typing .q
+                instead of .w)
+
+  profile   : Usage: .set profile
+                Allows you to toggle on/off the prompt to see someones
+                profile (.examine) by hitting enter.
+
+  autoexec  : Usage: .set autoexec [command to execute when you login|-none]
+                Allows you to set a command to execute for when you log onto
+                the talker. You can use the && special option here.
+
+  menus     : Usage: .set menus
+                Allows you to toggle on/off menus.  If you're using menus
+                and you type '.set', '.bank', '.store -sell', or
+                '.store -buy' it will bring you into the menu. If you're not
+                using menus, then it'll just show a listing of the different
+                options that you can use.
+
+  carriage  : Usage: .set carriage
+                Allows you to toggle carriage return (\r) on or off. This
+                is only good if you have a telnet client that doesn't
+                handle carriage returns that well.
+
+  bfafk     : Usage: .set bfafk [a bfafk message|-none]
+                Allows you to set a message that will get displayed when
+                you come back to the keyboard from being AFK (Away From
+                Keyboard). If you don't have one set, it'll just choose
+                one of the talkers random ones.
+
+  icqhide   : Usage: .set icqhide
+                Allows you to hide your ICQ UIN from the public to see.
+                Only yourself and the staff may see this once it's hidden.
+
+  rows      : Usage: .set rows [# of rows|-off]
+                Allows you to set the amount of rows (lines) before being
+                prompted to continue when viewing a textfile, the listing
+                of commands, and various other things.
+
+  NOTE: The usage is meaned to show you how to use the command if you're
+        using the command without using menus.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

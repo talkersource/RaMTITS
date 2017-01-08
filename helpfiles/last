@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS last
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .last [<user>]
+  
+Synopsis:
+  When used by itself, it displays the previous ten logins onto the
+  talker, unless of course, there haven't been ten logins. If that's the
+  case, then it displays whoever the most recent users that came on
+  where. When a user's name is specified, providing they aren't logged
+  onto the talker, then it will show when that user was last logged on.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

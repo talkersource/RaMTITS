@@ -1,0 +1,18 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS steal
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .steal [user] [item]
+  
+Synopsis:
+  Allows a user to attempt to steal an item from another user. Possible
+  items that you may steal are: 1) hat, 2) beer, 3) room, 4) carriage,
+  5) pet, 6) bullets, 7) nuke.
+  If the specified user has a body guard, then the user using the command
+  has a 1 in 35 chance to successfully steal something from the given
+  user.  Otherwise they only have a 1 in 3 chance.  If a user is successful
+  in getting past the given users door.. it will let them know if they
+  got the item.. or if the user didn't have the item that they specified
+  it will let the user know that they weren't able to find what they
+  were looking for.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS mail
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .mail
+  
+Synopsis:
+  This command allows a user to enter the mail manager, where users may
+  manage all of their mail. From this menu, a user may see who their
+  s-mail is from, who they have sent s-mail to, delete their s-mail,
+  delete their sent s-mail, or send a s-mail message to someone.  The menu
+  itself is pretty self-explanatory. At the prompt, enter the number of
+  the choice you would like, and go from there.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

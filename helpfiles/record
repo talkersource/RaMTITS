@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS record
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .record [user]
+  
+Synopsis:
+  Displays the arrest record of a user. Any time they have had a staff
+  command used against them, it gets recorded in this log, which makes
+  it helpful in finding the user's who like nothing more than to get
+  into trouble. You can also view comments that have been added by
+  other staff members via the '.addhist' command, in regarding to the
+  specified user.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,29 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS listen
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .listen [tells|shouts|logons|beeps|channel]
+Command Usage: .listen [pics|atmos|friends|swears]
+Command Usage: .listen [figlets|blinkies|alert|execall|quotd]
+  
+Synopsis:
+  tells     : Allows the user to listen to private messages.
+  shouts    : Allows the user to listen to shouted messages.
+  logons    : Allows the user to listen to login/logoff messages.
+  beeps     : Allows the user to listen to annoying beeps.
+  channel   : Allows the user to listen to the channel messages.
+  pic       : Allows the user to listen to pictures.
+  atmos     : Allows the user to listen to the atmospherics of rooms.
+  friends   : Allows the user to listen to their friends.
+  swears    : Allows the user to listen to swear words.
+  figlets   : Allows the user to listen to figlet messages.
+  blinkies  : Allows the user to listen to annoying blinking characters.
+  alert     : Allows the user to listen to 'Friend Alert' messages.
+  execall   : Allows a user to partake in .execall usages.
+  quotd     : Allows a user to see the quote of the day when the login.
+  
+  In order to 'listen' to something, the user must first be ignoring it.
+  To see what you are currently ignoring, you can type ~CW'~CR.ignore~CW'~RS by
+  itself, and it will show you a list of everything that you can ignore,
+  followed by what you are ignoring.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

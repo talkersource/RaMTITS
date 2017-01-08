@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS addhist
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .addhist [user] [history to add]
+  
+Synopsis:
+  Writes the history in which is specified at the command line to the
+  given users history file. This is good in case a user has been good
+  or bad, you can make notes for reference of future considerations for
+  staff members, or if the user is being accused of harrasing another,
+  and you want to make a note of it.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

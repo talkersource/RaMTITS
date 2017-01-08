@@ -1,0 +1,18 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS server
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .server [server|process|quota]
+  
+Synopsis:
+  When the server flag is used, it displays information about the
+  server that the talker is being run on, such as load averages, and
+  other interesting info. (Mainly helpful if the talker is experiencing
+  lag, and you want to determine if it's server related or not.)
+  
+  When the process flag is used, it displays information about the
+  talker process, such as the percentage of memory it's using, and the
+  percentage of CPU it's using.
+  
+  The quota flag is not used, and will tell you as much.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

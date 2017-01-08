@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS deny
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .deny [user] [<command>]
+  
+Synopsis:
+  If a command name isn't specified, then it will provide a listing for
+  all of the commands that the user has denied from them.  Otherwise this
+  command denies a user from using the specified command, and it remains
+  denied until they are ".allow"ed the command.  Alternatively, if the
+  user has a command allowed to them, then this command will remove that
+  user's allowed command.  To view a user's allowed commands, use:
+~CR    .allow [user]
+  This command is good if a user is causing spam, or harassing another
+  user.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

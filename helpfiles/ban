@@ -1,0 +1,36 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ban
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ban -site [site to ban]
+Command Usage: .ban -new  [site to ban]
+Command Usage: .ban -who  [site to ban]
+Command Usage: .ban -user [name of user to ban]
+  
+Synopsis:
+  This command basically bans/denies access to the talker from certain
+  IP addresses/sites, or users.  The different flags, and what they mean 
+  are:
+    -site [site to ban]: This flag denies access to the talker completely
+                         to the specified site. For example.. if you
+                         banned the site 'netcom.ca' any person who tried
+                         logging in with "netcom.ca" in their site won't
+                         be able to connect to the talker.
+    -new  [site to ban]: This flags denies access to the talker for new
+                         user's connecting, and trying to create an
+                         account. Works something like above.. except just
+                         restricts new user's from connecting from the
+                         specified site.
+    -who  [site to ban]: This flag doesn't let anyone from the given site
+                         to see whos on the talker.
+    -user [user name]  : This denies access to the talker for the given
+                         user. Whenever they try logging on, they will be
+                         told that they have been banned from the talker.
+  
+  Wild flags are allowed, but to place a wild card, ie.. to ban multiple
+  sites at once, you just need to specify the site.. and when connections
+  are made to the talker, it checks the the whole sites string, and
+  compares it to all the banned sites for each different category.
+  Banning works better if the numeric site is given.. (ie 209.180.)
+  seeing as how it also checks the users ip_site.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

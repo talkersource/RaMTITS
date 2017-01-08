@@ -1,0 +1,61 @@
+#!/bin/bash
+
+EXEC=rt2
+export EXEC
+IDENT_EXEC=ident_server
+export IDENT_EXEC
+
+if [ "$*" == "-clean" ]; then
+    cd ../src
+    make clean
+    cd ../bin
+    echo ""
+    echo "Talker files have been cleaned up."
+    echo ""
+    exit
+fi
+
+if [ "$*" == "-re" ]; then
+    cd ../src
+    make clean
+    cd ../bin
+    /bin/bash ./compile
+fi
+
+if [ "$*" == "-help" ]; then
+    echo "Usage: $0 -clean  (cleans up *.o *.log, and old talker executables.)";
+    echo "Usage: $0 -re     (doing ./compile -clean and ./compile after.)";
+    echo "Usage: $0 -help   (what you're reading.)"
+    echo "Usage: $0         (compiles the talker daemon.)"
+    exit
+fi
+
+cd ../src
+make
+make install
+cd ../bin
+if [ -e ./$EXEC ]; then
+    echo ""
+    echo -n "Would you like to start the daemon? (yes|[no]): "
+    read START_TALKER
+else
+    START_TALKER="no";
+fi
+
+if [ -z $START_TALKER ]; then
+    exit
+elif [ $START_TALKER = "no" ]; then
+    exit
+elif [ $START_TALKER = "n" ]; then
+    exit
+elif [ $START_TALKER = "yes" ]; then
+    echo "Starting the talker daemon."
+    ./$EXEC
+    exit
+elif [ $START_TALKER = "y" ]; then
+    echo "Starting the talker daemon."
+    ./$EXEC
+    exit
+else
+    exit
+fi

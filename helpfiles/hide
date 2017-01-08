@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS hide
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .hide
+  
+Synopsis:
+  Lets a user go hidden from any other user on the talker (except for
+  certain staff members). Once hidden, to come back to visible status,
+  the user must either use .hide again, or use .vis to become visible to
+  everyone.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,28 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS suggest
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .suggest
+Command Usage: .suggest -from
+Command Usage: .suggest -delete [args]               [For level GOD and above]
+Command Usage: .suggest -read   [<#>]
+  
+Synopsis:
+  If the command is used by itself, then it will bring the user into
+  the editor, where they can enter a message, usually relating to
+  things a user would like to be added to the talker.
+  
+  If the -from flag is used, it displays the number of suggestions that
+  there are, as well as who they are from, and the number of the
+  message.
+  
+  If the -read flag, and a number is specified, it allows the user to
+  read a specific suggestion. If no number is specified, then it will
+  display the whole suggestion board to the user.
+  
+  If the -delete flag is used, as well as the proper arguments, then
+  the specified messages will be deleted. (For more information on this,
+  see .h wipe.) To see the full list of arguments that can be used with
+  the -delete flag, use the -delete flag with no arguments specified
+  on the command line (.suggest -delete).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

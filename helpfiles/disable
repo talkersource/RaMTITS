@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS disable
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .disable [<command>]
+  
+Synopsis:
+  If a command name is not specified, then using this command will display
+  a list of all the talker's disabled commands.  If a command name is
+  specified, then the talker will disable the command, which prevents
+  users from executing it.  If the command name specified is already
+  disabled, then it will reactivate the command, allowing users to execute
+  it once more.  This command is good in case you find a command that is
+  causing the talker to crash, and you need to debug it.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS entroom
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .entroom [<room name>]
+  
+Synopsis:
+  Allows a user to enter a new room description (or edit the old one).
+  If a room name is given, then the user will be brought into the editor
+  where they will enter the room description for the room.  If no room
+  name is specified, then the user will be entering a room description
+  for the room in which they are currently in.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS drink
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .drink
+  
+Synopsis:
+  This command will only work if the user has bought beer from the store,
+  otherwise.. they can't drink anything.  This command just allows a user
+  to get drunk. Please note though, once the user is drunk, to become
+  sober again, they must log off the talker and log back on.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

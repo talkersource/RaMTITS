@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS say
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .say [message]
+  
+Synopsis:
+  Allows a user to say a message normally.  By default, (if in NUTS mode)
+  if you just enter a line (or more) of speech that you want to say, then
+  it will say the message automatically, unless a command is specified.
+  If in EWToo mode, a user must type the ~CW'~FRsay~CW'~RS command in order
+  to say something to the room they are in.
+  If a user has a connection established with another user (via .phone)
+  then in order to send a message to the room, the user must actually
+  type the whole command name, otherwise the speech will only get sent
+  to the user whom the connection is established with.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

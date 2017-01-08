@@ -1,0 +1,24 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS vote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .vote [<# to vote on>]
+Command Usage: .vote -results       [ WIZ ]
+Command Usage: .vote -clear         [ADMIN]
+Command Usage: .vote -enter         [ADMIN]
+  
+Synopsis:
+  When used by itself, it displays to the user the talker's current
+  voting topic. They can then vote for whatever they wish by typing:
+  ~CW'~CR.vote #~CW'~RS where the number sign is replaced by the number of the choice
+  that the user would like to vote for.  The user may only vote once per
+  voting topic, as the talker keeps a log of who has voted.  If a user
+  of WIZ level or above uses the ~CW'~CR-results~CW'~RS option, then it displays
+  the amount of votes that each number has received.  It is then up to
+  the owner / maintainer of the talker to decide what to do with those
+  results.  If a user of ADMIN level or above uses the ~CW'~CR-clear~CW'~RS option,
+  it wipes out the vote file, as well as all the current votes and voters.
+  This should only be done when changing the vote topic.  To enter a new
+  vote topic, first a user of ADMIN level or above must use the ~CW'~CR-clear~CW'
+  option, followed by the ~CW'~CR-enter~CW'~RS option.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

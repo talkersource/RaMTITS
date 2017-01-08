@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ignall
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ignall
+  
+Synopsis:
+  Allows a user to ignore everything that goes on in the talker, or else
+  lets the user start listening to everything again. Be advised.. if you
+  are using .ignall to listen to everything again, it resets all of
+  the things you might be already ignoring. (shouts, tells, etc.)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

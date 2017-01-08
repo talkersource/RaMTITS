@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS talker
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .talker [list|add]
+  
+Synopsis:
+  If the ~CW'~CRlist~CW'~RS option is used, the command displays a list of all the
+  talkers that other people have added to the list.  If the ~CW'~CRadd~CW'~RS option
+  is used, it then brings the user into different prompts asking for
+  the talker's name, address and ports.  Once the user answers all the
+  questions, the talker is then added to the list.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

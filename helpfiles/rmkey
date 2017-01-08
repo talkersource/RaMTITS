@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rmkey
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rmkey [user|-list]
+  
+Synopsis:
+  If a users name is specified, this command allows you to give a room
+  key to the specified user, unless they already have a key to the room,
+  in which case it will take the users key away.  If a user has a key to
+  your personal room, then it allows that user to have unlimited access
+  in and out of your room, even if you're not there.. So be careful who
+  you give your keys out to.  If the -list option is used, you can see
+  a list of users who currently have keys to your room.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

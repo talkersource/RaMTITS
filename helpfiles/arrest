@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS arrest
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .arrest [user]
+  
+Synopsis:
+  Throws the specified user in the jail, and prevents them from using
+  most of their commands. This command should only be used when a user
+  is not following the rules of the talker. When using this command,
+  after you arrest someone, you should post why they were arrested with
+  the '.wiznote' command.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS comment
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .comment [your comment on the session]
+  
+Synopsis:
+  Allows a user to give their own comments on the session that is currently
+  set.  To see what the session is set at, type ~CW'~CR.session~CW'~RS. This basically
+  provides a forum of sorts where users can express their opinions on
+  certain items.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

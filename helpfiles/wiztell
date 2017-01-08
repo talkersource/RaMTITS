@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS wiztell
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .wiztell [<staff level>] [message]
+  
+Synopsis:
+  If a staff level isn't specified then it will default to the WIZ level.
+  It prints out the specified message to everyone of the specified level,
+  or if one isn't given, then it prints out the message to all the people
+  who are the same level, or above the specified level.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

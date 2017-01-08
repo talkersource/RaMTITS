@@ -1,0 +1,107 @@
+--==--                                                                    --==--
+
+  README : backup
+
+  OUTLINE:
+    This readme is to give the person setting this code up a quick rundown
+    on the procedures to get the backup script running properly with their
+    shell account.  As I do not accept responsibility for whatever may
+    happen to your code it's always safe to have a backup right?
+
+  Last Updated: August 3rd, 2001
+--==--                                                                    --==--
+
+	Although I feel I commented the backup script enough, I figured I
+may need to make a quick README for it, just to give you a understanding
+of what exactly the script does.  The reason I decided to do it from a
+script like this is because if a bunch of talkers using the RaMTITS code,
+never changed their mesg_check_time, then at around 1am in the morning,
+all the talkers would begin their backup process. This could cause an
+extreme jump in the servers resources, and thus pissing them off somewhat.
+This script is basically designed to only backup some important things,
+such as userfiles, datafiles, and source. As well as a few other things.
+It doesn't compress the things that take up the majority of disk space
+(unless you have an extremely large userbase).  Therefore, the server load
+shouldn't be as high.  It generally is a good idea to change the mesg_check_time
+in the config to reflect upon a less busy time of your server.
+
+	In the backup script, you will have to define a few things, (Although
+you shouldn't if you use the default backup installation path: (~/rt2.backup)
+That folder gets created upon you running the quick.inst script to install
+the source files. If you don't run the install script, you'll need to make
+a directory (I'm using ~/rt2.backup as my default). To do this, simply type:
+
+	mkdir ~/rt2.backup
+
+And the directory will be made. Then, edit the backup script with your
+favourite text editor, and read all of the comments (Any line beginning
+with a '#' is a commented line.  The comments are pretty self explanatory,
+but I'll go through them.  If your server doesn't have the $HOME variable
+set, you'll need to uncomment the line that reads:
+
+	#HOME=/home/login    so it looks like:
+	HOME=/home/login
+
+If you're not sure if your server has the environment set, simply type:
+	echo $HOME
+at your shell prompt, and you should see something like: /home/squirt
+appear.  If all that's echoed back is $HOME then you'll need to set this.
+
+	Next you need to tell the script where the code is.  It uses
+the default path ($HOME/ramtits-2.2) as default.  If you've installed
+it somewhere else, specify the directory where it says:
+
+	TALKERDIR=$HOME/ramtits-2.2
+
+	Now we need to know where to find the 'tar' command. If your server
+doesn't have tar installed, or you'd rather 'zip' the file, please see below.
+You need a somewhat more recent version of tar, one that supports the
+-z (gzip) flag. If your not sure, type 'tar --version'  (I'm using:
+tar (GNU tar) 1.13). If you're version of tar doesn't support the -z flag,
+see the zip section below. Normally this command is stored in /usr/bin as it
+comes with all major linux distributions, but if it's not in /usr/bin, you'll
+have to change the location here:
+
+	COMPRESS="/bin/tar -zvcf"
+
+You can also change the file extension as well by changing the COMPEXT.
+
+
+	If you'd rather use zip, comment (#) out the lines that associate
+the COMPRESS and COMPEXT environments to tar, and uncomment the COMPRESS
+and COMPEXT for zip, as well as provide a valid path to the zip command.
+Normally the default for this should be ok.
+
+	Next you have to specify where you want the files stored. This relates
+to the directory we created at the top of this document (~/rt2.backup).
+If you didn't use the default backup directory name, change the:
+
+	BACKUPDIR=$HOME/rt2.backup
+
+to wherever you want them stored.
+
+	The rest of the script just writes the log file, and does the
+actual compressing, and moving.  If you encounter any problems running the
+script, let me know at the ramtits forum (address is below). Don't forget,
+I'm developing these scripts on one different version of bash, and I don't
+have access to a bunch of different shells.  I am willing to include any
+modifications made to the scripts, but as far as I know they work for me.
+
+--==--                                                                    --==--
+
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+        
+        squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+        http://forum.ramtits.ca
+
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+        ramtits.ca 6980
+
+--==--                                                                    --==--

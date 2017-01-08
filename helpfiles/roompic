@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS roompic
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .roompic [picture name]
+  
+Synopsis:
+  Prints out the picture to the room that the user is currently in, so
+  that everyone in the room can see it.  For a list of the names of all
+  the pictures the talker has to offer type '.piclist'.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

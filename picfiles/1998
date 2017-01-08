@@ -1,0 +1,31 @@
+                       ~CB=>~FM Calendar for 1998 ~CB<=
+~FT       January              ~FM February               ~FR  March        
+~FTSu Mo Tu We Th Fr Sa   ~FMSu Mo Tu We Th Fr Sa   ~FRSu Mo Tu We Th Fr Sa 
+~FT             1  2  3  ~FM  1  2  3  4  5  6  7   ~FR 1  2  3  4  5  6  7
+~FT 4  5  6  7  8  9 10  ~FM  8  9 10 11 12 13 14   ~FR 8  9 10 11 12 13 14
+~FT11 12 13 14 15 16 17  ~FM 15 16 17 18 19 20 21   ~FR15 16 17 18 19 20 21
+~FT18 19 20 21 22 23 24  ~FM 22 23 24 25 26 27 28   ~FR22 23 24 25 26 27 28
+~FT25 26 27 28 29 30 31  ~FM                        ~FR29 30 31
+~FT        April          ~FM         May           ~FR        June         
+~FTSu Mo Tu We Th Fr Sa   ~FMSu Mo Tu We Th Fr Sa   ~FRSu Mo Tu We Th Fr Sa 
+~FT          1  2  3  4   ~FM                1  2   ~FR    1  2  3  4  5  6
+~FT 5  6  7  8  9 10 11   ~FM 3  4  5  6  7  8  9   ~FR 7  8  9 10 11 12 13
+~FT12 13 14 15 16 17 18   ~FM10 11 12 13 14 15 16   ~FR14 15 16 17 18 19 20
+~FT19 20 21 22 23 24 25   ~FM17 18 19 20 21 22 23   ~FR21 22 23 24 25 26 27
+~FT26 27 28 29 30         ~FM24 25 26 27 28 29 30   ~FR28 29 30
+~FT                       ~FM31
+~FT        July           ~FM       August          ~FR      September      
+~FTSu Mo Tu We Th Fr Sa   ~FMSu Mo Tu We Th Fr Sa   ~FRSu Mo Tu We Th Fr Sa 
+~FT          1  2  3  4   ~FM                   1   ~FR       1  2  3  4  5
+~FT 5  6  7  8  9 10 11   ~FM 2  3  4  5  6  7  8   ~FR 6  7  8  9 10 11 12
+~FT12 13 14 15 16 17 18   ~FM 9 10 11 12 13 14 15   ~FR13 14 15 16 17 18 19
+~FT19 20 21 22 23 24 25   ~FM16 17 18 19 20 21 22   ~FR20 21 22 23 24 25 26
+~FT26 27 28 29 30 31      ~FM23 24 25 26 27 28 29   ~FR27 28 29 30
+~FT                       ~FM30 31
+~FT       October         ~FM      November         ~FR      December       
+~FTSu Mo Tu We Th Fr Sa   ~FMSu Mo Tu We Th Fr Sa   ~FRSu Mo Tu We Th Fr Sa 
+~FT             1  2  3   ~FM 1  2  3  4  5  6  7   ~FR       1  2  3  4  5
+~FT 4  5  6  7  8  9 10   ~FM 8  9 10 11 12 13 14   ~FR 6  7  8  9 10 11 12
+~FT11 12 13 14 15 16 17   ~FM15 16 17 18 19 20 21   ~FR13 14 15 16 17 18 19
+~FT18 19 20 21 22 23 24   ~FM22 23 24 25 26 27 28   ~FR20 21 22 23 24 25 26
+~FT25 26 27 28 29 30 31   ~FM29 30                  ~FR27 28 29 30 31

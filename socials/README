@@ -1,0 +1,24 @@
+This readme is rather bland, because when socials are created, they should
+be created through the talker itself, using the .make -social command. These
+socials are 'soft' meaning once they are created, they will be able to be
+used right away without having to reboot, PROVIDING that they are created
+through the talker. The general format for the socials can be seen below.
+
+Line1: User uses social by itself. (ie: Squirt types .hug)
+Line2: User uses social on themself (ie: Squirt types .hug squirt)
+Line3: User uses social on another user who isn't in the same room as them.
+       This line gets sent to the other user.
+Line4: User uses social on another user who isn't in the same room as them.
+       This line gets sent to the user who executed the social.
+Line5: User uses social on another user who IS in the same room as them.
+
+
+So for example.. this is what the 'hug' social would look like:
+
+%s holds $G1 arms open wide hoping someone will take pity and hug $G2!
+%s wraps $G1 arms around $G2self attempting a one person hug!
+=> %s smiles at you, leaning into you, hugging you tightly!
+=> You lean into %s and hug $G5 oh so tight!
+%s smiles at %s leaning into $G5 and hugs $G5 tightly!
+
+If you need more help, log into the talker and type '.help make'.

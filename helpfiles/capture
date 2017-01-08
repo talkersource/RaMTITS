@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS capture
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .capture [-tells|-revbuff|-shouts]
+Command Usage: .capture [-smail #]
+  
+Synopsis:
+  This command should only be used in harrasive situations. It allows
+  a user to submit their tell buffer, the room buffer of the room that
+  they are currently in, a specific s-mail message, and the shout buffer.
+  After submitting either a buffer, or a s-mail number, it write's it
+  out to a capture log which is available for viewing by staff members.
+  Abuse of this command, could result in having the command taken away
+  from you, and or a demotion.  This command should only be used if you
+  are being harassed.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

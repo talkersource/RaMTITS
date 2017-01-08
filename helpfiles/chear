@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS chear
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .chear [room clone is in] [all|swears|nothing]
+  
+Synopsis:
+   This lets a user decide what exactly they want their clone to hear.
+   If the user chooses the 'all' option, then the clone in the specified
+   room will hear everything that is said/done.  If the 'swears' option
+   is used, then only things that contain swearing (or whatever words are
+   banned by the talker) will be seen by the clone.  If 'nothing' is
+   used, then the clone will just sit there and not hear a thing.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

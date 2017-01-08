@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS chemote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .chemote [your message]
+  
+Synopsis:
+  Sends an emoted message across the users channel so it appears as an
+  emotion.  This is just another form of communicating with all the
+  users at one time.  If you wish not to pay attention to the user channel
+  simply type ~CW'~CR.ignore channel~CW'~RS and none of the messages will be sent
+  to you.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

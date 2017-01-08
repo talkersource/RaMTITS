@@ -1,0 +1,46 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rmadmin
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rmadmin -add  [room access] [room name]
+Command Usage: .rmadmin -del  [room name]
+Command Usage: .rmadmin -link [name of room to link to]
+Command Usage: .rmadmin -rec  [recap of the room's name]
+Command Usage: .rmadmin -map  [the map the room is in]
+  
+Synopsis:
+  This command is basically used to create rooms, delete them, change their
+  recap, etc.  Seeing as how rooms are now dynamically loaded, and stored
+  almost the sameway as userfiles this is the only way to create new rooms.
+  No more going through config files and storing 50+ rooms in memory that
+  will never get used.
+
+  ~CW'~CR-add ~CW'~CB :~RS This option allows the user to add a room, providing they enter
+            a valid access type. Valid access types are:
+              1] ~CRpublic~RS  - Room is open to all users, and access can't
+                           be changed.
+              2] ~CRprivate~RS - Room is open to staff members only.
+              3] ~CRboth~RS    - Room is open to all users, but the room can
+                           be set to private by a user.
+              4] ~CRhide~RS    - Room is set to hidden, but users can enter it,
+                           and lock it if they want.
+            The room name can contain spaces, and special characters, but
+            it is advised if you keep it alphabetized characters, and
+            numbers only.
+
+  ~CW'~CR-del ~CW' ~CB:~RS Providing you specify a valid room name with this option, this
+            option allows you to delete a room from the talker.
+
+  ~CW'~CR-link~CW'~CB :~RS This option allows you link the room you are currently in to
+            the given room name, providing you enter a valid room name.
+            Please note, that when linking rooms, you have to enter each
+            room to link them to one another.
+
+  ~CW'~CR-rec ~CW'~CB :~RS This option allows you to recap the name of the room that you
+            are currently in, so that you can add colours and what not to
+            it.
+
+  ~CW'~CR-map ~CW'~CB :~RS This option allows you to enter the map of the room, in case
+            you use the multiple map system that RaMTITS has to offer.
+            Don't use this option if you don't know what you're doing.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,57 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+                ~CB=[ ~FMSo you would like to learn about ~CRC~CTo~CYL~CGo~RDU~CMr~FRS~CB ]=
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FT      The colour commands are pretty basic, and are not that different from
+~FT the normal ~CRNUTS ~FTcolour commands..I have made some changes due to the fact 
+~FT that I hated having to bold everything with ~CW'~CR*~OL~CW'~FT. All the normal ~CW'~CR~F ~CW'
+~FT colours are still the same, but please note that you do not have to ~CW'~CR*~RS~CW'
+~FT them anymore, they are automatically resetted everytime you use one.
+~FT All of the colour commands still start with this little funky thing, ~CW'~CR~~CW'
+~FT I don't know what it's called, hence the name funky thing ;).
+~FG=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=-=><=
+~FMColour command         ~FYDisplay!
+~CW~~~~~~~~~~~~~~         ~~~~~~~~
+^~RS                    ~RSResets the text back to this colour
+^~OL                    ~OLMakes the text bolder (more details below)
+^~LI                    ~LImakes the text blink, note tho, not all terminals
+                        ~LI can see the blinkies. Some may just bold it.
+^~UL                    ~ULUnderlines text, note again not all terminals
+                        ~UL support it.
+^~RV                    ~RVReverse Video
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+^CRForeground Colours
+~FMColour command        ~FYDisplay!
+~CW~~~~~~~~~~~~~~        ~~~~~~~~
+^~FK                 ~FK~BWThis would be what you want if you want Black
+^~CK                 ~CKThis would be bolded black
+^~FR                 ~FRThis would be dark red
+^~CR                 ~CRThis would be bright red
+^~FG                 ~FGThis would be dark green
+^~CG                 ~CGThis would be bright green
+^~FY                 ~FYThis would be orange
+^~CY                 ~CYThis would be yellow
+^~FB                 ~FBThis would be dark blue
+^~CB                 ~CBThis would be a brighter blue
+^~FM                 ~FMThis would be purple
+^~CM                 ~CMThis would be magenta
+^~FT                 ~FTThis would be turqouise
+^~CT                 ~CTThis would be a bright blue
+^~FW                 ~FWand this would just plain ole this colour
+^~CW                 ~CWand this would be hilited white.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~BR~CGBackground Colours
+~FMColour command        ~FYDisplay!
+~CW~~~~~~~~~~~~~~        ~~~~~~~~
+^~BK                   ~BKSets the background to be black.
+^~BR                   ~BRSets the background red.
+^~BY                   ~BYSets the background yellow.
+^~BG                   ~BGSets the background green.
+^~BM                   ~BMSets the background magenta.
+^~BT                   ~BTSets the background turqouise.
+^~BB                   ~BBSets the background blue.
+^~BW                   ~BW~FKSets the background white,
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FT If you find yourself wondering anything else about colours, then feel free
+~FT to just talk to anyone, I'm sure that they would be happy to help you out
+~FT with anything :)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

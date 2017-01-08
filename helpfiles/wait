@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS wait
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .wait [user|-reset]
+  
+Synopsis:
+  When a user is specified, it lets the user know when the given user
+  logs on, as well as lets the specified user know that the user using
+  the command has been waiting for them. When the '-reset' option is
+  used, it resets it so that the user is no longer waiting for anyone.
+  It resets automatically whenever a user logs on, and this option should
+  only be used if you no longer want to wait for the user you were
+  waiting for.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

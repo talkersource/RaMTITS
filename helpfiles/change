@@ -1,0 +1,125 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS change
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .change -flag [arguments]
+
+Synopsis:
+  Please be aware that changing anything in here changes the config file,
+  if you have any problems after changing anything with this command, please
+  delete ~/ramtits-2.2/datafiles/config.talker
+  ~CW'~CR-clones~CW '~CB:~RS Using this flag, and providing a valid number (between 1 and 6)
+              this changes the max amount of clones that a user can have at
+              one time.
+              ~CRUsage~CB:~CR .change -clones ~CB[~CR1~CW -~CR 6~CB]
+
+  ~CW'~CR-life~CW   '~CB:~RS Using this flag changes the amount of days before messages are
+              wiped from the board. It can only be changed between 1 day and
+              15 days.
+              ~CRUsage~CB:~CR .change -life ~CB[~CR1~CW -~CR 15~CB]
+
+  ~CW'~CR-mesg~CW   '~CB:~RS Using this flag changes the time that the talker does system
+              maintenance, such as renaming logfiles, checking message boards,
+              and backing up the talker. When using this flag make sure you
+              enter a valid time.. (such as 13:30 for 1:30 pm.)
+              ~CRUsage~CB:~CR .change -mesg ~CB[~CRHH:MM~CB]
+
+  ~CW'~CR-users~CW  '~CB:~RS Using this flag changes the max amount of users that can be logged
+              on at one time. Note that the more users connected to the talker,
+              the more amount of memory (RAM) the talker consumes. The default
+              is 50.
+              ~CRUsage~CB:~CR .change -users ~CB[~CR10~CW - ~CR99~CB]
+
+  ~CW'~CR-wizplev~CW'~CB:~RS Using this flag allows you to change which level may be allowed
+              to log onto the staff port.
+              ~CRUsage~CB:~CR .change -wizplev ~CB[~CRlevel~CB]
+
+  ~CW'~CR-timeout~CW'~CB:~RS Using this flag allows you to change which level in which users
+              will be timed out and logged off of the talker.
+              ~CRUsage~CB:~CR .change -timeout ~CB[~CRlevel~CB]
+
+  ~CW'~CR-char~CW   '~CB:~RS Using this flag allows you to set default character mode
+              echoing on or off. This is mainly good if you know the type of
+              telnet client that the majority of your users use.
+              ~CRUsage~CB:~CR .change -char ~CB[~CRoff~CW|~CRon~CB]
+
+  ~CW'~CR-prompt ~CW'~CB:~RS Using this flag allows you to set the prompt default on or off,
+              which means that if a new user comes on, and you have the prompt
+              default set to on, that user would be given a prompt. (Which just
+              displays the time.)
+              ~CRUsage~CB:~CR .change -prompt ~CB[~CRoff~CW|~CRon~CB]
+
+  ~CW'~CR-backup ~CW'~CB:~RS Using this flag allows you to set the automatic talker backup
+              on or off. Backups are stored wherever the pre-defined backup
+              directory is. (Check defines.h)
+              ~CRUsage~CB:~CR .change -backup ~CB[~CRoff~CW|~CRon~CB]
+
+  ~CW'~CR-debug  ~CW'~CB:~RS Using this flag allows to to set the talker debugging on or
+              off, which basically just generates a crash file, showing
+              everything being done at the time of the crash. (Logins,
+              people in editors, and what not.) This is good if you experience
+              crashes and aren't sure what's crashing the talker. To view
+              the debug log use ~CW'~CR.view -debug ~CB[~CRPID~CB]~CW'
+              ~CRUsage~CB:~CR .change -debug ~CB[~CRoff~CW|~CRon~CB]
+
+  ~CW'~CR-webpage~CW'~CB:~RS Using this flag allows you to turn the talker's webpage
+              generator on or off. When the webpage generator is on, it will
+              generate html files for users, and a who file, showing who
+              is on the talker. (Providing that the talker webpage dir
+              is properly defined in defines.h).
+              ~CRUsage~CB:~CR .change -webpage~CB [~CRoff~CW|~CRon~CB]
+
+  ~CW'~CR-auto   ~CW'~CB:~RS Using this flag allows you to turn auto authlookups on or off.
+              When turned on, auth lookup attempts to connect to the user's
+              computer and perform an ident request, attempting to get a real
+              login name from the user's ISP. Which would provide useful
+              if the user is being harassive. (To see the user's name,
+              providing the auth lookup was successful, use the ~CR.getname
+              command).
+              ~CRUsage~CB:~CR .change -auto~CB [~CRoff~CW|~CRon~CB]
+
+  ~CW'~CR-passwd ~CW'~CB:~RS Using this flag allows you to decide if you want passwords
+              echoed at the login screen. If you decide no, then the user
+              won't see anything when prompted for a password, otherwise,
+              it'll show the user their password as they type it. Generally
+              this should be set to no, so people can't see other's passwords
+              as they log into a talker.
+              ~CRUsage~CB:~CR .change -passwd~CB [~CRyes~CW|~CRno~CB]
+
+  ~CW'~CR-afks   ~CW'~CB:~RS Using this flag allows you to decide if you want to time out
+              people who are afk or not.  If you decide yes, then even if
+              a user is away from keyboard, but are idle for an hour, they
+              will get disconnected. If you decide no, then they will not
+              be disconnected.
+              ~CRUsage~CB:~CR .change -afks~CB [~CRyes~CW|~CRno~CB]
+
+  ~CW'~CR-apromo ~CW'~CR:~RS Using this flag allows you to decide if you would like to
+              use the auto-promote feature. Which when a new user connects
+              to the talker, they will be taken through the new user setup
+              and promoted once they logon, if it's set to yes. If it's set to
+              no, the new user will still go through the new user setup, they
+              just won't be promoted.
+              ~CRUsage~CB:~CR .change -apromo ~CB[~CRyes~CW|~CRno~CB]
+
+  ~CW'~CR-free   ~CW'~CB:~RS Using this flag lets you decide if you want to allow users
+              to have free rooms or not. If set to yes, then the users
+              will have their own room upon using ~CR.home~RS for the first time.
+              If set to no, then in order to get their own room, they must
+              purchase it from the store.
+              ~CRUsage~CB:~CR .change -free ~CB[~CRyes~CW|~CRno~CB]
+
+  ~CW'~CR-crash  ~CW'~CB:~RS Using this flag allows you to change the talker's defalt crash
+              action. If ~CW'~CRsreb~CW'~RS is defined, then if the talker crashes, it
+              will perform a seamless reboot, which will reboot the talker
+              without losing any of the user's connections. If ~CW'~CRreb~CW'~RS is
+              defined, then the talker will perform a hard reboot,
+              disconnecting all the users and re-running the executable.
+              if ~CW'~CRnone~CW'~RS is specified, it will disconnect all the users
+              and shut itself down.  If ~CW'~CRign~CW'~RS is specified, then the
+              talker will try to ignore the crash, and carry on normally.
+              If that's the case, then the talker may become quite unstable
+              afterwards and crash more often. Seamless reboot is best for
+              this because users can carry on with whatever it was they were
+              doing after a crash.
+              ~CRUsage~CB:~CR .change -crash ~CB[~CRsreb~CW|~CRnone~CW|~CRign~CW|~CRreb~CB]
+
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS toss
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .toss [heads|tails] [amount to bet]
+  
+Synopsis:
+  This is basically just a simple coin toss game. You choose whether
+  you think the coin is going to turn up heads or tails, and how
+  much you're willing to wager. (minimum of 5 chips, maximum of 25 chips)
+  If you lose.. you lose your bet, and it's up to you to make it back.
+  If you win, you win double your bet.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

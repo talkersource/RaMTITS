@@ -1,0 +1,26 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS bship
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .bship [user]
+Command Usage: .bship [-accept|-reject]
+Command Usage: .bship [-random|-ready|-quit]
+  
+Synopsis:
+  If a user is specified, then it offers a battleship challenge to the
+  given user.  Once the challenge is issued, the user can accept the game
+  with ~CR.bship -accept~RS or similarily reject the game by using the
+  ~CR.bship -reject~RS flag.  If the user accepts the game, then both users
+  playing can choose their ship layouts by using ~CR.bship -random~RS and
+  continue choosing their layout until they are satisfied. Once they are
+  ready, they can type ~CR.bship -ready~RS to let their opponent know that
+  they are ready to play the game. Once both players are ready to play, it
+  will start the game. The object of the game is to try and sink all of
+  your opponents ships before they sink yours. To choose where you want
+  to attack you would use ~CR.bship ~CB[~CRletter~CB][~CR#~CB]~RS with the
+  letter and number corresponding to that on the grid layout. The
+  game can be finished by either of two ways.. either opponent typing
+  ~CR.bship -quit~RS during any moment of the game, or by an opponent sinking
+  all of their opponent's ships.  If you ever loose your position of the
+  board, you can bring back the grid, by typing ~CR.bship~RS all by itself.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

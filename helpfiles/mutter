@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS mutter
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .mutter [user|-male|-female] [message]
+  
+Synopsis:
+  When either the ~CW'~CR-male~CW'~RS or ~CW'~CR-female~CW'~RS flags are used it will mutter
+  the message to either only males (if the -female flag is used) or to
+  females (if the -male flag is used) who are in the same room as the user
+  using the command. If a user is specified, then it will display the
+  message to everyone in the room, except for the specified user.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

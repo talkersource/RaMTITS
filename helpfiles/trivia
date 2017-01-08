@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS trivia
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .trivia
+  
+Synopsis:
+  When used, the user is brought into trivia mode, while in trivia mode,
+  the user will be asked 10 different questions. (one at a time) After
+  each question is asked, the user will then be prompted for an answer.
+  At the prompt, the user can enter the letter that corresponds with the
+  answer they would like to choose, or they can enter 'quit' to quit.
+  If they choose to quit, it resets their trivia game. A user can win a
+  temporary promotion if they get 7 or more answers correct out of the
+  10 questions asked.
+  The temporary promotion ends when the user logs off the talker.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,18 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS allow
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .allow [user] [<command>]
+  
+Synopsis:
+  If a command name isn't specified, then it will provide a listing for
+  all of the commands that the user has allowed to them.  Otherwise this
+  command allows a user to use the specified command, and it remains
+  allowed until they are ".deny"ed the command.  Alternatively, if the
+  user has a command denied from them, then this command will remove that
+  user's denied command.  To view a user's denied commands, use:
+~CR    .deny [user]
+  This command is good if a user would like to play a game with another
+  user but does not have access to the game because it is at a higher
+  level.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

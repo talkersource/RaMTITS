@@ -1,0 +1,18 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS promote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .promote [user] [<level>]
+  
+Synopsis:
+  If the level name isn't specified, then this command incriments the
+  users level up one.  If a level is specified then it will raise the
+  user's level to the specified level.
+  If the given user's level is above the WIZ (or equivalent) staff level,
+  then it will prompt the user using the command if they would like to
+  add the user to the staff file. If the user says yes to this, then
+  this will make it so that the user won't lose his/her level whenever
+  they log back onto the talker. If the user says no to this, then
+  whenever the user being promoted logs off the talker, and logs back
+  on, they will be returned to the normal user level.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,25 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS seven
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .seven [under|over|seven] [your bet]
+  
+Synopsis:
+  Allows a user to place a bet whether the two dice rolled will either
+  be under seven, over seven, or the two will total seven altogether.
+  If the total of the two dice rolled are less then seven, and the
+  and the ~CW'~CRunder~CW'~RS flag is used, the user will win 2x their
+  original bet. The same goes if the total of the two dice rolled are
+  over seven, and the ~CW'~CRover~CW'~RS flag is used. For example:
+      ~CW'~CR.seven under 20~CW'~RS   -- And the total of two dice rolled
+                             equaled ~CW'~CR6~CW'~RS or lower, I would win 40
+                             chips.
+      ~CW'~CR.seven over 20~CW'~RS    -- And the total of two dice rolled
+                             equaled ~CW'~CR8~CW'~RS or higher, I would win 40
+                             chips.
+  However, if you choose the ~CW'~CRseven~CW'~RS flag, and the total of the
+  two dice equals seven, you win 4x your original bet. For example:
+      ~CW'~CR.seven seven 20~CW'~RS   -- And the total of two dice rolled
+                             equaled ~CW'~CR7~CW'~RS I would win 80 chips.
+  A person can only bet if they have 5 or more chips, with the maximum
+  bet being 100 chips.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS delold
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .delold
+  
+Synopsis:
+  This command goes through all users userfiles, and checks to see when
+  they were last logged on.  If their account has been inactive in the
+  predefined number of days, and providing that they are not protected
+  from deletion, then their account will be erased.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

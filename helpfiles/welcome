@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS welcome
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .welcome [message]
+  
+Synopsis:
+  Prints out a message to everyone on the talker, unless you're ignoring
+  shouts. This command is generally ideal for welcoming a new user onto
+  the talker, but could be used just for fun as well. It's different from
+  a normal should because it does the shouted message in a somewhat
+  'different' form.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

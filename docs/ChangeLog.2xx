@@ -1,0 +1,715 @@
+--- August 4, 2001
+- Played around with profiles, added [HTML] and [/HTML] tags so that users
+	can have html tags in their profile without it showing up to everyone
+	who .examine's them.  This is only really useful if you plan on using
+	the webpage generator.
+
+- Fixed a bug with .change so that it will save the config file if you change
+	the webpage generator from OFF to ON.
+
+- Fixed a bug with the editor and using '.l' to load up old files
+
+- Updated webpage generator again, cleaned up html code, etc so it makes
+	it somewhat easier to customize the html files providing you know
+	HTML.
+
+- Added -clear and -add flags to .riddle command as to make it easier
+	for talker owners to modify the riddle.
+
+--- August 2, 2001
+- Made some cosmetic changes to gear up towards the actual release, made
+	the talker more easier to setup, etc.  This required the aid of
+	many many different shell scripts. I personally was using 
+	bash version: GNU bash, version 2.04.0(1)-release (as noted
+	with bash --version). I am rather confident that the majority
+	of these scripts should work on all systems.
+
+--- June 27, 2001
+- Mucked around with clones for a while, realized and fixed a bunch of clone
+	and room bugs... hopefully should work better.
+
+--- June 26, 2001
+- Bug with goin afk and session being locked, you enter your password, and well
+	after you come back from afk it says your password to the room, that's
+	not good, and rather insecure... *FIXED* Thanks to Techno for pointing
+	this out.
+
+- Minor bug fix with clone switches fixed
+
+--- June 4, 2001
+- Finished the new banning method, it works good, nice and fast, just
+	how I originally planned it :)
+
+- Updated the .staff command so it doesn't require a text file anymore,
+	now the text file is for just decoration, it goes to the
+	top of the generated staff list.
+
+--- May 31, 2001
+- Noticed a wierd bug if you .ignore logons and then try and .listen
+	logons right away again, it wouldn't listen, to listen you had
+	to type '.listen' by itself, and it would start working again?
+	Looked at it, and realized a missing ! caused this.. bleh.. I
+	suck.
+
+- Started work on a new banning method.. will take out the needless
+	I/O but end up taking up more memory, bans are stored in their
+	own structure now, reason I did this is so I can impliment
+	timed bans at a later point.
+
+--- May 30, 2001
+- Fixed a small bug with the sites being screened, need both IP and alpha-
+	numeric site screened in order for it to screen.
+- Worked on documents for a little bit.
+- Was going through, writing up the credits, and noticed on the battleship
+	where I got the original design, and gameplay, that in order to
+	to distribute the game with RT I need the author's permission
+	to distribute it in whole with the RT talker daemon.  Sent out
+	an e-mail, let's just hope I get a reply rather quick.
+
+--- April 10, 2001
+- Fixed a crash bug with .delold (hehe whoops) was missing a u->name in
+	a write_log() call.. bad bad bad squirt
+
+--- April 4, 2001
+- Fixed a small bug with the clones and not being able to kick them
+	out of personal rooms.
+- Fixed a bug (Should go with above) that if you use .to and .toemote
+	on a clone that is in your room it would tell you that user
+	isn't in the same room as you.. *should be fixed now*
+
+--- April 3, 2001
+- Hopefully fixed chess so it can tell what a checkmate actually is now.
+- Fixed a minor bug in hangman so that if you're guessing letter 'q' it
+	won't quit your game.. whoops.. my bad :p
+
+--- April 1 & 2, 2001
+- Updated all of the .who listings so they look somewhat cleaner.
+- Added ei3_who.	(Bristol's talker's 2nd .who)
+- Added mori_who	(Mordeth's design)
+- Updated .memcnt so it's more accurate with what memory is actually
+	being allocated.
+- Re-wrote the ran() function so it becomes truly more random.
+- Lowered the max craps bet to 20.
+- Updated the backup_files() function so it now uses a shell script,
+	ppl have to be sure to edit this script if they expect it to
+	work.
+
+--- March 30, 2001
+- Re-wrote the .gstat command.. looks nicer now.. thanks to Mordeth for
+	the new design.
+
+--- March 26, 2001
+- Fixed a bug with inviting a user to a hidden room.. the user couldn't
+	join the person who invited them.
+- Fixed a bug with being able to .rmkick someone from a hidden room.
+- Finished the checkers game (.checkers and .chmove)
+- Fixed a minor bug with saving userfiles and and then it setting
+	certain things to #NOTSET# (which gets reset in load_user) I
+	created a function called reset_junk() for this.
+- Fixed a minor bug in blackjack that if you win with a 5 card hand
+	it upped the users money.. not their chips as it should.. Thanks
+	to Techno for pointing this out.
+- Made it so users can echo their own names as well as urls, instead
+	of them always getting the 'Sorry you can't echo other names' message.
+- Think I fixed a minor bug that would write a message to some random
+	user that they have session swapped when in fact it was another
+	user who swapped sessions.
+- Changed version number to 2.2b5 when it goes to beta testers it will
+	be 2.2a# (another new version system ;p)
+- Attempted to make the games more random.... hopefully it'll work..
+
+--- March 21, 2001
+- Update the headers in all the .c files, also did various bug fixes.
+- Removed .server command (system.c) as I found it was just too buggy to
+	even bother with.. nothing in it was really needed anyway, so I
+	figured it'd just be better to get rid of then fix it.
+- Fixed a bug with reading of new s-mail and having your rows turned off,
+	and it not deleting the new s-mail file.. (so you'll always end
+	up having new s-mail :p
+- I believe the bug mentioned below is finally fixed.. holy sheesh..
+	took me long enough eh? :p
+
+---  March 10, 2001
+- Well.. I didn't fix the bug below when I thought I did.. but I do believe
+        that it is fixed now.. not sure, so we'll just have to see. For the
+        record tho, I believe that it is a memleak bug that exists in all
+        NUTS 3.3.x talkers.. found it while playing with gdb and the
+        Electric Fence library.
+- Fixed a small bug with .session -who not displaying time correctly.
+
+---  March 9, 2001
+- After some heavy duty debugging, I believe I fixed a seemingly random crash
+	that would happen so often whenever a user logged off the talker or
+	examined another user.. etc. it would crash the talker, and not be
+	able to perform a seemless reboot.. Not sure if it's fixed yet.. we'll
+	have to see..
+
+---  March 3, 2001
+- Changed it so there's another auto-promote after 5 days of total login time.
+- Fixed a bug I thought I already had fixed with the saving/loading of userfiles
+	and it showing the #NOTSET# which it shouldn't seeing as how they're
+	nullified values.. and this bug.. if not fixed.. opens up a whole
+	shitload of other bugs.. such as nullifying user names, destructing
+	users at random, etc.
+- Fixed a huge possible whole with the && option being used in aliases, which
+	would crash the talker.. bad bug.. really yucky.. Thanks for Khamael
+	pointing this one out to me.
+- Fixed a small bug with the checksmail not working at the login and it displaying
+	the .rmail usage? wierd wierd stuff.
+- Fixed a minor bug with the not saving of user's last site.
+
+---  March 1, 2001
+- Fixed a crash bug in wiz_who (if a users logging in and soemone does a
+	.wizwho it would cause the talker to crash)
+
+---  Feb 25, 2001
+- Fixed a minor bug w/ the logins displaying the wrong name when logging
+	in hidden or fake logged off, as well as made the recap proper
+
+---  Feb 23, 2001
+- Fixed a bug in disconnect_user when it changes the AFK users desc and they
+	idle out it doesn't change they're desc back to what it should be.
+
+---  Feb 19, 2001
+- Fixed a bug with .finduser and displaying a whole shitload of users
+	all at once.. all gone to that bug.
+- Fixed a minor bug with the checking of new s-mail where it doesn't delete
+	the new mail file.. so you keep getting the new s-mail over and over.
+- Decided to start dating when everything is done.. so this way ppl keep
+	better track of what's goin on.
+
+
+--------------------------------------------
+  All changes before the times posted above.
+--------------------------------------------
+
+- Fixed a minor bug: [write_user(user,... ) ] in the minlogin(user) function.
+	should actually be [ write_user(u,...) ]  Thanks to Bobby for pointing
+	this out.
+- Added a gender_types[] in the ramtits1xx.h file in order to get the
+	check_gender() function working properly.
+- Re-did the check_gender() function.
+- Added a delete_messages() function, which made the existing wipe_messages()
+	and dmail() functions obsolete. This is now the function that handles
+	all of the major wiping of files.
+- Updated print_usage() function so it works with the new delete_messages()
+	function.
+- Added a review_buffer() function, which makes the following functions
+	obsolete:  review_user(user,inpstr);	(rooms.c)
+		   revshout(user);		(speech.c)
+		   revchannel(user);		(module1.c)
+		   revwiz(user);		(staff.c)
+	Also makes the following commands obsolete:
+		   revtell,  revshout,  revwiz,  revchan
+	review is now: review_buffer(user,inpstr) in the exec_com() switch.
+- Added a clear_buffers() function which makes the following functions
+	obsolete:  revclr(user,inpstr);       (rooms.c)
+		   shoutcbuff(user);          (speech.c)
+		   tellcbuff(user);	      (speech.c)
+		   channelcbuff(user);	      (speech.c)
+		   wizcbuff(user);            (staff.c)
+	Also makes the following commands obsolete:
+		   tcbuff,  shcbuff,  wizcbuff,  chcbuff
+	cbuff is now: clear_buffers(user,inpstr) in the exec_com() switch.
+- Added a load_shortcuts() function, which does pretty much what it says,
+	loads the users shortcuts providing they have set them. Users now have
+	their own defined shortcuts.
+- Added a load_default_shortcuts() function which in case a user hasn't set
+	any of their own shortcuts then it loads the talkers default ones.
+- Added a shortcuts() function which allows a user to set their own short -
+	cuts.. ie ! for .semote, etc..
+- Added the following functions for cut down in the code:
+	- is_jailed(user)             (returns 1 if the user is jailed.)
+	- is_clone(user)              (returns 1 if the user is a clone.)
+	- is_muzzled(user)            (returns 1 if the user is muzzled.)
+	- status_text(user,type,com)  (writes the proper text to a user pending
+					what their status is, for use with the
+					above functions. See pretty much any
+					function now to see how it all works.)
+- Made a new .c file (other then module2.c) "whohelp.c" which contains the
+	different types of who's, and the different types of helps, as well
+	as those functions who(user), and the help(user) functions. Did this
+	to cut down the size of the main.c file and so that I can start only
+	keeping major things in that file.. *major plans for the future.*
+- Added the following things to the user structure.
+	- type 'char'
+	   sstyle[MAX_STYLE_LEN],   away_buff[REVTELL_LINES][REVIEW_LEN+2],
+	   autoexec[COM_NAME_LEN],  ccopy[MAX_CARBON][USER_NAME_LEN+2],
+	   link[USER_NAME_LEN+2],   bfafk[AFK_MESG_LEN+1]
+	- type 'int'
+	   whitespace,	tzone,	quit,	profile,   menus
+	I'll explain what each of them does after I actually impliment them
+	into the code ;-)
+- Had to define lots of new things in the ramtits1xx.h file.
+- Made a reset_vars() function, another idea I got from Amnuts.. due to a
+	default NUTS bug that would pretty much allow a user to hack into
+	another persons account if they didn't have their own account.
+- Moved the following variables to type 'long':
+	user->last_login_len,  user->money,  user->dep_money,  user->chips,
+	user->dep_chips,       user->icq,    user->sm_bytes,   user->ssm_bytes
+	- Did this because as reading up on C programming, I've realized just
+	  how unstable it could make the code be if these variables exceeded
+	  the max amount for type 'int'
+- Actually finished the whohelp.c file (after spending much time re-doing
+	certain things.)
+- Re-wrote the count_messages() function so it now works with 5 different
+	files and not just the users s-mail box.
+- Went and updated the reboot/shutdown commands so that the seamless reboot
+	will in fact work.. virtually making RaMTITS an uncrashable code..
+	unless of course the seamless reboot crashes ;p
+- Re-wrote the read_specific() function.. don't know where I'm going to place 
+	it yet.. probably back in the messages.c library.
+- Removed the function count_mail() and added count_mess() which counts the
+	s-mail messages, sent s-mail messages,  suggestions, and bugs.
+- Updated the get_filesize() function so that it works with sent s-mail as well.
+- Removed the get_filesize() function... now using the C stat function.
+- Had to update the functions that use the read_specific (rmail(), read_board(),
+	suggestions(), bugs(),read_sent().
+- Added a new include file to the main include files in ramtits1xx.h
+	<sys/ioctl.h> This is for figlet's which I'm starting work on.
+- Added another definition to the ramtitsxxx.h it's for the strlen() function
+	for use with the figlets.
+- Updated the write_() functions. So that the continue statements are somewhat
+	more identifiable.
+- Updated the login() so users can't have bad words for names.
+- FINALLY, debugged the shit outta the user defined shortcuts, so they work
+	.. now I gotta do the same w/ the new way message handling is done.
+- You can now delete certain suggestions/bugs/newsfiles. as well as sent
+	s-mail messages.
+- Whenever a new message is posted. either with .suggest, .bug, .addnews,
+	.write/.carve, .smail the NEW message is saved to the TOP of the file as
+	opposed to the bottom of it..
+- Re-worked the s-mail system, so that users can use .rmail -new to just
+	read their new s-mail. In order for me to do this, I had to create a
+	whole new user file (user->name.NM) which stores the new mail until
+	the user types .rmail -new, or just .rmail, in either case, the new
+	mail file gets appended to the TOP of the old mail file.
+	*THIS WAS VERY VERY TRICKY!*
+- Made a new function called view_from() so that you can see the message
+	numbers with the suggestions/bugs/news/s-mail/sent s-mail/messages
+- Put a block on users sent s-mail boxes now too which meant I had to
+	update the get_file_size() function.
+- Fixed a hangman bug that would crash the talker. (Thanks to Sparky for
+	pointing this out to me.)
+- Fixed a few minor bugs with the seamless reboot. It's yet to be determined
+	if this reboot will be put in the distribution.. It's not really my
+	choice.
+- Put the normal NUTS editor back in, named it under the function:
+	nuts_editor() as well as renamed my editor to ramtits_editor().
+	Next is to move the message functions to call upon the appropriate
+	editor, then to add the .set editor :p
+- Did some mucking around w/ write_() functions... they are all different
+	now.. sorry ppl.
+- Added the following things to .set:
+	- Whitespace toggle (Strips all spaces and chars<33 from the beginning
+                             of a string. *no more dropped tells? ;) )
+	- Time zone         (not implimented yet)
+	- Columns           (Now have proper word wrapping)
+	- Hide room         (hides your room from users)
+	- Menus             (set whether or not you want to use menus)
+	- BFAFK message     (When a user comes back from afk this message is
+                             shown.)
+	- Editor            (Users can either use the NUTS editor or the
+			     RaMTITS editor.)
+	- Say style         (users can define what comes after their name
+			     when they type stuff.)
+	- Quit toggle       (Users can choose whether or not they have to type
+			     .quit to quit.)
+	- Profile           (Users can choose whether or not they want to be
+			     prompted when examining someone.)
+	- Auto exec command (Users can set a command they want to execute when
+			     they log onto the talker.)
+	- User link         (Users can set up a link, so if a user isn't found
+			     if they just type .t message it'll get sent to
+			     whoever they have a link to.)
+	- ICQ hide          (Users can hide their icq numbers from others.)
+	- Rows              (-off/# Users choose how many rows before they
+			     get prompted. If off, it doesn't page, just goes
+			     through the file.)
+	- Show attributes   (Users can see what stuff they currently have set.)
+- Added figlets :-) Thanks to the Mish and writers of the figlet code for this.
+- Put a block on the users sent smail boxes so they can't exceed over 15000
+	bytes.
+- Moved the bank/store/set stuff into menus.c
+- Made it so when you .enemy someone.. that person pretty much can't communicate
+	with you AT ALL, even if they are in the same room with you.
+- I know I did some more.. I just can't remember what at this time...
+- moved library2.h to games.h, library3.h to general.h, and library4.h to
+	staff.h
+- Added a .ban who, so you can ban a site from doing a "who" at the login,
+	forcing them to have to login to see who's on ;-)
+- Added an option for .wake, so it's .wake -tfu (TheFuckUp) sends a nice message
+	instead of just the WAKEUP. ;-)
+- Moved .people over to .site so when .site is used alone, it'll show the same
+	thing .people did. Hence removing the .people command for good.
+- Made some modifications to the login().. Fixed a bug with the send of mail
+	to users who enter a password wrong more then 2 times. As well as took
+	out most of the attempts(user); So that attempts(user) just deals with
+	the wrong password for the user.  If the user enters a wrong password,
+	rather then them having to re-type their nick name, they just have to
+	type their password again.  There is a block for new users.. this is
+	explained in the char *wrong_pwd= " in library1.h.
+- Changed around .toplock, it is now easily .topic -l. One feature with this
+	is that you can do a .topic -l <the new topic> and it'll lock the new
+	topic at that level.
+- Updated .ignore and .listen added 2 new things to ignore/listen (blinkies
+	and figlets) Also implimented the swear words.. so users actually can
+	ignore swear words now :-)
+- Updated the more() function.. Totally different.. and no.. this wasn't from
+	Andy's more() in Amnuts v2.1.1.. he did however tell me what I needed to
+	know to get started.
+	At the page prompt, instead of just [E]& enter = quit or ENTER=continue
+	the options are:
+		ENTER = continue
+		H     = Help for the pager.
+		R     = Redraw the current page.
+		P     = Previous page.
+		Q     = Quit the pager.
+		B     = Goto the bottom page.
+		T     = Goto the top page.
+		#     = Jump to the page number.
+	As well, it shows the percentage of the file complete. And the
+	page you're on and the last page of the file.
+- Ok.. I'm gonna be on everyones hate list after I tell them about this change
+	but so goes life... Ok.. RaMTITS is now ANSI C.. as you'll look through
+	the code, you'll see what I mean by this. All C files are now compiled
+	seperately and then link everything up. You can now compile with just
+	the "make" command. I suppose I'll write more documentation on this 
+	later.. and put it in the documents directory... But in doing this, it
+	will make the code that much more stable, and that much more efficient,
+	one thing you'll probably notice is that it runs MUCH faster then it
+	did before.
+- Fixed around some of the pre-defined definitions that are based in the C
+	language itself. Such as certain fixes.. hopefully this didn't fuck
+	anything up, but made it more efficient.. This also includes an
+	automatic bug fix with the glibc207 glitch.. (frozen in time) To which
+	I have Arny, and Andy for helping me with this.
+- The version is now 2.1 rather then 1.2.1 (Felt there was no reason for the
+	first 1. in the version name) And from what I see so far everything
+	appears to be running nice and smoothly :-)
+- Moved the bank menu over to menus.c finally, as well as the print_menu()
+	function, updated that big time too.
+- Moved the store menu over to menus.c and added the following things to it:
+	Six pack of beer = (users can get drunk)
+	Box of bullets   = (for russian roullette)
+	Nuclear bombs    = (users can detonate nukes)
+	User pets        = (this is cool.. read the helpfile)
+	Keys for rooms   = (Not implimented yet)
+- Added a config flag so that the owner of the talker can toggle on whether
+	or not they want to charge users for rooms in the store or not.
+- In the connect_user() function I made it check to make sure that the user
+	can't login fake logged off, or hidden if their level is less then that
+	of the command level... this posed a problem for quite a few people,
+	so I figured I might as well change it.
+- I also added a config flag so that the newbie setup can be disabled by
+	setting auto_promote in the config file to NO.. i'll leave it at
+	YES by default because auto-promotions are the easiest way to
+	do things ;)
+- Made a change to .set bday so that it's in MM/DD format.
+- Fixed a bug I had with the delete_messages() function.
+- Added the functions: rmname_taken() <checks to see if a room name is already
+	being used.> add_roomname() <adds a room name to the user rooms list.>
+	and clean_room_list() <which takes a room name out of the user rooms
+	list.> I added these functions because if users had two identical room
+	names and they both tried to go .home, it would cause the talker to
+	crash.. I don't know if anyone ever experienced this.. but I tested
+	it out.. and the results were.. bad.
+- Removed the .inventory function.. I figured there was no point for it cause
+	I just added it to the .store function.. so they can either see their
+	inventory in the menu or by typing something like .store -i, haven't
+	really implimented the actual .store command yet.
+- Updated get_level() function so that it can get the level of the talkers
+	levels, the ones that are usually set in other_name[]
+- Added a .help <level> so users can see what commands are at <level>
+- Went through the misc_ops and made them be more.. such as for the shutdown
+	you HAVE to enter either Y or N.
+- Removed the command .logging (which toggles system_logging on/off) I did this
+	because in fact system_logging should always be on... and well.. suppose
+	someone who didn't like you gained access to that command, toggled it
+	off and went on a nuking rampage.
+- Went through staff.c and fixed up alot of functions.
+- Renamed the .chname command to .rename... also attempted to make a patch so
+	we could change the name of a user who is logged on.
+- Changed around .getname. Now it'll attempt to get the name of the user when 
+	they first connect to the talker.. now when .getname is used, it'll just
+	use the user->realname variable.
+- Added an auto_auth flag into the config file.. if it's set to ON, then the
+	talker will attempt to get their real name from their server. The name
+	that they use to log into the server... then the name can be viewed
+	via the .getname command. If auto_auth is OFF.. then when .getname is
+	used, it will attempt to get the name when the command is used.
+- Attempted to use a multi_ source for all main private messages (.tell, 
+	.pemote, .psing, .pthink.... which means that you could send a message
+	to up to ten people...
+- Removed the functions: send_tell() private_emote() private_think and
+	private_sing() I did this because the commands that call them are
+	all replaced by the multi_message() function. I also removed the
+	reply_tell() function because noone really uses it and well.. figured
+	it was pointless to have.. I personally use .t all the time.. dono
+	about the rest of you.
+- Attempted to make the talker more smart on handling user birthdays...
+- Fixed a bug w/ the more() function that if you attempted to display a ~RD
+	colour com it would crash whenever a user logs on.. good thing noone
+	else figured this out ;-)
+- Fixed a bug w/ the .rename command (formerly .chname) which allowed a user
+	to change another users name to something like Squirt69.. not much of
+	a bug.. but still it would be bad.
+- Removed the idle timeout from the .change command because of a possible
+	bug conflict with it and the moving of users to the idle room.
+- Re-wrote the .change command completely.. I'm going to be attempting many
+	different things with this, to make the talker more defineable from
+	within the talker itself, Which will make the default config rather..
+	obsolete... I'll write more on this as I progress..
+- Made a change w/ the moving of users to the idle room, so it just makes
+	user->room=rm; instead of move_user(user,rm,2);  I did this because
+	people complained to me about the spam from being moved back and forth
+	from the idle room... I never get sent there, so I don't usually worry
+	about it ;-)
+- Removed the .rooms command... with the new way that I'm doing rooms... I'd
+	find it kind of hard to do this without lagging up the talker big time.
+- Re-did the way the .rmname command is done... now it just takes the 
+	room->recap variable and changes that.
+- Added the config.c which handles all the OWNER type stuff.. this is NOT some-
+	thing for users to play with, for this is very very sensitive stuff..
+	mainly because you can add your rooms now through the talker, as well
+	as deleting the old ones... all via a .rmadmin command (i'll write the
+	help files for everything later)
+- Added carbon copies for s-mail to set a carbon copy it's just
+	.ccopy # <user> to delete one, .ccopy -del #/all This will allow you
+	to send s-mail to multiple users :-)
+- Added a screening for sites.. so the "connection made from site" you can
+	screen sites so that they don't show up when someone connects to the
+	talker.
+- Put a user list into a structure of it's own, which holds all user names,
+	and the levels in which they are at. This gets loaded and parsed when
+	the talker boots up, which, if you have a lot of users on your talker
+	it may take a while for the talker to boot, pending basically on your
+	server. So don't think that the talker is hanging while it's booting,
+	it's just taking a lil while to boot up ;-)
+- Removed the search_boards (.search) and users() (.users) commands, frankly
+	because for .search.. not enough people used it.. if any, for it to
+	be classified as a useful command.. and .users because, i've vastly
+	redone the .finduser command, so that it basically does the same thing
+	if word_count<2.
+- Added a similiar command structure to that of Andy's amnuts command_table,
+	the reason I did this is because of the fact that many of you don't
+	have an extensive background in C programming, and this way, it
+	provides an easier way to add commands, or remove commands.
+- Went through the server.c and attempted to make the system calls more
+	readable, and pageable via more().
+- Attempted to add triggers.. this will only be in my personal version..
+	sorry pplz.
+- Fuck.. i honestly don't know why I do some things some times.. specially when
+	it means so much more work for me to do... I went and re-wrote the
+	write_user() function yet again.. as well as the more() function.
+	I also added a split screen. Please note.. for ZMUD users, this will
+	crash ZMUD, and they shouldn't use it.
+- Added more structures and what not.. And stuff for users and rooms, to try
+	and make the talker more smarter.. Also moved around the object
+	functions into objects.c (create_user() etc).
+- Moved the write functions into write.c
+- Re-wrote the get_command() function.
+- RaMTITS is now very very smart ;-)
+- Added more structures and stuff to try and fix a default NUTS socket bug
+        you can only cut and paste so many lines of text before it doesn't
+        paste it anymore.. this is still rather buggy..
+- Re-wrote the main() loop to get the above to work....
+- Re-wrote the login() and attempts() functions, as well as everything that
+        is in the connect.c (I found a lot of bugs with the current
+        connect_user() whoops ;) But the login() is now done by form of a
+        menu.. it first prompts the user if they would like ANSI colours
+        or not.. if not, the user->colour flag gets set accordingly...
+        then it checks the input when the user is logging in... and what
+        not... it should be more stable, and more user friendly this way..
+- Splits up the main ramtits21.c some more.. created editor.c, ramtits.c,
+        and string.c.  Moved the ramtits21.c to main.c. Also while doing this
+        I fixed up various functions that I noticed would and could cause
+        severe bugs n problems.. all fixed now :-)
+- Added .ignore alert so you you can ignore the friend messages when a friend
+        of yours is logging on or off.. People complained about this to me,
+        and didn't want to .ignore friends completely.. *shrugs*
+- Finished up the menus and the store.. will be writing more detailed help
+	files for everything once I figure out the new way I want to handle
+	the .h <command> (Yes it is going to be different.. everything else
+	is so far :p)
+- Wrote out my new TODO list on the computer.. hopefully this will motivate
+	me more into working on the code.
+- Added a level structure so people can add levels easier, and customize them
+	to their likings more easier.
+- Re-wrote the command structure.. and the exec_com.. no long have to put
+	everything in a really big switch statement.. commands get executed
+	by cmd->funct(user,inpstr,cmd->args).
+- Re-wrote .samesite
+- Fixed a bug i put in my code :p
+- Fixed up the editors a bit more.. now they both look nice :-) Still a minor
+	bug w/ the RaMTITS editor tho...
+- Re-wrote how socials are executed... now reads things from the social dir.
+	(the .dat files in there) I did this for ease of adding socials
+	through the talker itself.. (I'm aiming at a completely user friendly
+	talker to set up so ppl quit bugging me!)
+- Socials are now debugged and working properly re-wrote the get_social()
+	function for .randsoc, and the .social command (which prints out a
+	list of socials.)
+- Fixed various bugs that I put in by accident with the ran() command.. also
+	a few other bugs that would segfault.. but all appears fixed now :-)
+- Made it so you can't .force users to .capture.
+- Added .some options to .gag (.gag <user> [<-shouts/-socials/-private>]
+- More bug fixes.
+- Added some new things to .version, so it displays total login stats better.
+- Added Andy's blackjack game with a few minor mods myself.. such as being
+	able to alter the bet amount and what not.. Also added Sabin's GAEN
+	puzzle game.. except I found a small bug with this (It was saying
+	the puzzle was solved when in fact it wasn't) So I fixed that up.
+- Re-did all the defines.. mainly cause I got sick of dealing with CAPSLOCK
+	stuff...
+- Re-did the way banned sites are handled (Yes, more directories ;-)) Did this
+	because it made more sense in a way, because if you think about it...
+	what would be more faster and more efficient.. opening up a big ass
+	file, going through each line of a file, and see if we find a match..
+	OR open up a dir, and check the files in that dir? (I believe the
+	latter would be much faster.. Here's hoping I'm right ;-))
+- Fixed a memory leak problem.. (just hope no other bugs are introduced from
+	me doing this)
+- Made it so users can't set anything with the user_vars ($variables) in any
+	of their settings unless their level>=OWNER. I did this because
+	basically you could send the talker into a nasty loop if this wasn't
+	handled properly, and there are those shitheads out there that have
+	nothing better to do then to look for ways to exploit bugs on talker
+	codes.
+- Added .ltell (send a tell to a specific line number) So that in case someone
+	gets lost at a login or something we can send them tells at the login
+	screen...
+- Re-did .clearline because I'm trying to cut down the amount of goto calls.
+	(Reminds me too much of basic)
+- Added a new setting for carriage return (\r's) so users can decide if they
+	want them or not (clients such as tinyfugue, gmud? can't handle
+	carriage returns properly.. so made it a setting for the user to
+	decide.
+- Added a #define usage "" so to add to the ease of customization.
+- Added a proper alias system and got rid of the current .1, .2 etc etc
+	now users can basically create there own commands.. such as
+	doing something like .alias hi ;waves hi to everyone..
+	For more information on this one should read the helpfile.
+	You can also now execute more then one command using the C 'and'
+	symbol (&&) for example: ;waves hi to everyone && ;smiles big
+	would execute .emote waves hi to everyone as well as .emote smiles big.
+- Added a .wiznote command.
+- Holy.. went around just to take a look at the code.. fixed about 3 or 5 bugs
+	that I just saw lying around.
+- Fixed another bug in the close_sockets() function that I had a different
+	workaround for in version 1.1.3 (with telnet sockets freezing the
+	talker if close_sockets was called)
+- Attempted to fix the server commands (ie .finger <user>) so we could
+	actually page the file properly, instead of showing the whole
+	file at one time... This I owe a big thanks to Andy for giving me
+	an idea how to do it..
+- A couple of more bug fixes.. some of em new.
+- Re-wrote the menu system completely.. this new way should be more efficient,
+	still need to test it out, but from a programming glance.. it looks like
+	it should work fine :-)
+- Re-wrote the way roomfiles are loaded/saved to prevent corruption.. I had
+	to much around with the room links and what not to get this all
+	to work.. please read README.rooms in the docs directory.
+- a lot more bug fixes.. lots lots lots more!
+- Fixed a HUGE bug w/ more() that if a file was 0bytes in size and you tried
+	to read it.. it would CRASH!
+- Finally got word wrapping to work in a test program I've been writing,
+	hopefully this will work as flawlessly as it does in the test
+	program. If not.. back to the old drawing board :(
+	UPDATE!!! IT WORKS PERFECTLY (well, from my testing..)
+- Finally fixed the ramtits editor bug that's been stumping me.
+- Removed triggers, decided they weren't needed, I'm thinking about just
+	doing certain events instead, IE: checking certain things like
+	a user coming back from afk, going afk, examining you, etc.
+- Fixed a bug on my idiocy with the user being trapped in the idle room
+	if they got sent there.
+- Wrote up the .make command, now I think I'll be sitting around and writing
+	helpfiles on the talker for the next while :p
+- Fixed up a bug with battleship
+
+- It's my birthday today December 11th :-) I had to plug that in somewhere...
+- Fixed up a bug in the .helpme command.. I didn't even know it existed :p
+- Re-wrote the .newbie file to try and give a bit more help.
+- Added a lottery game..
+- Added chess, will be putting this one in the distribution, it's based off of
+	the EW-Too version by Ben Kirchmeyer, and modified by Phypor.
+- Added a few more games too..
+- FINALLY got the ident daemon to work w/ RaMTITS, that took a while to
+	get to work properly..
+- Updated the Webpage Generator, so now when someone wants to use the
+	Generator, It now requires php3 to be installed on the server,
+	and comes with three files (index.php3, header.php3, footer.php3).
+	Only the header and footer.php3 files should be modified for
+	customization.
+- Cleaned up speech.c quite a bit.. took it from 2500 lines to about 2000 lines.
+	Maybe in the next version I'll clean it up even more.
+- Did a few more bug fixes.. almost finished RaMTITS 2.1b4.
+- Re-did a couple of things for .fight, so instead of the winner being chosen
+	by level, it will determine it in a ran() call.. so it is luck of the
+	draw.
+- Fixed a bug with the ident daemon that would cause a user to be frozen at
+	disconnecting if they are present during a seamless reboot. Thanks
+	to Arny, and baadpuppy for this fix.
+- Added a -shouts flag to the .capture command.
+- Fixed a bug with the new record_away function, well.. more so with the
+	functions that called it... this was to prevent another bug that
+	was pointed out to me earlier.
+- Fixed a helluva lot more bugs, (mostly bugs with the telnets in my copy).
+- Started cleaning all of the .c files to make the source look cleaner and
+	easier to read, (well to me at least) I had to adapt to a new
+	programming style for this...
+- Noticed that I've been working on an old copy of RaMTITS 2.. moved all my
+	changes over.. should all be accurate now.
+- Actually added the .rmkey command.. forgot about it for a while.. have
+	all the stuff for it.. just keep forgetting about it :p
+- Added a automatic window resize detect.. thanks to Arny.. it may only work
+	on *true* telnet applications.. ie linux telnet, (tinyfugue it does
+	work if the visual [splitscreen] is set to on.)
+- Done a lot of bug fixing lately... Should be finished pretty quick.
+- Was going through staff.c and noticed alot of bugs.. should be fairly
+	clean now...
+- Added it so you can have letters & numbers in a users login name..
+	i.e. squirt49  or ib6ub9 etc..
+- Fixed a nasty bug with the server commands (.finger, .nslookup, etc)
+	Thanks to Cygnus for pointing this.
+- Changed the appearance of .stat and .examine so that it looks somewhat
+	cleaner, and nicer looking.
+- Updated it per request so that OWNERS can't review personal room or locked
+	room review buffers. Changed it so that GOD's and above can .rev <room>
+	will only work for PUBLIC rooms tho.
+- Fixed a bug w/ the .atmos command.. hopefully should work.
+- Done a lot of bug fixing lately.. wow.. that's all i've been working on
+	so far that's all i really have to do now is bug fixing..
+- Finished .steal (thank god)
+- Modified .bank so you can use the -all flag to take out / deposit all
+	chips/money you can also just use '1' to do it
+- Changed the way the lottery works now.. now uses a nifty little structure
+	which should work better..
+- A few more bug fixes.. everything hopefully will be working more smoothly
+	now and the random sigsegv's I've seen hopefully will be fixed..
+	this should be it too.. I just have to write up the helpfiles and
+	the first pre-release to the beta testers should be out within a 
+	week or two.. whenever I get those damn helpfiles done..
+- One of two last things to add/modify.. in the macros.. I made it so that
+	when you add a macro.. it'll default to your hat colour after it
+	replaces your macro.
+- Done a few cosmetic changes (changed the look of the dcove_who() and
+	made it so that if you have a ' as the first character of your
+	description, it'll append it to your name instead of a space)
+- Fixed a small little buffer overrun error.
+- Fixed a bug with chess, and offering a game to someone who's doing
+	something else.
+- FINISHED ALL THE HELPFILES!!!!!!!!! (Now I just gotta do those damn
+	documents)
+- Appeared to fix a bug with it saying that my helpfile was aborted
+	when in fact it actually saved it..
+- Fixed a minor problem/changed the look of .site (used to be .people).
+- Fixed a minor bug with the talker generated userfiles.
+- Fixed a bunch of clone bugs that I overlooked when implimenting the
+	new room system.
+- Added .baninfo and modified banning of sites so that if someone bans
+	a site they need to specify a reason why they're banning the site,
+	then that information can be read with .baninfo.
+- Fixed a bug with the mail menu, and the mass smailing of friends/staff/all.
+- Got the user convert program working properly with RaMTITS1.1.x and
+	RaMTITS2.x The program is found in ~/ramtits-2.x/utils/uconvert-1.x

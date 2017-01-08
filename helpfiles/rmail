@@ -1,0 +1,20 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rmail
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rmail [<message number>]
+Command Usage: .rmail -new
+  
+Synopsis:
+  
+  Allows the user to read the s-mail that has been sent directly to them from
+  another user on the talker.  To use the 'message number' option, just type
+  '.rmail [message number]' and the user will view the specified message
+  number (i.e. '.rmail 4' would show the user's 4th s-mail message in their
+  s-mail box).  This option comes in handy if you have a lot of s-mail.
+  If the '-new' flag is used, and the user has new s-mail, then it will
+  display all the users new s-mail since they last logged into the talker.
+  After the -new flag is used, the new mail gets merged in with the old
+  mail.
+  NOTE:  You can see the message numbers by using the '.from' command.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

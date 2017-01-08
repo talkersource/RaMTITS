@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS go
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .go [<room>]
+  
+Synopsis:
+  
+  If used by itself, the command warps the user back to the main room of
+  the talker.  Otherwise, it moves the user to the room specified, unless
+  the room does not exist.  You cannot "go" into a locked room unless you
+  are invited and you cannot "go" into a personal room unless you own the
+  room or are invited by the room's owner.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

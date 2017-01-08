@@ -1,0 +1,33 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS fsmail
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .fsmail [all|message #]
+Command Usage: .fsmail -autofwd verify
+Command Usage: .fsmail -autofwd on [<verification #>]
+Command Usage: .fsmail -autofwd off
+  
+Synopsis:
+  This command allows you to forward your s-mail to your e-mail address
+  that you have set via the '.set' command.  To forward all of your s-mail
+  in your s-mail box, to your e-mail address.. use the 'all' flag. For
+  example '.fsmail all' will send all of your s-mail to your e-mail addy.
+  To forward a specific message number, locate the number you would like
+  to forward with the '.from' command, and then type: '.fsmail #' replacing
+  the # sign with the number of the message you would like to forward.
+  
+  You can now forward any new s-mail to your e-mail address by turning on
+  autoforward.. To use this, first make sure you have your proper e-mail
+  address set via '.set email'. Then use '.fsmail -autofwd verify' and
+  the talker will send an e-mail to the address you have set with your
+  verification number. You can't turn autoforwarding on without this
+  number.  Once you have the number, you can turn on the autoforwarding
+  by typing: '.fsmail -autofwd on #' replacing the # sign with the
+  verification number that you received.  If at any time you decide you
+  don't want your s-mail forwarded automatically anymore, just type:
+  '.fsmail -autofwd off' and this will turn it off. (You can turn it on
+  again at a later point in time.
+  
+  Please be aware that once you change your e-mail address with the .set
+  command, you will have to re-verify your e-mail address.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

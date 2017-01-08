@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS time
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .time
+  
+Synopsis:
+  If you don't have your timezone set, then this command will just show
+  the system time. If you do have it set, then it takes whatever you
+  have your timezone set to and subtracts or adds it from the system time
+  to give you your current time.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,94 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS store
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .store -buy  [<option>] [<arguments>]
+Command Usage: .store -sell [<option>] [<arguments>]
+Command Usage: .store -inventory
+  
+Synopsis:
+  If used with only the -buy or -sell options, and nothing else, and the user
+  is using the RaMTITS menu system, the user will then be brought into the
+  store menu (either for buying or selling) where they will be prompted for
+  what they want to do. You can get a general idea on what the different
+  choices are, and what you can buy / sell by reading below what the
+  different command line options are. If you aren't using the menu system,
+  then you will be given a list of options to use:
+
+  Buying Items:
+
+  ~CW'~CRroom~CW'~CB     :~RS This option, no extra arguments are required, this just allows
+               the user to purchase their own personal room, providing that
+               the talker doesn't give free rooms away.
+
+  ~CW'~CRatmos~CW'~CB    :~RS This option, no extra arguments are required, this allows a
+               user to buy atmospherics to personalize their rooms. See
+               ~CW'~CR.h atmos~CW'~RS to learn how to set them once you buy them.
+
+  ~CW'~CRcarriage~CW'~CB :~RS This option, no extra arguments are required, this allows a
+               user to buy a horse carriage so that they can move around the
+               talker without having to follow the room's links.
+
+  ~CW'~CRhat~CW'~CB      :~RS This option, no extra arguments are required, this allows a
+               user to buy a hat, which basically just changes their text
+               colour in all speech commands they use. You can change your
+               colour any time afterwards by using the ~CW'~CR.hatcolour~CW'~RS command.
+
+  ~CW'~CRcondoms~CW'~CB  :~RS This option, no extra arguments are required, this allows a
+               user to buy condoms so that they can ~CW'~CR.netsex~CW'~RS other users.
+
+  ~CW'~CRchips~CW'~CB    :~RS This option, extra arguments are required, you must specify
+               how many chips you would like to buy. Chips are used in all
+               of the gambling games.
+
+  ~CW'~CRbguard~CW'~CB   :~RS This option, no extra arguments are required, this allows a
+               user to buy a bodyguard, which will help (but not always)
+               protect a user when someone tries to ~CW'~CR.steal~CW'~RS from them.
+
+  ~CW'~CRnukes~CW'~CB    :~RS This option, no extra arguments are required, this allows a
+               user to buy a nuclear bomb, which then allows the user to
+               use the ~CW'~CR.nbomb~CW'~RS command.
+
+  ~CW'~CRbullets~CW'~CB  :~RS This option, no extra arguments are required, this allows a
+               user to buy bullets so they can play the ~CW'~CR.rroul~CW'~RS game.
+
+  ~CW'~CRkey~CW'~CB      :~RS This option, no extra arguments are required, this allows a
+               user to buy a key. Having a key allows you to basically give
+               a user a permanent invite into your room. See ~CW'~CR.h rmkey~CW'~RS.
+
+  ~CW'~CRpet~CW'~CB      :~RS This option, no extra arguments are required, this allows a
+               user to buy a pet to play with. Pet's can be smart.. it's up
+               to you to train it and stuff.. See ~CW'~CR.h pet~CW'~RS.
+
+  ~CW'~CRbeer~CW'~CB     :~RS This option, no extra arguments are required, this allows a
+               user to buy some beer. Once you have some beer, you can
+               get drunk using the ~CW'~CR.drink~CW'~RS command.
+
+  Selling Items:
+
+  ~CW'~CRroom~CW'     ~CB:~RS This option allows you to sell your room. No extra options
+               are required.
+
+  ~CW'~CRcarriage~CW' ~CB:~RS This option allows you to sell your horse carriage. No extra
+               options are required.
+
+  ~CW'~CRhat~CW'      ~CB:~RS This option allows you to sell your coloured hat. No extra
+               options are required.
+
+  ~CW'~CRbguard~CW'   ~CB:~RS This option allows you to sell your body guard. No extra
+               options are required.
+
+  ~CW'~CRnukes~CW'    ~CB:~RS This option allows you to sell your nuclear bomb. No extra
+               options are required.
+
+  ~CW'~CRpet~CW'      ~CB:~RS This option allows you to sell your pet.. sheesh.. can't
+               you handle a little extra responsibility.. you should be
+               shot for even thinking about doing this.
+
+  ~CW'~CRchips~CW'    ~CB:~RS This option lets you sell your chips back for money. You
+               must specify on the command line how many of your chips you
+               would like to sell.
+
+  The ~CW'~CR-inventory~CW'~RS option is pretty much self explanatory. To see which
+  items you own, you would use this option.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

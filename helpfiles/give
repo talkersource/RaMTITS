@@ -1,0 +1,32 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS give
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .give [user] [item] [<amount>]
+  
+Synopsis:
+  It gives the specified user the item specified, and providing that
+  item can be given certain amounts, gives the amount of that item to
+  the user. (Only some items, such as atmos, and condoms can have the
+  amount specified.)  This command should only be used if somehow a users
+  userfile became corrupted and lost items in which they purchased.
+  Possible Items:
+
+  ~CW'~CRcarriage~CW'~CB:~RS (A carriage which allows the user to move freely through
+              talker).
+  ~CW'~CRcondoms ~CW'~CB:~RS (Condoms so that they can use the .netsex command)
+              ~CRNOTE~CW:~RS An amount has to be specified with this option.
+  ~CW'~CRbguard  ~CW'~CB:~RS (A bodyguard which protects a user from being robbed).
+  ~CW'~CRatmos   ~CW'~CB:~RS (Atmospherics so users can customize their room).
+              ~CRNOTE~CW:~RS An amount has to be specified with this option.
+  ~CW'~CRroom    ~CW'~CB:~RS (A personal room for the user).
+  ~CW'~CRhat     ~CW'~CB:~RS (A coloured hat so users can change their speech colour).
+  ~CW'~CRmoney   ~CW'~CB:~RS (Money so users can buy stuff from the store).
+              ~CRNOTE~CW:~RS An amount has to be specified with this option, and
+                    there is a limit to how much money a user can be
+                    given.
+  ~CW'~CRchips   ~CW'~CB:~RS (Chips so the users can gamble and stuff).
+              ~CRNOTE~CW:~RS An amount has to be specified with this option, and
+                    there is a limit to how many chips a user can be
+                    given.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

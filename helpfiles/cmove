@@ -1,0 +1,59 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS cmove
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .cmove [piece from] [piece to]
+  
+Synopsis:
+  This command allows you to move your chess pieces to different places
+  on the grid.  If you're familiar with the game of chess and just want
+  to know how to move the pieces, then simply type:
+  ~CW'~CR.chess X# Y#~CW'
+  Where you would replace ~CRX~RS with the letter on the grid that corresponds
+  with the piece you want to move and the number sign gets replaced with
+  the number on the grid that corresponds with the piece you want to move.
+  You would also replace ~CRY~RS with the letter on the grid that corresponds
+  with the place you want to move your piece, and the number sign gets
+  replaced with the number on the grid that corresponds with the place
+  you want to move your piece.  See below for example.
+
+             8| nun | `%= |  /) | (Q) | (K) |  /) | `%= | nun |
+             8|_(_)_|_]\ _|_(_)_|_(_)_|_(_)_|_(_)_|_]\ _|_(_)_|
+             7|  o  |  o  |  o  |  o  |  o  |  o  |  o  |  o  |
+             7|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|
+             6|     | ... |     | ... |     | ... |     | ... |
+             6|_____|_____|_____|_____|_____|_____|_____|_____|
+             5| ... |     | ... |     | ... |     | ... |     |
+             5|_____|_____|_____|_____|_____|_____|_____|_____|
+             4|     | ... |     | ... |     | ... |     | ... |
+             4|_____|_____|_____|_____|_____|_____|_____|_____|
+             3| ... |     | ... |     | ... |     | ... |     |
+             3|_____|_____|_____|_____|_____|_____|_____|_____|
+             2|  o  |  o  |  o  |  o  |  o  |  o  |  o  |  o  |
+             2|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|
+             1| nun | `%= |  /) | (Q) | (K) |  /) | `%= | nun |
+             1|_(_)_|_]\ _|_(_)_|_(_)_|_(_)_|_(_)_|_]\ _|_(_)_|
+                 A     B     C     D     E     F     G     H
+  I type: ~CR.cmove A2 A4
+
+             8| nun | `%= |  /) | (Q) | (K) |  /) | `%= | nun |
+             8|_(_)_|_]\ _|_(_)_|_(_)_|_(_)_|_(_)_|_]\ _|_(_)_|
+             7|  o  |  o  |  o  |  o  |  o  |  o  |  o  |  o  |
+             7|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|
+             6|     | ... |     | ... |     | ... |     | ... |
+             6|_____|_____|_____|_____|_____|_____|_____|_____|
+             5| ... |     | ... |     | ... |     | ... |     |
+             5|_____|_____|_____|_____|_____|_____|_____|_____|
+  ~CRA4~RS         4|  o  | ... |     | ... |     | ... |     | ... |
+  ~CW.----------~RS4|_(_)_|_____|_____|_____|_____|_____|_____|_____|
+  ~CW|~RS          3| ... |     | ... |     | ... |     | ... |     |
+  ~CW|~RS          3|_____|_____|_____|_____|_____|_____|_____|_____|
+  ~CW|~RS          2|     |  o  |  o  |  o  |  o  |  o  |  o  |  o  |
+  ~CW|   ~CRA2~CW-.---~RS2|_____|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|_(_)_|
+  ~CW|      |~RS   1| nun | `%= |  /) | (Q) | (K) |  /) | `%= | nun |
+  ~CW|      |~RS   1|_(_)_|_]\ _|_(_)_|_(_)_|_(_)_|_(_)_|_]\ _|_(_)_|
+  ~CW|      |~RS       A     B     C     D     E     F     G     H
+  ~CW`------`-------'        
+  The pawn that was originally at the ~CW'~CRA2~CW'~RS position moved to ~CW'~CRA4~CW'
+
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

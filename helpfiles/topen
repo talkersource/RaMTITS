@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS topen
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .topen [site] [port]
+  
+Synopsis:
+  Allows the user to open up a telnet connection to the specified site
+  and port.
+  NOTE: Once you telnet to another talker, you are obligated to abide by
+        the rules of that talker.  Any user caught abusing these commands
+        will have them removed.  All telnet connections are logged (not the
+        data transmitted, but the connections themselves, you still have
+        your privacy we only log the sites and ports of where you are
+        connecting to).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

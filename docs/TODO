@@ -1,0 +1,56 @@
+--===---===---===---===---===---===---===---===---===---===---===---===---===--
+     These are some of the things I would like to do for future versions of
+     RaMTITS, if you feel you could help in anyway.. let me know by
+     e-mailing me at: squirt@ramtits.ca with any contributions you might
+     have.  Coincidentally, if you have any suggestions.. post them on
+     the suggestion forum (http://forum.ramtits.ca).
+--===---===---===---===---===---===---===---===---===---===---===---===---===--
+
+- Re-Do hidden things, perhaps have a user->contact array, with about 10
+	different holding areas, so that if a user is hidden and they start
+	talking to another user, the other user should be able to reply.
+
+- Actual webport.
+
+- Auto-Updater of sorts, probably web-based, it'll connect to something like
+	http://updates.ramtits.ca, check if there's anything new, if so,
+	download it, put it in a folder, and let the talker owner(s)/coder(s)
+	know there's an update ready for install. Of course.. it'd be
+	configured in the config file. This is just in a planning stage,
+	if you like this idea, let me know.
+
+- Have the command structure more generic, so things can be set through the
+	talker with greater ease, and saved easier as well.  Might do this
+	by dumping a binary .dat file (commands.dat) with any saved data
+	for commands such as command level, command type, etc...
+	IE: .command -level [command name] [level name]
+		would change the command's level to the level specified.
+	Just gotta think of a half decent way to save it...
+
+- Also for the commands, re-do the command structure somewhat again, so
+	it's has the following variables:
+		command name		command level
+		command type		command function
+		command arguments
+		(the stuff below would be new additions)
+		command	jailed		(jailed users could use it)
+		command muzzled		(muzzled users could use it)
+		command gagged_shout	(users who are shout gagged could use it)
+		command gagged_private	(users who are private message gagged could use it)
+		command tpromo		(users who are temp promoted can use it)
+		command shackled	(users who are shackled could use it)
+		command clone		(clones could use it)
+	Doing it this way would save ALOT of code if done properly... I could
+	probably cut down the file sizes a fair bit too if I did this way..
+	because if done this way... I would only need one if statement in
+	the exec_com() function for each of these things, such as:
+		if (cmd->jailed == 0 && is_jailed(user))
+		{
+			status_text(user,1,command[com_num].name);
+			return;
+		}
+	instead of a whole slew of if (is_jailed(user)) calls inside each of
+	the functions...
+
+- Timed bans... dunno how I would work it quite yet... still in the planning.
+

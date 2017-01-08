@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS unarrest
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .unarrest [user]
+  
+Synopsis:
+  Releases the user from jail, and allows them to use their commands
+  again.  Should only be done once the user has begged and explained
+  why exactly they did whatever they did to get arrested in the first
+  place.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

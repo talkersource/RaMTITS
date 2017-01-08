@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rroul
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rroul
+  
+Synopsis:
+  Allows the user to try their luck at russian roulette.  This only works
+  if the user has bought bullets from the store.  If the user is unlucky
+  and gets the one chamber with the bullet, then they will be disconnected
+  from the talker.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

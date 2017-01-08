@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS craps
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .craps [amount to bet]
+  
+Synopsis:
+  Lets a user roll the dice to see if they can win.  You win by either
+  rolling a 7 or 11, and lose by rolling a 2, 3 or 12.. Any other number
+  and you win your money back.  The minimum bet is 5 chips and the max.
+  bet is 100 chips.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

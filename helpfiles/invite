@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS invite
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .invite [male|female|all]
+Command Usage: .invite [user]
+  
+Synopsis:
+  
+  If you're in a private room, this command allows you to invite a user
+  into the room that you're in so they may join you.  If you're in a personal
+  room which you do not own, you must ask the room's owner to invite the
+  user in.
+  NOTE: You cannot invite a user into a personal room which you do not own.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

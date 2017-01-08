@@ -1,0 +1,53 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS make
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .make [-social|-helpfile] [<name -delete>]
+  
+Synopsis:
+  When the -social flag is used without any extra arguments, you will be
+  prompted to enter 6 different lines.
+      Line 1: The social name.
+      Line 2: What to execute when the social is used by itself.
+      Line 3: What to execute when the social is used on the same user
+              executing the social. (ie, squirt types .hug squirt)
+      Line 4: What to execute when the social is used on another user who is
+              not in the same room. This line will display to the given user.
+      Line 5: What to execute when the social is used on another user who is
+              not in the same room. This line will display to the user using
+              the social.
+      Line 6: What to execute when the social is used on another user who is
+              in the same room as the user using the social. This will be
+              written to the entire room.
+    Lines 2 3 4 and 5 require that your pass off a %s somewhere within the
+    line, which will eventually be replaced with either the users name, or
+    the given users name. You can only have one %s in each of those lines.
+    Line 6 however, you need 2 (two) %s' one to pass off the given users name
+    and one for the user executing the socials name. A sample of each of the
+    lines is as follows:
+      Line1: smoke
+      Line2: ^~CT%s ^~FTtakes out a smoke and starts puffing away.
+      Line3: ^~CT%s ^~FTtosses $G2self a smoke and puffs away happily.
+      Line4: ^~CB-- ^~CT%s^~FT tosses you a smoke and a lighter.
+      Line5: ^~CB-- ^~FTYou toss ^~CT%s^~FT a smoke and a lighter.
+      Line6: ^~CT%s ^~FTtosses ^~CT%s^~FT a smoke and a lighter.
+    You can also get the genders of the users with the following flags:
+      $G1 = his/her/it for the user executing the social.
+      $G2 = him/her/it for the user executing the social.
+      $G3 = he/she/it  for the user executing the social.
+      $G4 = his/her/it for the given user.
+      $G5 = him/her/it for the given user.
+      $G6 = he/she/it  for the given user.
+  If you find that you have a social that you don't want anymore, you
+  can also delete it by using the <name -delete> flag. For example:
+  .make -social hug -delete would delete the 'hug' social providing that
+  it exists in the first place.
+~FT---------------
+  When the -helpfile flag is used without any extra arguments, you will be
+  prompted to enter the command name, and then thrown into the editor where
+  you will be given 50 (fifty) lines to write a helpfile for the command
+  that you specified. Optionally, you can delete certain helpfiles by using
+  the <name -delete> flag, such as .make -helpfile make -delete which would
+  delete this helpfile that you are reading. (I wouldn't do this if I were
+  you as you'll find that this helpfile is one of the more informative ones)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

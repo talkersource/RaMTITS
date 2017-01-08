@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS listbans
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .listbans [-users|-sites|-new|-who|-swears]
+  
+Synopsis:
+  If the ~CW'~CR-users~CW'~RS option is used, then this command will display the list
+  of users currently banned from coming onto the talker.  If the ~CW'~CR-sites~CW'
+  option is used, then it will display a list of currently banned sites.
+  If the ~CW'~CR-new~CW'~RS option is used, it will display a listing of the currently
+  banned sites for new users. (meaning new users can't log in from that
+  site.) If the ~CW'~CR-who~CW'~RS option is used, it will display a list of the sites
+  banned from seeing who is logged on from the login prompt.  If the
+  ~CW'~CR-swears~CW'~RS option is used, it displays a list of words that are banned
+  from being said. It also shows if the swear ban is on or off.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

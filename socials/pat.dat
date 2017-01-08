@@ -1,0 +1,6 @@
+~CT%s ~FTgathers everyone into a circle and pats them all on the back!
+~CT%s~FT pats $G2self on the back for a superb job done!
+~CB::~CT %s ~FTpats you on the back for doing such a great job!
+~CB::~FT You pat ~CT%s~FT on the back for doing such a great job!
+~CT%s~FT pats ~CT%s~FT on the back for doing such a great job!
+

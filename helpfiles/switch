@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS switch
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .switch [room clone is in]
+  
+Synopsis:
+   This function basically just allows a user to switch places with a
+   clone that they have in a different room. Meaning that they control
+   the clone that they switched with as if it were actually them, (more
+   or less just switching places with it.)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

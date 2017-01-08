@@ -1,0 +1,23 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS addnews
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .addnews
+Command Usage: .addnews -from
+Command Usage: .addnews -delete [args]               [For level GOD and above]
+  
+Synopsis:
+  If the command is used by itself, then it will bring the user into
+  the editor, where they can enter a message, usually relating to
+  any new information regarding the talker.
+  
+  If the -from flag is used, it displays the number of news items that
+  there are, as well as who they are from, and the number of the
+  message.
+  
+  If the -delete flag is used, as well as the proper arguments, then
+  the specified messages will be deleted. (For more information on this,
+  see .h wipe.) To see the full list of arguments that can be used with
+  the -delete flag, use the -delete flag with no arguments specified
+  on the command line (.addnews -delete).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

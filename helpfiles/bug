@@ -1,0 +1,28 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS bug
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .bug
+Command Usage: .bug -from
+Command Usage: .bug -delete [args]               [ GOD ]
+Command Usage: .bug -read   [<#>]                [POWER]
+  
+Synopsis:
+  If the command is used by itself, then it will bring the user into
+  the editor, where they can enter a message, usually relating to
+  things they might have found wrong with the talker (bugs).
+  
+  If the -from flag is used, it displays the number of bugs that
+  there are, as well as who they are from, and the number of the
+  message.
+  
+  If the -read flag, and a number is specified, it allows the user to
+  read a specific bug. If no number is specified, then it will
+  display the whole bug board to the user.
+  
+  If the -delete flag is used, as well as the proper arguments, then
+  the specified messages will be deleted. (For more information on this,
+  see .h wipe.) To see the full list of arguments that can be used with
+  the -delete flag, use the -delete flag with no arguments specified
+  on the command line (.bug -delete).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,43 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS aliases
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .aliases
+Command Usage: .aliases # -delete
+Command Usage: .aliases [alias name] [what to execute]
+  
+Synopsis:
+  This command allows a user to more or less shorten commands that they
+  feel have to many arguments (such as .cbuff, .review, etc), or allows
+  them to set up an alias for something to execute a greeting to everyone.
+  If no extra options are given on the command line, then this command
+  displays a list of the user's aliases that they have already set.
+  
+  To set an alias:
+    Setting an alias is rather easy, you just type:
+    ~CW'~CR.alias name what to execute~CW'
+    ~FGFor example:
+    ~CR.alias hihi ;waves hihi to everyone
+    Setting an alias such as this would make it so that if you were to
+    type ~CW'~CR.hihi~CW'~RS after setting this alias it would execute:
+    ~CW'~CR;waves hihi to everyone~CW'~RS (which would emote that to the room that
+    the user is currently in.  There are special options allowed in
+    aliases, such as the $# flags ($1, $2, etc). The $# flags get
+    replaced by whatever you specify on the command line along with your
+    alias. ~FGFor example:
+    ~CR.alias hihi ;waves hihi to $1
+    Setting this alias would make it so that if you were to type:
+    ~CW'~CR.hihi squirt~CW'
+    it would execute:
+    ~CW'~CR;waves hihi to squirt~CW'~RS (replacing the $1 with squirt).
+    This command can be fairly powerful, providing you figure out all
+    the extra options, such as && (which allows executing more than one
+    command). Play around with it.. you'll probably like it.
+  
+  To delete an alias:
+    Deleting an alias is simple, just type:
+    ~CW'~CR.aliases # -delete~CW'~RS where the number sign is replaced by the
+    number of the alias you would like to delete. To see which numbers
+    correspond with your aliases, use ~CW'~CR.aliases~CW'~RS alone with no extra
+    options.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

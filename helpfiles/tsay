@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS tsay
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .tsay [string to send through telnet connection]
+  
+Synopsis:
+  Providing you have a telnet connection opened (see .h topen) this command
+  allows you to communicate with your telnet connection. It sends the
+  string to the connection, so you can execute your commands, log onto
+  another talker, etc.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

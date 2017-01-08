@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS check
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .check
+  
+Synopsis:
+  Providing that the user is in a poker game, it is their turn to bet,
+  and the current bet is nothing, then this allows the user to basically
+  pass the bet on to the next user.  Basically checking to see how the
+  other users will bet.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

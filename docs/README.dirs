@@ -1,0 +1,561 @@
+--==--                                                                    --==--
+
+  README : dirs
+
+  OUTLINE:
+    This readme is to allow the person using the code get a basic feel of what
+    all of the different files and directories are for in RaMTITS v2.2.  There
+    are alot of different files, as well as directories, so rather then get
+    a ton of e-mails asking 'what does this file do?' or 'what gets stored in
+    this directory?' I figured I'd save myself plenty of grief and just write
+    this out.
+
+--==--                                                                    --==--
+
+	Seeing as how I don't like garbage everywhere, I decided to make every-
+thing semi neat looking.  With the default NUTS, everything was all in one
+big directory, with exception of a few files and quite frankly, I thought that
+was rather not nice to look at.  But then again, that's just me.  I decided
+to sort everything out and throw it all in their respective directories, as
+it would look more neat and clean that way.
+
+	Below is a list of directories, their sub-directories, and what is
+contained in each of these directories.
+
+~/ramtits-2.2/  : This is the root directory, no files should be here, only
+------=---------  sub-directories. The sub-directories are:
+
+  bin/          : This directory stores all the executables once they've
+  --------------  been compiled, and after you run 'make install
+	FILES	: Description:
+	--------  -----------
+		  NOTE: all these files should be executable.
+
+	backup	: a shell script that performs the backup functions of the
+	--------  talker I did it via this method because I've found it's more
+		  efficient, and well, I didn't want to perform a bunch of
+		  system calls for things that can be done in a small bash
+		  script.
+
+	compile: Another small bash script that will compile the talker,
+	-------  as well as put the proper files into the proper directories.
+		 You should always use this when compiling the code, unless
+		 you're sure of what you're doing.
+			Usage:  ./compile -help  (show help)
+				./compile -clean (Clean old/stale files)
+				./compile -re	 (Clean then recompile)
+				./compile	 (Re-compile talker daemon)
+
+	rt2	: This is a default name, it could change if you change the
+	--------  EXEC flag in the compile script.  After you finish compiling
+		  the talker this is the main talker executable. To start it,
+		  just type './rt2'.  Note, after you've compiled, and installed
+		  the code if there is already a 'rt2' executable, the install
+		  script will rename that file to 'rt2.old' and put the new one
+		  into the bin directory.
+
+	ident_server	: This is the ident daemon, it loads when the talker
+	----------------  program is run.  It's a seperate daemon that
+			  attempts to connect to an ident server on any user
+			  connecting to the talker, and returns the users
+			  ident nick if they are running an ident server.
+			  This is a seperate daemon, because if a user is
+			  connecting from an unresolvable site, it may
+			  lag up the talker
+
+
+  bin/reboot/   : This is the directory where user information gets stored
+  --------------  whenever the talker seemless reboots.
+
+  bin/runtime/  : This is where the PID (used by one of the utilities
+  --------------  found in the utils directory) gets stored.  Upon the talker
+		  starting up, it writes the PID to this file.  For easy
+		  talker killing, just use a command like:
+		    kill -9 `cat ~/ramtits-2.2/bin/runtime/ramtits.pid`
+
+  bin/tempfiles/: These are where the talkers temporary files get stored.
+  --------------  Such as temp mail messages, etc. This directory *SHOULD*
+		  always appear to be empty.
+
+  datafiles/    :
+  --------------
+	FILES	: Description:
+	--------  -----------
+
+	BANNED.*: These files store the talker's bans. The ban types / names
+	--------  of the files are: user bans (BANNED.users), new site bans
+		  (BANNED.new), site bans (BANNED.sites), who site bans,
+		  (BANNED.who), and sites being screened. (BANNED.screen).
+		  The talker loads the bans upon startup, and saves them
+		  upon shutdown.
+
+	config	: This is the first config file that was made.  If there is a
+	--------  config.talker file in this directory, then you have already
+		  used the .change command. This is the file that the majority
+		  of the talker's global variables are set.
+
+	config.talker	: See above. This file takes precedence over the file
+	----------------  above.
+
+	newsfile	: This file gets displayed to a user when they use
+	----------------  the .news command.  Instead of manually editing
+			  this file, you can use the .addnews command to add,
+			  and delete news from this file.
+
+	staff_file	: This file contains those people on your talker who
+	----------------  are staff.  If someone logs on and they are of a
+			  staff level, and not in this file, (or in the talkers
+			  memory, they will be demoted to their proper level.
+
+	talker.dat	: This file contains misc. junk reguarding total 
+	----------------  logins, as well as the lottery jackpot.
+
+	talkerfile	: This file contains all of the talkers added via the
+	----------------  command ".talker -add".
+
+		END OF FILES FOR ~/ramtits-2.2/datafiles
+
+  docs/         : This directory contains all of the documents for the RaMTITS
+  --------------  distribution. You should read ALL of these files (with
+		  exception of the ChangeLogs.  If you're missing any
+		  documents for any reason, you can always download them
+		  from http://www.ramtits.ca.
+
+  fonts/        : This is where the fonts for the .figlet command are stored.
+  --------------  All of the fonts have a .flf file extension.
+
+  helpfiles/    : This is where the helpfiles for the ramtits commands are
+  --------------  stored.
+
+  miscfiles/    : This directory holds miscellaneous files, which I didn't
+  --------------  feel belonged in the datafiles directory. Below is a list
+		  of files that should be in this directory.
+
+	FILES	: Description:
+	--------  -----------
+
+	hangman_listing	: This contains a list of words which are used for the
+	----------------  one player hangman game. If you want to add new
+			  words, just go to the bottom of the file and start
+			  adding words.
+
+	lotto.dat	: This contains the lottery information, such as the
+	----------------  winning numbers, owners of tickets, etc.
+
+	newuserfile	: This file contains useful information when a user
+	----------------  uses the .newbie command.  You shouldn't modify this
+			  file unless you can provide more useful information
+			  then what is already in it.
+
+	openscreen.*	: These files (with an extension of .0 - .4 are the
+	----------------  opening screens. (When a user first connects to the
+			  talker, after they enter their ANSI colour choice.)
+			  This file will be displayed to them. Normally it
+			  may just contain an ASCII picture, as well as the
+			  name of the talker.
+
+	piclist		: This file gets generated automatically upon the
+	----------------  talker booting up. It basically just makes a list
+			  of all of the files in the ~/ramtits-2.2/picfiles
+			  directory.
+
+	riddle		: This file gets displayed to a user when they use
+	----------------  the .riddle command.  Generally, you could throw
+			  a riddle in here using .riddle -add.  This is just
+			  something so that users can have fun with another
+			  command.
+
+	rid_answers	: This file gets generated when someone uses the
+	----------------  .riddle -submit [answer]. This should be the
+			  basis for when someone creates a riddle results
+			  file in the textfiles directory.
+
+	rulesfile	: This is the file that gets displayed when a user
+	----------------  uses the .rules command, or when a new user is
+			  creating their account.  You should change this
+			  file so that it matches your rules accordingly.
+
+	staffrules	: This is the file that gets displayed to a user when
+	----------------  they use the .strules command. It should contain a
+			  guideline in which you feel your staff should abide
+			  by.
+
+	textlist	: This file gets generated automatically upon the
+	----------------  talker booting up. It makes a list of all of the
+			  files in the ~/ramtits-2.2/textfiles directory.
+
+	votetals	: This file gets generated when a user votes on a
+	----------------  topic via the .vote command.  Each line in this
+			  file matches up with the corresponding .vote #.
+
+	voters		: This file keeps track of those users who have
+	----------------  voted on the current topic. This is to prevent
+			  users from voting more then once on the same
+			  topic.
+
+	vote		: This is the actual vote file.  When users use the
+	----------------  .vote command by itself, this file will be displayed
+			  to them. Voting topics should generally be in the
+			  format of:
+
+			  Voting topic on the first line(s).
+			  1] Choice # 1
+			  2] Choice # 2
+			  3] Choice # 3
+
+			  You can create a vote file by typing .vote -enter,
+			  BUT BE AWARE that you must use .vote -clear first,
+			  to get rid of the old voting files.
+
+		END OF FILES FOR ~/ramtits-2.2/miscfiles
+
+  modules/	: As of RaMTITS 2.2 (actually I added this the other day).
+  --------------  I've decided to make it easier to install code 'snippets'
+		  well, not really... but there will be more done with this
+		  in a later version, right now it's going to only be used
+		  if I release some command snippets seperately from the
+		  RaMTITS distribution (such as battleship). See the RT
+		  download page for more information.
+
+  picfiles/     : This is where the pictures (used with .vpic, .ptell, etc)
+  --------------  are stored.  The list of these pictures is generated auto-
+		  matically upon talker startup.
+
+  roomfiles/    :
+  --------------
+	roomname.dat	: Like userfiles, these store each of the rooms vital
+	----------------  information, such as the access, etc. These files
+			  should NEVER EVER be edited manually. That's what
+			  the .rmadmin command is for.
+
+  roomfiles/atmospherics/:
+  -----------------------
+	roomname.A	: This directory holds the files for each of the rooms
+	----------------  atmospherics. This probably will be obsolete in later
+			  versions to go with the binary file format above.
+			  Again, these files shouldn't be edited manualy, if
+			  you want to edit atmospherics, use the .atmos
+			  command.
+
+  roomfiles/descriptions/:
+  -----------------------
+	roomname.R	: This directory contains the 'descriptions' of rooms,
+	----------------  (The message that gets shown at the top of the .look
+			  command.)  To create room descriptions, use the
+			  .entroom command.
+
+  roomfiles/mesgboards/	 : 
+  -----------------------
+	roomname.M	: This directory contains the message boards for
+	----------------  each of the talker rooms. (The boards that are
+			  viewed with .read).
+
+  screens/      : This directory contains many of the different screens that
+  --------------  can be viewed as either ASCII or ANSI. (If the talker can't
+		  find the ANSI file, it will display the ASCII one.) For more
+		  info on ASCII's and ANSI's in RaMTITS, refer to the
+		  README.ansis document.
+
+		  NOTE: all of the files below can have either the .ASC or .ANS
+			file extensions, provided with this distribution are
+			the default ones (only .ASC).
+
+	FILES	:	  Description:
+	--------	  -----------
+
+	Newbiemotd.*	: This is the message of the day that gets displayed
+	----------------  to new users who are logging onto the talker for the
+			  first time.  Normally it's good to have a bit of
+			  information reguarding your talker in this file.
+
+	bankmenu.*	: This is the file that gets displayed to a user if
+	----------------  they have menus turned on, and they use the .bank
+			  command.
+
+	bankopts.*	: This is the file that gets displayed to a user if
+	----------------  they have menus turned off and they use the .bank
+			  command with no other arguments.
+
+	closescreen.*	: This file gets displayed to a user upon them logging
+	----------------  off of the talker.
+
+	levellist.*	: This file gets displayed to a user when they use the
+	----------------  .levels command.  In this file it's good to have
+			  a brief description of your talker's levels, as well
+			  as how to get to that level.
+
+	loginmenu.*	: This file gets displayed to a user if they enter
+	----------------  '?' at the login menu (when they're prompted for
+			  their name).
+
+	mailmenu.*	: This file gets displayed to a user if they use
+	----------------  the mail management menu (.mail).
+
+	map1.*		: This file contains the map of the talker. It's up
+	----------------  to you to provide a somewhat reliable map, so users
+			  know how to get to the different rooms of the
+			  talker.
+
+	motd.*		: This file gets displayed to a user upon them logging
+	----------------  on. After they have already entered their login
+			  information, they'll be shown this file, and prompted
+			  to hit enter.
+
+	newmail.*	: This file gets displayed to a user after they have
+	----------------  logged onto the talker, providing they have new
+			  s-mail to read.
+
+	setmenu.*	: This is the menu choice for user's who are using
+	----------------  menues, and they use the .set command.
+
+	setopts.*	: This is the file that gets shown to a user when they
+	----------------  use the .set command, and have menues turned off. It
+			  displays a list of everything they can set from
+			  the command line (ie: .set age).
+
+	stafflist.*	: This file goes on top of the talker generated staff
+	----------------  list, this is just to allow you to make your staff
+			  list look purty... For an example, don't touch this
+			  file, and log onto the talker and type .staff.
+
+	storebuy1.*	: If a user has menues turned on, and they use the
+	----------------  .store -buy command with no other options, this
+			  menu will be shown to them, it contains a list of
+			  items in which they can buy, as well as the #
+			  corresponding to their choice.
+
+	storebuy2.*	: If a user has menues turned off, and they use the
+	----------------  .store -buy command with no other options, this
+			  file will show them what they can buy from the
+			  store, then the user can use .store -buy [item].
+
+	storesell1.*	: If a user has menues turned on, and they use the
+	----------------  .store -sell command with no other options, this
+			  menu will be shown to them.  It should contain
+			  a list of things which they can sell, as well
+			  as well as how much they can get for selling that
+			  item.
+
+	storesell2.*	: This is the menu that gets displayed to a user if
+	----------------  they have menus turned off and use the .store -sell
+			  command with no extra arguments.
+
+		END OF FILES FOR ~/ramtits-2.2/screens
+
+  socials/      : This is where the socials of the talker are stored.  These
+  --------------  socials are created with .make -social. For more info
+		  reguarding these, see the README file in the socials
+		  directory.
+
+  src/          : This is where the main source file for the talker are stored.
+  --------------  Included with these source files are 3 scripts:
+
+	compile	: This is the same compile script that is in the bin directory,
+	--------  it should just be a symbollic link linking to the script
+		  in the bin directory.
+
+	ffind	: This script is to help you find certain functions within
+	--------  the code. To use this, your server must have grep installed.
+		  To find a certain function, just use something like:
+			./ffind  exec_com
+		  And you'll receive something like:
+			Please wait.. searching for function...
+			command.c:33:void exec_com(User user,char *inpstr)
+		  Which tells us that at line 33 in the file command.c
+		  you'll find the exec_com function.
+
+	install	: This script will 'install' the executable files to 
+	--------  ~/ramtits-2.2/bin which should be the ONLY place where
+		  the talker is booted from, otherwise strange and bad things
+		  can happen.
+
+  src/include/  : This directory contains the different headers required
+  --------------  for the ramtits source files. (*.h)
+
+  src/objects/  : This directory you should leave alone, and don't bother
+  --------------  touching anything in here. Until you compile your talker,
+		  this directory will remain empty. After you compile tho,
+		  it will be filled with a bunch of "object" files, which
+		  get all linked together when the talker is compiled.  This
+		  makes it easier and less time consuming when you only want
+		  to change one thing in one of the .c files, only that one
+		  file will need to be re-compiled, and not the whole
+		  daemon.
+
+  systemlogs/   : This directory contains all of the logs generated by the
+  --------------  talker:
+
+	syslog	 : This is the main system log, that tells of any important
+	---------  events that went on in the talker.
+
+	emaillog : This is the log that lets the administrators know of any
+	---------  outgoing e-mail going through the talker. It doesn't store
+		   the outgoing e-mails itself, but it does store who sends
+		   e-mail, and the e-mail address to where it goes.
+
+	identlog : This is the log generated by the ident daemon, that lets
+	---------  people know of anything relevant going on with the ident
+		   daemon.
+
+	loginlog : This is a log file of all of the users who have logged
+	---------  in and out of the talker.
+
+	stafflog : This log stores any staff commands which are used, which
+	---------  is good in case you want to watch for your staff members
+		   abusing their commands.
+
+	caplog	 : This log gets made when someone uses the .capture command,
+	---------  so talker staff can view this log, and then hand out any
+		   punishment reguarding whatever was .captured.
+
+	wwwlog	 : This log stores when webpages are created/updated from
+	---------  users using the .set command, etc.
+
+	telnetlog: This log stores outgoing addresses when a user uses the
+	---------  .topen command, so that in case someone complains of abuse,
+		   you can check this log, and then deny the command to the
+		   guilty user.
+
+  systemlogs/caplogs/  : This is where the talker stores previous capture
+  ---------------------  logs when it does the maintenance.  To view these
+			 files see .help view while logged on the talker.
+
+  systemlogs/debuglogs/: This is where the talker stores 'crash' files. These
+  ---------------------  files get dumped if the talker crashes (SIGSEGV/SIGBUS)
+			 and talker debugging is turned on. These files get
+			 stored as: debug_file.#  (Replace the number sign
+			 with the PID of the talker when it crashed). You can
+			 use .view -sys to find out the name of the file that
+			 the talker dumped everything to.
+
+  systemlogs/emaillogs/: This is where the talker stores e-mail logs, such as
+  ---------------------  when a user uses the e-mail logs, it keeps a record
+			 of Sender, and the recipient e-mail address'
+
+  systemlogs/loginlogs/: This directory holds the old loginlogs which turn
+  ---------------------  over every 24 hours (so they don't all build up into
+			 one great big humongous file that takes forever
+			 to open up in a text editor.
+
+  systemlogs/stafflogs/: This directory holds the old stafflogs which turnover
+  ---------------------  every 24 hours so they don't get too large.
+
+  systemlogs/syslogs/  : This directory holds the old system logs, which
+  ---------------------  turnover every 24 hours.
+
+  systemlogs/wwwlogs/  : This directory holds the old www generator logs which
+  ---------------------  turnover every 24 hours.
+
+	NOTE ON LOGS: It is up to you to clear out these directories of old
+	------------  files, so they don't build up to be too large. You
+		      may want to clean up these directories every month
+		      or so, but that's up to you, I like to keep records
+		      up to a year myself, but that's just paranoid ole me ;)
+
+  textfiles/    : This directory, like the picfiles directory above, stores
+  --------------  all of the files which can be viewed with .text. You can
+		  delete all of the distribution ones you like, EXCEPT for
+		  the 'credits' and 'nuts' files. You may also want to
+		  keep the 'colours' and 'color' file, as it explains to
+		  users how to use the RaMTITS colour codes. A list of the
+		  files in this directory gets generated everytime the talker
+		  boots up.
+
+  trivia/       : This directory holds all of the questions asked when a user
+  --------------  uses the .trivia command. Questions are asked in (AND THEY
+		  MUST BE IN THIS FORMAT!):
+		  Line 1: Question
+		  Line 2: Choice 1
+		  Line 3: Choice 2
+		  Line 4: Choice 3
+		  Line 5: A/B/C (answer of question)
+		  Before creating your own trivia questions, look at the
+		  current trivia questions with a text editor...
+
+  userfiles/    : This is the main users directory, all the users data gets
+  --------------  stored in this directory. The main userfile is:
+
+	username.dat: This holds virtually everything that the user sets,
+	------------  buys, etc. This is a binary file, and you should never
+		      ever manually edit this file.
+
+  userfiles/usermesg/: This directory holds misc message information (stuff
+  -------------------  that requires the editor). The different files are:
+
+	username.M : This is the users main s-mail file. Whenever a user s-mails
+	-----------  another user, that message gets stored in here.
+
+	username.NM: This is the users new mail file. More information reguaring
+	-----------  this file is in README.userfiles
+
+	username.P : This is the users profile, which is seen when someone
+	-----------  .examine's that user.
+
+	username.S : When a user sends a s-mail message, a copy of it is stored
+	-----------  into this file.
+
+  userfiles/usermisc/: This directory stores misc. files for the user, right
+  -------------------  now it only stores one file:
+
+	username.R: This is the users 'arrest' record, whenever a staff member
+	----------  uses a staff command on a user, it gets written to this
+		    file.
+
+  utils/        : This directory contains some programs which you may find
+  --------------  useful in running your talker.
+
+	ascii.c		: This displays a list of some high ascii values,
+	----------------  so the talker coder/owner can use the ansi screens.
+			  To Compile:    gcc ascii.c -o ascii
+			  To Run:	./ascii
+
+	keepalive.c	: This is a small keepalive program kept to ensure
+	----------------  that your talker is never down. This program
+			  MUST be run from the ~/ramtits-2.2/bin directory.
+			  To Compile:    gcc keepalive.c -o keepalive
+			  To Run:	 mv keepalive ~/ramtits-2.2/bin
+					 ./keepalive rt2
+
+	shutdown.c	: This is a small program to shutdown your talker
+	----------------  from the shell. This program MUST be run from the
+			  ~/ramtits-2.2/bin directory.
+			  To Compile:	gcc shutdown.c -o shutdown
+			  To Run:	mv shutdown ~/ramtits-2.2/bin
+					./shutdown
+
+	viewansi.c	: This is a small program that will allow you to
+	----------------  display an ansi screen as it would be displayed
+			  on the talker.  You need your telnet client to
+			  support ansi characters in order for this to work,
+			  otherwise everything will look like gibberish.
+
+	scripts/	: This directory contains a backup of all of the scripts
+	----------------  that ramtits uses, in case you delete them by accident
+			  you can just get the originals from here.
+
+	webpage/	: This are some default webpages for you to use,
+	----------------  README.webpages for more info on how to use
+			  this file.
+
+  utils/uconvert-1.1/: See the top of the uconvert.c file for more information
+  -------------------  reguarding how to convert your userfiles.  If you have
+		       problems using this program, let me know, or start your
+		       userbase from scratch.
+--==--                                                                    --==--
+
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+        
+        squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+        http://forum.ramtits.ca
+
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+        ramtits.ca 6980
+
+--==--                                                                    --==--

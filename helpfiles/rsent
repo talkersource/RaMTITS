@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS rsent
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .rsent [<# of message>]
+  
+Synopsis:
+  If no number is specified, this command allows the user to read the
+  s-mail messages that they have sent to other users.  If a number is
+  specified, and it's a valid number, then the user will be shown that
+  particular message that they sent.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS suicide
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .suicide [your password]
+  
+Synopsis:
+   If the user uses this command, and the password that they have given
+   is correct, then this command will delete the user's account, along
+   with any files associated with that user. (mail, profiles, etc.) Please
+   be aware that if you would like your name changed you can ask a staff
+   member, as they should be able to do it for you.
+  
+   NOTE: ONCE YOU DELETE YOUR ACCOUNT, ALL YOUR FILES ARE DELETED AND
+         THERE IS NO WAY TO RESTORE THEM.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

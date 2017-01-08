@@ -1,0 +1,105 @@
+--==--                                                                    --==--
+       Welcome to RaMTITS version 2.2, the newest release in the RaMTITS
+       talker source code.  What this README file aims to do is help you
+       out in configuring your talker for the first time.
+--==--                                                                    --==--
+
+	Please be aware that this program assumes you have some programming
+experience, as you would need it if you want to fully customizing a talker
+into suiting your theme. These documents also assume you know something
+about your shell, and the commands, such as: cd ~/ would take you to your
+home directory.  When I refer to something starting with '~/' I'm assuming
+you know that this is your home directory on your server, and that when
+you install RaMTITS, it's installed into ~/ramtits-2.x (where x is the number
+of the current distribution).
+
+	Your first step is to go read everything in ~/ramtits-2.2/docs and
+get an idea on how/why everything is the way it is.. it'll save you a lot of
+frustration later when trying to set everything up.
+
+	Your second step is to run the 'make_config' file found in this
+directory. Run it by typing './make_config'.  If it gives you a 'Permission
+Denied' message, type 'chmod 777 make_config' and then try running it. If
+that doesn't work try just running 'sh ./make_config'. If that still doesn't
+work, then I honestly don't know.. there's something screwy with your shell
+prompt. Either e-mail me, and in that e-mail include information such as
+which OS / distribution you're using (ie Slackware Linux 7.1), and make
+sure that you have bash/sh installed on your server (ls -l /bin/sh /bin/bash).
+You can see my e-mail at the bottom of this README. Answer all the questions
+that this program asks you and it will create a config file for you, (If you
+want to change anything later on you can use the '.change' command in the
+talker).
+
+	Next, we got to do some minor directory creations... this shouldn't
+take too long.  If you plan on using the webpage generator, you need the
+proper directories created. If you're not sure which directory that your
+webspace belongs in, contact your server's system administrator and ask
+him/her. (Normally it can be found in /home/loginname/public_html).  Once
+you've found out, create a directory in there called 'users', for example:
+
+  mkdir ~/webspace/users
+
+	Replace 'webspace' with the directory where you're supposed to store
+your webpage files.  For more information on the webpage generator, go read
+~/ramtits-2.x/docs/README.webpages, as that gives you the general info on what
+you need to do in order to get the generator working properly.
+
+	Allright, for those of you who have said that RaMTITS was not a
+code which was easy to customize, you are fairly wrong, the most you want
+to do if you want a unique colour system then that of the default talker,
+is go into the code and change the colour codes to that of whatever colours
+you wish.  Otherwise, all unique phrases and what not can be customized in
+the ~/ramtits-2.x/include/custom1.h file.  But be warned.. if you remove or
+modify a line that has "/* Leave this alone */" on it, your talker may not
+run properly, that's why that warning is there ;).  But you can change the
+text that actually appears in anything below those warnings.  Just make
+sure that if it has a quotation mark (") at the beginning, it'll need one
+at the end of the phrase.  Use the sample sentences already there to guide
+you.  For more information on these things, see:
+
+	~/ramtits-2.x/docs/README.custom
+
+As this is the file that gives a bit more information on what everything
+in the custom1.h file does/displays to the users.
+
+	Ok, we got this far, now we need to compile the code, be forwarned
+tho, I've only really tested this code out on a Slackware 7.1 and 
+Slackware 8.0 But I am hoping that it will work on all flavours of linuxes,
+although it may need some tweaking on other linux boxes.  Simply go into the
+bin directory:
+
+	cd ~/ramtits-2.x/bin
+
+	Once there type './compile'.  Oh yah.. forgot to mention, you need
+gmake or a relevant 'make' command installed, otherwise you can compile
+each file seperatly, but that would take too long to explain, go get gmake
+from http://www.gnu.org if you don't have it and tell your system admin
+to get off his/her lazy ass and install it.  After it compiles, hopefully
+without any problems, you should be prompted if you want to start the talker.
+Choose yes, telnet into the port you specified, and start your customizing :)
+
+	To connect to your talker after you've started it, simply type:
+telnet 0 [port]. Where the port is the port you specified when you generated
+your config file.  Once you've connected, use the login 'test' with the
+password 'tester' (all lower case). Then start configuring your talker.
+The main helpfiles you'll want to check out are: '.h rmadmin', '.h change',
+and '.h make'.
+
+--==--                                                                    --==--
+   
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+        
+	squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+	http://forum.ramtits.ca
+   
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+	ramtits.ca 6980
+
+--==--                                                                    --==--

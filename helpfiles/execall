@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS execall
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .execall [command] [<arguments>]
+  
+Synopsis:
+  Allows the user to execute a social or command on EVERY person logged
+  onto the talker.  So running something such as:
+~CR      .execall .hug
+  would execute the "hug" social on everyone currently logged onto the
+  talker.  Please be aware that many people don't like seeing the spam
+  that this generates, to which you should show courtesy when using this
+  command.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

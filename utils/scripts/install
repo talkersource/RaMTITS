@@ -1,0 +1,48 @@
+#!/bin/bash
+
+if [ -d ../bin ]; then
+  echo -n ""
+else
+  mkdir ../bin
+fi
+if [ -d ../bin/reboot ]; then
+  echo -n ""
+else
+  mkdir ../bin/reboot
+fi
+if [ -d ../bin/tempfiles ]; then
+  echo -n ""
+else
+  mkdir ../bin/tempfiles
+fi
+if [ -d ../bin/runtime ]; then
+  echo -n ""
+else
+  mkdir ../bin/runtime
+fi
+
+if [ -e ./$EXEC ]; then
+  if [ -e ../bin/$EXEC ]; then
+    mv ../bin/$EXEC ../bin/$EXEC.old
+    cp ./$EXEC ../bin/$EXEC
+  else
+    cp ./$EXEC ../bin/$EXEC
+  fi
+else
+  echo "Talker compilation failed, please review and fix any errors and"
+  echo "re-compile."
+  exit;
+fi
+
+if [ -e ./$IDENT_EXEC ]; then
+  if [ -e ../bin/$IDENT_EXEC ]; then
+    mv ../bin/$IDENT_EXEC ../bin/$IDENT_EXEC.old
+    cp ./$IDENT_EXEC ../bin/$IDENT_EXEC
+  else
+    cp ./$IDENT_EXEC ../bin/$IDENT_EXEC
+  fi
+else
+  echo "Ident daemon failed to compile, installation process failed."
+  exit;
+fi
+echo "Talker executables have been stored in ../bin."

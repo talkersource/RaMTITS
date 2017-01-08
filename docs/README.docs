@@ -1,0 +1,24 @@
+This directory should contain the following files:
+
+AUTHORS			<-- A list of the people who have contributed to RaMTITS
+ChangeLog.1xx		<-- A list of changes for RaMTITS 1.x.x.
+ChangeLog.2xx		<-- A list of changes for RaMTITS 2.x.
+FAQ			<-- Frequently Asked Questions.
+LICENSE			<-- The RaMTITS LICENSE.
+LICENSE.ident		<-- The license for the ident daemon.
+README			<-- The RaMTITS main README.
+README.ansis		<-- README for ansi screens
+README.backup		<-- README for setting up the backup script.
+README.config		<-- README for configuring your talker.
+README.custom		<-- README for customizing your talker.
+README.dirs		<-- README for a list of RaMTITS directories and files.
+README.docs		<-- This file.
+README.userfiles	<-- README for the userfiles.
+README.webpages		<-- README for using the webpage generator.
+
+If you're missing any of the files, you're urged to either download them from
+the official ramtits website at http://www.ramtits.ca, or re-download the
+distribution from the website mentioned above. Also, if you've chosen to install
+the battleship game that can be downloaded and installed seperately, there
+will be a file called LICENSE.bship which contains the licensing information
+for the battleship game.

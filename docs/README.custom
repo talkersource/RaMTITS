@@ -1,0 +1,415 @@
+--==--                                                                    --==--
+
+  README : custom
+
+  OUTLINE:
+    This readme is to familiarize the talker owner/coder into some of the
+    ways in which to customize the talker to suit their theme.  Due to the
+    fact that I had a lot of people tell me RaMTITS 1.x was hard to
+    customize, I've made this file to help people familiarize themselves
+    with some of the variables which help distinguish their talker from
+    other RaMTITS talkers.
+
+  Last Updated: August 3rd, 2001
+--==--                                                                    --==--
+
+	There are two (2) major files that most of the customizing is done
+in. They are:
+	1) ~/ramtits-2.2/src/include/custom1.h
+	and
+	2) ~/ramtits-2.2/src/include/defines.h
+
+	I will explain all of the different variables, and what they do for
+the first file, and only the things that should be changed in the second file.
+
+File 1: ~/ramtits-2.2/src/include/custom1.h:
+-------------------------------------------
+	NOTE: All of these variables start with either a #define, char *, or
+	      int in front of them, showing what types of variables these are.
+	      DO NOT CHANGE THAT PART, OR THE NAME OF THE VARIABLE!
+
+Variable	: What It Does:
+----------------  ------------
+
+NumBfafkMesgs	: These are the amount of back from afk messages there are
+----------------  (BfafkText).  It's advised that you don't change this number
+		  to more then the amount of BfafkText's that you have set.
+		  It's probably better to leave it at 15, and just change the
+		  BfafkText messages.
+
+BfafkText	: These get displayed at random (providing the user hasn't
+----------------  set a bfafk message). The first one should remain blank
+		  ("",) like that, and then how ever many NumBfafkMesgs you
+		  have defined (see variable above), you need that many of
+		  these AFTER the blank variable. IE: look at the current
+		  custom1.h and you'll see 16 BfafkText's between the
+		  parenthesis, but only 15 are used.
+
+MAX_QUOTES	: Like the NumBfafkMesgs above, this provides the talker
+----------------  of the amount of qotd (below) you have set. The default is
+		  50, and there are 50 default quote of the days provided.
+		  (All coming from the bash 'fortune' command.)
+
+qotd		: These are the random "quote of the day's" that get displayed
+----------------  to a user upon logging onto the talker. (The user does have
+		  the option to ignore this tho.) Be aware that the first 
+		  one HAS to be blank ("",) if not, the quote you put there
+		  will just be ignored. However many MAX_QUOTES you specified
+		  in the variable above, you need that many of these, after
+		  the blank variable.  I sort these in groups of 5, as it's
+		  easier to keep track of how many you have.
+
+atmos		:
+----------------
+
+signature	: This is the signature that will go at the bottom of the
+----------------  e-mails sent out from the talker. (IE When a user has
+		  autoforwarding turned on, or uses the .email command.)
+		  NOTE: The signature requires 5 %s' in it one for each
+		  of in this order: 1) TalkerName;  2) TalkerAddy;
+		  3) TalkerEmail; 4) TalkerName; and 5) TalkerEmail.
+		  (All these variables can be set in:
+		      ~/ramtits-2.2/src/include/defines.h)
+		  Look at the current signature for an example.
+
+syserror	: This gets displayed to a user if a system error occurs during
+----------------  a command that the user was using. I can't remember if
+		  I use this anymore, but I know I will be removing it
+		  eventually.
+
+nosuchroom	: This is the message that gets displayed to a user if they
+----------------  try going to a room that the talker can't find.
+
+nosuchuser	: This is the message that gets displayed to a user if
+----------------  multiple matches of the nickname they specified shows up,
+		  or if the talker can't find that user at all.
+
+notloggedon	: This message gets displayed to a user if the talker finds
+----------------  multiple or no matches for a user being logged on the
+		  talker.
+
+invisenter	: This message gets displayed to everyone in a room in which
+----------------  an invisible person enters.
+
+invisleave	: This message gets displayed to everyone in a room in which
+----------------  an invisible person leaves.
+
+invisname	: This is the invisible person's name as gets displayed to
+----------------  users in the same room if the invisible user says something.
+
+invismesg	: This is the invisible person's name as it appears in s-mail
+----------------  messages. This is different then the above because the
+		  above can contain spaces in the name. Seeing as how this
+		  is for messages, if your invisible name contains a space
+		  this one can't because it would screw up the way messages
+		  are counted (.from, .bfrom, etc). So just replace the
+		  space with an underscore ("_"), and you're set.
+
+noswearing	: This message gets displayed to a user if they swear in
+----------------  a public room, and the swear ban is set to ban swear words.
+		  to find out more about this, see the "swear_words" variable.
+
+login_vis	: This message gets displayed to all users whenever a user
+----------------  logs onto the talker, providing the user logging on isn't
+		  a) connecting from the staff port, or b) invisible,
+		  hidden, or fake logged off.
+
+login_invis	: This message gets displayed to users of the same level
+----------------  or higher of the user logging onto the talker if the
+		  user logging on is invisible.
+
+login_hide	: This message gets displayed to users of level ADMIN
+----------------  or higher whenever a user who is hidden logs on.
+
+login_fake	: This message gets displayed to users of level GOD
+----------------  or higher whenever a user who is fake logged off
+		  logs on.
+
+logout_vis	: This is the main message the gets displayed whenever a user
+----------------  logs off of the talker.
+
+logout_inv	: This message gets displayed to users of the same or
+----------------  higher level if the user logging off is invisible.
+
+logout_hide	: This message gets displayed to users of ADMIN level or
+----------------  higher if the user logging off is hidden.
+
+logout_fake	: This message gets displayed to users of GOD level or
+----------------  higher if the user logging off is fake logged off.
+
+wtf		: This message gets displayed to the user if the talker
+----------------  can't find a certain command or social.  This variable
+		  requires one (1) %s for the name of the command.
+
+notallowed	: This message gets displayed to a user when they try using
+----------------  a command that is of a level to high for them. (IE: a USER
+		  level user is trying to use the .promo command an ADMIN
+		  level command.)  This option requires two (2) %s for
+		  the name of the command, as well as the level name of
+		  the command.
+
+clnodo		: This message gets displayed when a user tries using the
+----------------  .cexec command with a command in which clones can't execute.
+		  This variable requires one (1) %s which will be replaced 
+		  by the name of the command.
+
+tempnodo	: This message gets displayed to a user who is temp promoted,
+----------------  and they try using a command in which temp promoted users
+		  can't use.  This variable requires one (1) %s which will
+		  be replaced by the name of the command.
+
+muzztext	: This message gets displayed to a user who is muzzled,
+----------------  and they try using a command that muzzled users can't use.
+		  This variable requires one (1) %s which will be replaced
+		  by the name of the command.
+
+qotdm		: This message gets displayed to a user just before it displays
+----------------  one of the qotd (see "qotd" above).
+
+nohelp		: This message gets displayed if the talker can't find a
+----------------  helpfile for the command specified by the user.  This
+		  shouldn't happen, unless the coder adds commands and fails
+		  to write a helpfile with .make -helpfile.
+
+salt		: This is the "salt" for when the talker crypt's users
+----------------  passwords. This makes it harder for people to crack a
+		  talker users password.  This variable SHOULD NOT BE CHANGED!
+		  If you change this, the test account will fail to work.
+
+login_name	: This message gets displayed to a user at varius places
+----------------  at the login prompt, such as when the user is checking
+		  for new s-mail.
+
+login_pwd	: This message gets displayed to a user when they are prompted
+----------------  for their password at the login prompts.
+
+login_vpwd	: This messages gets displayed to a user when they are setting
+----------------  up a new account. After they enter their password the first
+		  time, they must enter it once more for verification
+		  purposes.
+
+login_prompt	: This is the prompt a user gets just after the ANSI colour
+----------------  prompt, where a user can either enter their login name
+		  or the letter corresponding to their choice from the login
+		  menu.
+
+wrong_pwd	: This message gets displayed to a user if they enter the wrong
+----------------  password at the main login prompt.
+
+wrong_pwd2	: This message gets displayed to a user 1) if they're new, and
+----------------  the user's two passwords didn't match, or 2) if the user is
+		  checking for s-mail and enters the wrong password.
+
+new_tells1	: This message gets displayed to a user when they come back
+----------------  from being afk, and someone tried to .tell them something.
+
+new_tells2	: This message is just a continuation of the message above.
+----------------
+
+continue1	: This message gets displayed when a user is in a menu, usually
+----------------  after they set, buy, or use an option in the menu.
+
+continue2	: This message gets displayed when a user is using commands
+----------------  that may exceed their screen wrap when they use a command
+		  such as .socials, or .help.
+
+edprompt	: This is the prompt after the user enters a '.' on a line by
+----------------  itself in the editors.
+
+menuprompt	: This is the default prompt when a user is doing something
+----------------  in the menus.
+
+def_inphr	: This is the default in phrase for new users.
+----------------
+
+def_outphr	: This is the default out phrase for new users.
+----------------
+
+def_url		: This is the default homepage for new users.
+----------------
+
+def_lognmsg	: This is the default login message for new users.
+----------------
+
+def_logtmsg	: This is the default logout message for new users.
+----------------
+
+def_desc	: This is the default descriptions for users made with the
+----------------  .mkuser command.
+
+def_topic	: This is what topics get set to if there isn't one currently
+----------------  set for it.  Topic's do get saved whenever the talker shuts
+		  down, or at least they should...
+
+ansi_line	: If the user ANSI screens set to ON, then instead of the
+----------------  ascii_line below, this line will be displayed to the user
+		  for the majority  of commands that provide listings (.who,
+		  .help, etc).
+
+ansi_tline	: If the user has ANSI screens turned ON, then instead of
+----------------  the ascii_bline below, this line will be displayed to the
+		  user for commands which call these lines to be used. Commands
+		  Normally between a tline, and a bline there is useful
+		  information reguarding the command they just used.
+
+ansi_bline	: Something like what I said above, except this one should
+----------------  be used for the bottom of the useful information. (Just to
+		  make things look neat ;p.)
+
+ascii_line	: This is the default line, it gets displayed in virtually
+----------------  everything, (.help, .who, .socials, etc, etc). This line
+		  should use PLAIN ascii characters. The one above is for
+		  ansi/high ascii characters. You can have colour codes in
+		  this line.
+
+ascii_tline	: Like the ansi_tline, this line gets written to a user usually
+----------------  atop of misc. information.
+
+ascii_bline	: This is the line that goes below the ascii_bline. Look at the
+----------------  examples in the custom1.h you received with your copy of
+		  the code.
+
+mesg_line	: Kind of like the ascii_line, except this one MUST NOT
+----------------  CONTAIN RaMTITS colour codes. This is a divider of sorts
+		  that gets sent via e-mail, so ramtits colour codes are
+		  useless in it.
+
+emp		: This is just something that gets displayed if the logfile
+----------------  you're attempting to view is empty. This is virtually
+		  obsolete, and probably will be removed in my next version.
+
+tab		: This is a *html* tab. All it consists of is seven (7) &nbsp;
+----------------  html tags, so that you can 'tab' your html files.
+
+html_header	: This is the header that goes at the top of all of the RaMTITS
+----------------  talker generated files, userfiles, whofile, etc.
+
+html_footer	: This is the footer for the talker generated html files. This
+----------------  is good for closing off the <html> with </html> etc.
+
+--==--                                                                    --==--
+
+File 2: ~/ramtits-2.2/src/include/defines.h:
+-------------------------------------------
+	NOTE: Don't edit past where it says: "DON'T EDIT PAST HERE!" unless you
+	      know what you're doing.
+
+Variable	: What It Does:
+----------------  ------------
+TalkerName	: I seriously hope you know what this variable does by now.
+----------------  But if not, this set's the "name" for your talker, this
+		  one shouldn't contain colour codes in it, seeing as how
+		  it gets sent via the e-mail signatures.
+
+TalkerRecap	: This allows you to set your talker name with colour codes.
+----------------  This is the name that shows up in the talker more often.
+
+TalkerMailName	: This is the name when the talker sends mail messages to
+----------------  other users, this name can't contain spaces in it, as
+		  that can screw up the messaging counts.
+
+TalkerOwner	: This is the main owner of the talker, basically... god.
+----------------  This definition allows the code to know who the main
+		  owner is, so it knows who to bestow certain privilages on.
+
+TalkerEmail	: The e-mail address where the owner of the talker can be
+----------------  reached. This is so users know who they can contact if
+		  they feel their site/ip/name has been banned unjustly.
+
+TalkerAddy	: This is the address of the talker (in form: site port)
+----------------  IE: ramtits.ca 6980
+
+WWWDir		: This is the directory that tells the talker where to
+----------------  store the webpage files if you use the webpage generator.
+		  For more information on this, see the README.webpages
+		  document.
+
+UserIndex	: I don't think I use this variable anymore, so just leave
+----------------  it and you should be safe ;)
+
+WWWExec		: This is the system command to use lynx to build webpages
+----------------  which users can see via the .lynx command.
+
+AtmosString	: This is the string that goes just before the atmos is
+----------------  displayed, it's best not to make it look like actual text
+		  so the user won't get confused as easily.
+
+SendMailExec	: This is where the 'sendmail' program is found. Usually found
+----------------  in /usr/sbin.  RaMTITS requires sendmail to e-mail out going
+		  stuff to users, if they have auto forward on, as well as if
+		  a user wishes to use the .email command.
+
+--==--                                                                    --==--
+
+	With those two files done, there are a few other things that help
+to customizing, such as making your talker's rooms. (For more information
+on that, boot the talker, log in, and read the '.help rmadmin'. All rooms
+are created with that command, with exception to the three main rooms, which
+get generated upon starting the talker for the first time.  There are some
+other files that you can edit for quick customizing, such as:
+
+File 3: ~/ramtits-2.2/src/include/custom2.h:
+-------------------------------------------
+	NOTE: There are only three variables that you should change in here for
+	      customizing, changing anything other then these three variables
+	      may result in problems with the general running of your talker.
+
+Variable	: What It Does:
+----------------  ------------
+swear_words	: These are the words (seperated by quotations (") and commas
+----------------  (,)), that the talker does not permit to be used in public
+		  rooms.
+
+pet		: These are the different types of pets that users can buy
+----------------  from the store. You can change the names of these, or add
+		  more. The first one however, marked by a blank ("",) space,
+		  should not be touched.
+
+censored	: If a user has chosen to ignore swear words, then whenever
+----------------  someone swears, instead of writing it to the user, it'll
+		  replace the naughty word with one of these censored
+		  phrases.
+
+--==--                                                                    --==--
+
+Level Names:
+-----------
+	Another way to customize your talker is to change the names of the
+levels. Up until now, in RaMTITS, changing these level names required a bit
+of work, I've hopefully made it a bit easier this time around.  First thing
+you want to do is open up the file:
+	~/ramtits-2.2/src/include/levels.h
+
+	At first glimpse, this file may appear cryptic, but the only things you
+need to change are those items that are in quotations BELOW the 'm-name' and
+'f-name' categories. The m-name stands for male-name. The f-name stands for,
+you guessed it, female-name. This way it's a politically correct talker ;)
+You should ALWAYS LEAVE THE NORMAL NAMES ALONE. There is alot of code that
+depends on these default names. There's more information reguarding the adding
+of levels in the source file itself, so feel free to read away :)
+
+--==--                                                                    --==--
+
+	I hope this README helped you customize your talker somewhat, it's up
+to you to change the generic colours, although that's something I have planned
+to change in a future version, to allow the talker to be more 'themeable'.
+But more on that later... ;)
+
+--==--                                                                    --==--
+
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+        
+        squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+        http://forum.ramtits.ca
+
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+        ramtits.ca 6980
+
+--==--                                                                    --==--

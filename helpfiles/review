@@ -1,0 +1,24 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS review
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .review -shout [<-search [pattern]>]
+Command Usage: .review -tells [<-search [pattern]>]
+Command Usage: .review -chann [<-search [pattern]>]
+Command Usage: .review -wiz   [<-search [pattern]>]  [For level WIZ and above]
+Command Usage: .review [<-search [pattern]>]
+  
+Synopsis:
+  The ~CR-shout~RS flag allows you to review the shout buffer.
+  The ~CR-tells~RS flag allows you to review your personal message buffer.
+  The ~CR-chann~RS flag allows you to review the channel buffer.
+  The ~CR-wiz~RS flag (if you're level WIZ and above) will review the wiz buffer.
+
+  When used alone it allows the user to review the conversation buffer for
+  the room that they are in.
+
+  If the ~CR-search~RS option is used, as well as a pattern to search for, then
+  it will go through the review buffer, and only display lines that have the
+  pattern in them. (Particularly good if you missed what someone said to you,
+  and don't want to go through a spammy buffer.)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

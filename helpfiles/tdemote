@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS tdemote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .tdemote [user]
+  
+Synopsis:
+  Allows a user to temporarily demote another user to the level below
+  their current level. If the user is already temporary demoted, then
+  it will continue to decrease the user's level. The temp. demote lasts
+  until the user who is temporarily demoted logs off of the talker.
+  
+  Also.. you can use this command to remove a user's current temporary
+  promotion. So if you want to remove a user's temp promotion, just
+  .tdemote them, and their level will be restored.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

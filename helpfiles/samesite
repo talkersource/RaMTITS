@@ -1,0 +1,18 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS samesite
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .samesite [user]
+Command Usage: .samesite [part of address to check]
+  
+Synopsis:
+  If a username is specified, and it is a valid username, then the talker
+  will search for user accounts that have the same site as the user
+  specified.  If an IP address is given, then it will search all the user
+  accounts who have that IP address in their site.
+  Example 1: .samesite squirt
+             This would find all users who have the same site as squirt's
+  Example 2: .samesite .aol.com
+             This would find all users who have '.aol.com' in their
+             site.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

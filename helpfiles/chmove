@@ -1,0 +1,77 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS chmove
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .chmove [piece from] [piece to] <[next piece to] ...>
+  
+Synopsis:
+  This command allows you to move your checkers pieces to different places
+  on the grid.  If you're familiar with the game of checkers and just want
+  to know how to move the pieces, then simply type:
+  ~CW'~CR.chmove X# Y#~CW'
+  Where you would replace ~CRX~RS with the letter on the grid that corresponds
+  with the piece you want to move and the number sign gets replaced with
+  the number on the grid that corresponds with the piece you want to move.
+  You would also replace ~CRY~RS with the letter on the grid that corresponds
+  with the place you want to move your piece, and the number sign gets
+  replaced with the number on the grid that corresponds with the place
+  you want to move your piece.  See below for example.
+
+  (NOTE) I'm using the small board for this example.
+  _______________________________	  _______________________________
+ |   | _ |   | _ |   | _ |   | _ |	 |   | _ |   | _ |   | _ |   | _ |
+8|___|(_)|___|(_)|___|(_)|___|(_)|	8|___|(_)|___|(_)|___|(_)|___|(_)|
+ | _ |   | _ |   | _ |   | _ |   |	 | _ |   | _ |   | _ |   | _ |   |
+7|(_)|___|(_)|___|(_)|___|(_)|___|	7|(_)|___|(_)|___|(_)|___|(_)|___|
+ |   | _ |   | _ |   | _ |   | _ |	 |   | _ |   | _ |   | _ |   | _ |
+6|___|(_)|___|(_)|___|(_)|___|(_)|	6|___|(_)|___|(_)|___|(_)|___|(_)|
+ |   |   |   |   |   |   |   |   |	 |   |   |   |   |   |   |   |   |
+5|___|___|___|___|___|___|___|___|	5|___|___|___|___|___|___|___|___|
+ |   |   |   |   |   |   |   |   |   .---|-->| _ |   |   |   |   |   |   |
+4|___|___|___|___|___|___|___|___|   |  4|___|(_)|___|___|___|___|___|___|
+ | _ |   | _ |   | _ |   | _ |   |   |.->|   |   | _ |   | _ |   | _ |   |
+3|(_)|___|(_)|___|(_)|___|(_)|___|   || 3|___|___|(_)|___|(_)|___|(_)|___|
+ |   | _ |   | _ |   | _ |   | _ |   ||  |   | _ |   | _ |   | _ |   | _ |
+2|___|(_)|___|(_)|___|(_)|___|(_)|   || 2|___|(_)|___|(_)|___|(_)|___|(_)|
+ | _ |   | _ |   | _ |   | _ |   |   ||  | _ |   | _ |   | _ |   | _ |   |
+1|(_)|___|(_)|___|(_)|___|(_)|___|   || 1|(_)|___|(_)|___|(_)|___|(_)|___|
+   A   B   C   D   E   F   G   H     ||    A   B   C   D   E   F   G   H
+				     `\
+ I type: ~CR.chmove A3 B4~RS  --------------> The piece that was at ~CRA3~RS is now at~CR B4
+
+  Now those of you who know how to play checkers know that you can do
+  multiple hops. ie: jumping more then one checker at a time. This game
+  supports that, and it works well.  In order to do it you must specify
+  on the command line '.chmove X# Y# Z# ...' you can specify up to 10 hops
+  and providing that they're all valid, they'll all work. So suppose we
+  have the board layout:
+  _______________________________         _______________________________
+ |   | _ |   | _ |   |   |   | _ |       |   | _ |   | _ |   |   |   | _ |
+8|___|(_)|___|(_)|___|___|___|(_)|      8|___|(_)|___|(_)|___|___|___|(_)|
+ | _ |   |   |   | _ |   | _ |   |       | _ |   |   |   | _ |   | _ |   |
+7|(_)|___|___|___|(_)|___|(_)|___|      7|(_)|___|___|___|(_)|___|(_)|___|
+ |   | _ |   |   |   | _ |   | _ |   .---|-->|   |   |   |   | _ |   | _ |
+6|___|(K)|___|___|___|(_)|___|(_)|   |  6|___|___|___|___|___|(_)|___|(_)|
+ |   |   | _ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+5|___|___|(_)|___|___|___|___|___|   |  5|___|___|___|___|___|___|___|___|
+ |   |   |   |   |   |   |   |   |   |   |   |   |   | _ |<--|---|---|---|-.
+4|___|___|___|___|___|___|___|___|   |  4|___|___|___|(K)|___|___|___|___| |
+ | _ |   | _ |   | _ |   | _ |   |   |   | _ |   |   |   | _ |   | _ |   | |
+3|(_)|___|(_)|___|(_)|___|(_)|___|   |  3|(_)|___|___|___|(_)|___|(_)|___| |
+ |   |   |   |   |   | _ |   | _ |   |.--|-->| _ |   | _ |   | _ |   | _ | |
+2|___|___|___|___|___|(_)|___|(_)|   || 2|___|(K)|___|(_)|___|(_)|___|(_)| |
+ | _ |   | _ |   | _ |   | _ |   |   ||  | _ |   | _ |   | _ |   | _ |   | |
+1|(_)|___|(_)|___|(_)|___|(_)|___|   || 1|(_)|___|(_)|___|(_)|___|(_)|___| |
+   A   B   C   D   E   F   G   H     ||    A   B   C   D   E   F   G   H   |
+                                     `\					   /
+ I type: .chmove B6 D4 B2 -------------> The top arrow B6 is where our piece
+					 starts, the middle arrow is where
+					 it lands after the first hop (D4).
+					 Notice the piece at C5 is no longer
+					 there.. (The piece at D4 wouldn't
+					 stay there either.. it's just there
+					 now as an example.  And the final part
+					 of the move (to B2) is where the
+					 checker ends). Notice no piece at C3
+					 anymore either.
+
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

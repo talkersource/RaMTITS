@@ -1,0 +1,22 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS help
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .help
+Command Usage: .help [level]
+Command Usage: .help [command name]
+  
+Synopsis:
+  When used by itself, it will display a listing of commands, sorted by
+  either levels, the command type (fun, misc, speech, etc), or just
+  display a list of commands. This all depends on what a user
+  ~CW'~FRset~CW'~RS's their help style to.
+  
+  When a level is specified (i.e. ~CW'~FR.help user~CW'~RS) it will only
+  display the commands available at that level. However a user cannot
+  view commands of a level greater than their own.
+  
+  When a command name is specified, it will display the helpfile for
+  the command name given. This is a great way of learning the
+  the commands that you have access to.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

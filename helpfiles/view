@@ -1,0 +1,52 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS view
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .view -debug   [PID]
+Command Usage: .view -sys     [<date>]
+Command Usage: .view -staff   [<date>]
+Command Usage: .view -login   [<date>]
+Command Usage: .view -email   [<date>]
+Command Usage: .view -www     [<date>]
+Command Usage: .view -capture [<date>]
+  
+Synopsis:
+
+  -debug  : Providing that a PID is specified, then it will view the
+            logfile if the talker crashed on that PID, displaying any
+            commands used before the crash.  To find out what the PID
+            was, using '.view -sys' will show you.
+
+  -sys    : If a date isn't specified, it will show the system logfile,
+            (any problems/errors with the talker, as well as any other
+            relevant information.) for the current day.
+
+  -staff  : If a date isn't specified, it shows the staff log, the log which
+            contains any commands used by users of the wiz level or greater,
+            and how they used them, for the current day.
+
+  -login  : If a date isn't specified, it shows the login log, for the
+            current day. (A logfile that monitors all traffic on and off
+            the talker.)
+
+  -email  : If a date isn't specified, it shows the email log for the
+            current day. (A logfile that monitors any e-mail that was sent
+            through the talker, and where it was sent to [not the actual
+            message that was sent] as well as if any e-mail got auto-
+            forwarded.
+
+  -www    : If a date isn't specified, it shows the www log for the current
+            day. (A logfile which monitors which users userfile webpages
+            get updated, and stuff like that.)
+
+  -capture: If a date isn't specified, it shows the capture log for the
+            current day. This is the command a user uses in case they feel
+            they are being harassed and want to prove to staff that they
+            were being harassed. When a user uses the .capture command,
+            it gets written to this file, allowing staff members to see
+            what actually took place.
+  
+When specifying a date, it has to be in the format ####. The first 2
+numbers are the month, and the second two numbers are the day. So if
+I wanted to see the syslog for December 2nd, I would have to type:
+.view -sys 1202.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

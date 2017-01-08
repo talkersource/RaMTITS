@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS recount
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .recount
+  
+Synopsis:
+   Forces a recount of all the talker room's message boards.  What the
+   recount actually does, is searches all the message boards for any
+   old messages on them, and deletes those messages if it does in fact
+   encounter them.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,21 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS gag
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .gag [user]
+Command Usage: .gag [user] [-private|-socials|-shouts]
+  
+Synopsis:
+  If a user is specified, and no extra arguments are given, then this
+  command will make it so that the specified user is unable to perform
+  any commands, if the user isn't currently gagged. If the user is
+  gagged, then it will un-gag them, allowing them to use their commands
+  again.  If the ~CW'~CR-private~CW'~RS flag is used, and a valid user is
+  specified, then it will either gag, or un-gag the user from being able
+  to use private message commands, such as .tell, .pemote, etc.
+  If the ~CW'~CR-socials~CW'~RS flag is used, and a valid user is specified,
+  then it will either disable/enable the given user to use the talker's
+  socials.  If the ~CW'~CR-shouts~CW'~RS flag is used, and a valid user is
+  specified, then this it will either gag, or un-gag the given user from
+  being able to use shout commands, such as .shout, and .semote.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

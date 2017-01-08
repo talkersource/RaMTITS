@@ -1,0 +1,22 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS checkers
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .checkers [user]
+Command Usage: .checkers [-accept|-reject]
+Command Usage: .checkers [-gs|-board|-pieces|-quit]
+  
+Synopsis:
+  If a user is specified, then it will offer that user a game of checkers,
+  providing that they currently aren't in a game.  The user who is offered
+  a game, must either accept the game with the ~CW'~CR-accept~CW'~RS option, or reject
+  it with the ~CW'~CR-reject~CW'~RS option. Once the game is accepted then the two
+  user begin playing a game of checkers. While playing the game, one of
+  the players may quit the game by using the ~CW'~CR-quit~CW'~RS option (this counts
+  as a loss).  If the ~CW'~CR-gs~CW'~RS option is used, it displays a short summary
+  of the game, such as the last move, the checker board, and whos turn
+  it is.  If the ~CW'~CR-board~CW'~RS option is used, then it prints out the users
+  current checker board.  If the ~CW'~CR-pieces~CW'~RS option is used, then it toggles
+  the users piece size from big to small or vice versa.  To move your
+  checkers pieces, please consult the ~CW'~CRchmove~CW'~RS helpfile (.h chmove).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

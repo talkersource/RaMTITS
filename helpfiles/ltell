@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ltell
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ltell [line] [message]
+  
+Synopsis:
+  Sends the specified socket (line) the message. It will only send the
+  message if the user is at the login stage, and hasn't fully logged
+  onto the talker yet.  This command could be helpful in guiding some
+  people step-by-step through the login procedure (providing you know
+  how that works), or just saying hi or something stupid.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

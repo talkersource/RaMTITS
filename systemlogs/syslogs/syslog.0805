@@ -1,0 +1,118 @@
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[BOOT FAILURE] - Error while parsing configuration file.
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[BOOT FAILURE] - Error while parsing configuration file.
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[RaMTITS] - DragonS CovE talker booted properly with PID 580
+[ERROR] - Unable to open 'whofile.html' to write in who_webpage()!
+[07/29 05:05 p.m.] -=> SHUTDOWN initiated by Test <=-
+[ERROR] - Unable to open 'whofile.html' to write in who_webpage()!
+-=> SHUTDOWN complete on Sun. July 29, 2001 at 05:05 p.m. <=-
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[RaMTITS] - DragonS CovE talker booted properly with PID 1330
+[ERROR] - Unable to open 'whofile.html' to write in who_webpage()!
+[ERROR] - Unable to open 'whofile.html' to write in who_webpage()!
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[BOOT FAILURE] - Can't bind to main port.
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[BOOT FAILURE] - Can't bind to main port.
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2b6 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[BOOT FAILURE] - Can't bind to main port.
+[07/29 07:40 p.m.] -=> SHUTDOWN initiated by a termination signal - [SIGTERM] <=-
+-=> SHUTDOWN complete on Sun. July 29, 2001 at 07:40 p.m. <=-
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[RaMTITS] - DragonS CovE talker booted properly with PID 263
+[ERROR] - Unable to open 'whofile.html' to write in who_webpage()!
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [366] - child: [366]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 368
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [394] - child: [394]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 396
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [418] - child: [418]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 420
+[ERROR] - Couldn't open file 'test.html' to write in do_user_webpage()
+        - Reason: [No such file or directory]
+[ERROR] - Couldn't open file 'test.html' to write in do_user_webpage()
+        - Reason: [No such file or directory]
+[ERROR] - Couldn't open file 'test.html' to write in do_user_webpage()
+        - Reason: [No such file or directory]
+[08/03 05:25 a.m.] [CHANGE] - User: [Test] Changed: webpage_on - ON to OFF
+[08/03 05:25 a.m.] [CONFIG] - Config file saved as config.talker.
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [438] - child: [438]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 440
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [550] - child: [550]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 552
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [573] - child: [573]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 575
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [598] - child: [598]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 600
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [620] - child: [620]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 622
+[08/03 06:44 a.m.] -=> SHUTDOWN initiated by Test <=-
+-=> SHUTDOWN complete on Fri. Aug. 3, 2001 at 06:44 a.m. <=-
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[RaMTITS] - DragonS CovE talker booted properly with PID 265
+[RaMTITS] - DragonS CovE talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [422] - child: [422]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - DragonS CovE talker booted properly with PID 424
+[RaMTITS] - RaMTITS Talker talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[RaMTITS] - RaMTITS Talker talker booted properly with PID 621
+[08/04 07:00 a.m.] -=> SHUTDOWN initiated by Test <=-
+-=> SHUTDOWN complete on Sat. Aug. 4, 2001 at 07:00 a.m. <=-
+[RaMTITS] - RaMTITS Talker talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Can't find child's PID. This isn't a reboot.
+[RaMTITS] - RaMTITS Talker talker booted properly with PID 496
+[RaMTITS] - RaMTITS Talker talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [533] - child: [533]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - RaMTITS Talker talker booted properly with PID 535
+[RaMTITS] - RaMTITS Talker talker running RaMTITS v2.2 now booting.
+[RaMTITS] - Checking for a reboot proof....
+[RaMTITS] - Reading child's PID.. boot: [561] - child: [561]
+[RaMTITS] - [possibly_reboot()] Rebooting...
+[RaMTITS] - RaMTITS Talker talker booted properly with PID 563
+[08/05 12:47 a.m.] Test submitted a riddle answer!
+[08/05 01:00 a.m.] [Check-Messages] - Files checked: [0] Deleted: [0]

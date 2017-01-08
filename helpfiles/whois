@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS whois
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .whois site[@<whois.server>]
+  
+Synopsis:
+  If just a site is given, then it searches the default internic server
+  for any matches of the site given. You can override the default server
+  by entering @a.diff.server. This command just calls on the talker
+  server's 'whois' command.  Like the .finger and .nslookup command,
+  if no activity after 5-10 seconds, just hit enter a couple of times,
+  as the server has to gather the information.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

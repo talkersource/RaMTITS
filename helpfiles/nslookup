@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS nslookup
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .nslookup [site]
+  
+Synopsis:
+  This uses the talker server's 'nslookup' command to try and find the
+  alphanumeric/numeric internet address of the site specified. Which
+  is useful when your wanting to ban all instances of a harassive
+  user.  Like the .finger and .whois commands.. this command may not
+  respond for about 5-10 seconds.. if that's the case, just hit enter
+  a couple of times and it will display the generated file.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

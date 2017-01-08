@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS destroy
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .destroy [<room clone is in>] [<user>]
+  
+Synopsis:
+  If the room isn't specified, this will destroy the user's clone which
+  is in the same room as the user (as long as there is actually a clone
+  there). Otherwise, it will destroy the clone in the specified room
+  that belongs to the user using the command.  If a user is specified,
+  then it will destroy that user's clone, providing the user using the
+  command is of an equal or higher level than the specified user.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

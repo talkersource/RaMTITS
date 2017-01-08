@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS randsoc
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .randsoc [<user>]
+  
+Synopsis:
+  Allows the user to execute a random social. If no user is specified,
+  then it will just execute the social as tho no user was specified.
+  This is just a fun command that allows you to play with different
+  socials without actually having to go through the social list.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

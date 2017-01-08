@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS beep
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .beep [user] [<message>]
+  
+Synopsis:
+  Lets the user send a beep to another user if they are idling away, or
+  something and the user needs to get ahold of them. If no message is
+  supplied, it just sends a terminal beep (normally through the PC
+  speaker). As well as a text message to the user saying "Beep from ..."
+  (replace the dots with your username). So that the user will know
+  who is trying to get ahold of them.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

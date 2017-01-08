@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS sites
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .sites [<user>]
+  
+Synopsis:
+  When the command is used by itself, it provides a listing of the users
+  who are currently online, as well as connection information about
+  them such as their alphanumeric site, the socket they're connected to,
+  and the port that they are logged into (either staff port or user port).
+  If a users name is specified, and that user isn't currently on the
+  talker it will display the last site that the user connected from.
+  If the user is online, then it will display the user's site that they
+  are currently connecting from.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

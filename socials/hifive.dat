@@ -1,0 +1,6 @@
+~CT%s ~FTlooks around for someone to slap a hifive with!
+~CT%s ~FTslaps $G1 own hand in an attempt to hifive $G2self!
+~CB::~CT %s~FTswings $G1 hand up and slaps your hand in a hifive!
+~CB::~FT You swing your hand up and slap ~CT%s's~FT hand in a hifive!
+~CT%s ~FTswings $G1 hand up and slaps ~CT%s~FT a hifive!
+

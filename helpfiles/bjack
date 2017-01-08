@@ -1,0 +1,22 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS bjack
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .bjack
+  
+Synopsis:
+  This command brings you to the blackjack table where you pit your luck
+  against the dealer. First off you can do 1 of 3 things. Deal the cards,
+  Quit playing, or change the Bet. The minimum bet is 6 chips, maximum
+  is 1000. Once you deal the cards, you can Double your bet, if you're
+  sure you're gonna win, and you have enough chips. Or you can Hit, letting
+  yourself take another card. If your satisfied with your hand, you can
+  Stand. Or Surrender, which forfeits the game to the dealer. At any time
+  at the prompt you can type in Quit to quit.  The point of blackjack is
+  to keep your card total under 21, if you go over 21, you will bust, and
+  your money will go to the dealer.  If you get a natural blackjack you
+  automatically win. Same with the dealer. An ace can count as an 11 or
+  1.. the talker will decide if you go over 21 and you have an ace acting
+  as an 11. If at the end when both players stand, you have the higher
+  score.. you win, otherwise, the dealer wins.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

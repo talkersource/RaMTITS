@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS desc
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .desc [<description>]
+  
+Synopsis:
+  
+  If a new description isn't given, this command displays the user's current
+  description.  Otherwise, it changes the user's description to the given
+  text.
+  NOTE: Descriptions can be a maximum of 30 characters, NOT including colour
+        codes.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS finger
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .finger [user<@host>]
+  
+Synopsis:
+  This command uses the servers 'finger' command to gain information on
+  a certain user at the specified hostname. Or allows a user to see who's
+  on the specified host server in which they are fingering. Some servers
+  disable the finger service tho, so it may not work.  After using this
+  command, wait 5 to 10 seconds for the server to finish generating it's
+  information, then if nothing comes up.. just hit enter a couple of
+  times.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

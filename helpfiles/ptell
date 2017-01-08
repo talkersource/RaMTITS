@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ptell
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ptell [user] [picture name]
+  
+Synopsis:
+  Allows you to send one of the talker's pictures to the specified user,
+  providing that the user is currently logged into the talker, and the
+  picture file specified actually exists. For a list of the talker's 
+  pictures, type '.piclist'
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

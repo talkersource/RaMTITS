@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS email
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .email [email address]
+  
+Synopsis:
+  Allows a user to send an e-mail off to the specified e-mail address.
+  Once entering the email address, it will bring the user into the
+  editor, and after they finish the message, it will be sent to the
+  specified e-mail address.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS icqpage
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .icqpage [user] [message]
+  
+Synopsis:
+  Providing that the specified user has their ICQ UIN set, and it isn't
+  hidden, then this command will attempt to send the given message to
+  the user's UIN.  This can be a good way to try and check and see if
+  one of your friends is online.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

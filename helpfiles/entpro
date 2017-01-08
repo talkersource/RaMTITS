@@ -1,0 +1,35 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS entpro
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .entpro
+Command Usage: .entpro [-read|-delete]
+  
+Synopsis:
+  If no flags are given, and .entpro is used by itself, then you will
+  enter the editor where you may enter up a profile / description of
+  yourself.
+  If you use the -read flag, then you can read your current profile
+  without having to ~FY.examine~RS yourself.
+  If you use the -delete flag, the you can remove your current profile,
+  without entering a blank line in the editor.
+  Also note, that in case you come across an error in your profile, rather
+  then having to type the whole thing out again, you can type .entpro
+  and at the prompt, type ~CW'~FR.l~CW'~RS providing you use the RaMTITS
+  editor, and it will load your old profile into memory.
+
+  NOTE: If the talker is using the webpage generator, your profile can
+        contain html tags. This is useful in case you want to have an
+        <img src tag inside of your profile, but don't want everyone in
+        the talker who .examine's you to see it.  The talker ignores everything
+        between the [HTML] and [/HTML] flags in a profile when someone
+        .ex's another user.  To use these tags, while you're in the editor,
+        enter something like:
+
+        [HTML]
+        <img src="http://www.ramtits.ca/mypicture.jpg" alt="My picture">
+        [/HTML]
+
+        Everything between the [HTML] and [/HTML] tags will only be written
+        to your generated webpage file.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

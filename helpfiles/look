@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS look
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .look
+  
+Synopsis:
+  Allows a user to view the room details of the room in which the user
+  is currently in.  It displays such information as: the room's
+  description; the user's who are in the room, (not including the user
+  executing the command); the other rooms which are linked to the room;
+  the room's access; the amount of messages on the room message board;
+  and the topic for that room.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

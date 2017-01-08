@@ -1,0 +1,253 @@
+.-------.
+| 1.0.1 |
+`-------'
+- To many too name from the original NUTS 3.3.3 version.
+
+.-------.
+| 1.1.1 |
+`-------'
+- Added record_commands() which records the commands that are being used by the
+     users.  Added .debug which toggles the talker debugging on/off.  If it's
+     on, then when the talker crashes, it takes the commands which are stored
+     in memory and prints them out to the debug_file which can be viewed with
+     .debug -read
+- Added a .icqpage which pages the given text to the given user providing their
+     icq number is set.
+- Wrote ALL helpfiles, making all of them up to date and completely accurate.
+- Redid .delold, the way it was working before didn't actually delete the
+     users, now it loads the users details and deletes the user if they aren't
+     protected from deletion, and their last_login_time >= DELETE_SECS
+     NOTE: 1 day = 86400 seconds
+- Added a delete_files() function in order to easily get rid of files instead of
+     having to delete each one in each function that deletes them all the time.
+- Redid the way it loads and saves the user details, mainly cuz I got sick
+     of everything being all mixed together. But now all values of type 'char'
+     get saved to user->name.C and all values of type 'int' get saved to
+     user->name.I
+- Added a webpage generator. If webpage_on is on, it will create a username.html
+     file in the WWW_DIR/userfiles with all of their information, once the user
+     sets something with .set, or .entpro. Also does the same thing with room
+     files upon completion of .entroom or .edit. Once those commands are done,
+     it writes the name of the room/user to a set file, and every 24 hours the
+     talker will open up that list and make a webpage for it. For more info read
+     ramtits/documents/webpages.
+- Added a give_stuff function to give users stuff, in case of lost accounts
+     and shit like that. Just got to add a take_stuff function next ;-)
+- Instead of having a different write_ function for each log file, such as
+     the syslog, and loginlog, etc, I moved it all into one function. Figured
+     I may save some space that way. *shrugs* maybe I am getting lazier in my
+     days.
+- Added a who_webpage() function so that users may check to see who's on
+     the talker just by going to the talkers webpage and clicking the link
+     that leads to the "whofile.html".
+- Added the ability to capture tell revbuffers, room revbuffers, and specific
+     s-mail messages w/ .capture. I figure this can help prevent alot of 
+     harrassive users. This is user controlled, not for spying :P
+- Located about 43 missing fclose()'s in total. Found them in the wipe_board()
+     delete_mail() and forward_smail() functions. Hopefully this will solve a
+     bug that has been baffling me for a while.
+- Added a rename_logfiles() function so that it doesn't make my check_messages()
+     function look so ugly ;-).
+- Added a protect(user) function so that users can be protected from being
+     deleted via the .delold command. I know, I know, a lot like amnuts, but
+     Andy did have some great ideas :-).
+- Fixed a bug in examine() (people where wondering why there Examined wasn't
+     going up) Reason: if the user being examined wasn't on, the u->examined++
+     wasn't being saved. Simply added: if (!on) save_user_details(u,0);
+- Went through rooms.c and noticed a bunch of ways to get around the fact that
+     users in hidden rooms can just go to anyroom. Which they shouldn't they 
+     should only be able to go to the main room!
+- Went and added more defaults to the talker, such as login_hide, (the message
+     if a hidden user logs in) etc. Did that cuz it's easier then having to type
+     all the stuff over and over again. Also moved stuff from ramtits111.h to
+     library1.h (the ramtitsxxx.c main library) just cuz I prefer to keep all
+     my default shit in one file.
+- Took out .viewsys, .viewemail, .viewwww, .viewtelnet, .viewlog, etc and just
+     put it all into a .view command.
+- Added a .randsoc command, which lets a user use a random social (they won't
+     even know themself what social their using). Had to add a SOC_NAME file so
+     that the talker can read it in, and know which social to execute.
+- Added a different kind of swearing ban, this one, if its on, arrests the
+     users who swear in shouts/fixed private rooms, sends em to the jail, and
+     all that funky stuff ;-) So in order to toggle it on/off, i just added a
+     couple of options to .swban, instead of that just toggling on/off the
+     swearing ban. Now it can be used .swban -ban or -arrest. I think it's
+     pretty self explanatory from there ;-)
+- Fixed the speech commands where it says %s %s => that has the type in it, now
+     it strips the colour of the inpstr and checks the end of it for ;) and
+     all those other different types. Did this because some people like to
+     colour their smiley faces.
+- Added a couple of options to .mutter so users can mutter things to a specific
+     gender. Like .mutter -male <message> would write the message to everyone in
+     the room if they were female.
+- Finally added all of the trivia questions.
+- Fixed up craps a bit so it actually goes by the rules somewhat.
+- Fixed a bug with the editor that wouldn't tell the user they have new tells
+     upon leaving the editor.
+- Added a file_size function that checks the size of the given file name,
+     mainly used to figure out how much s-mail a users s-mail box is allocating.
+     Three different flags in the main header file for it too, one for users,
+     one for members, and one for staff. If the user->sm_bytes is > then 
+     their defined flag, then it will stop them from getting anymore s-mail
+     messages.
+- Started using the get_user_full for some functions that were using the
+     write_user(get_user()), so that fixed a minor bug.
+- Fixed a bug with .samesite where in the .samesite site option, it was looking
+     for a u_loop->name, switched to u->name, should work now ;)
+- Attempted to fix a bug w/ my telnets that if you tried to connect to a site
+     it would lag the talker up pretty bad if you were trying to connect to a
+     laggy server. So I used a function from the authlookup, and hopefully
+     that'll get it working properly ;)
+- Added a "checksmail" option to the login prompt, when used, it'll prompt the
+     user for their name and password, and let them know if they have any unread
+     s-mail or not. Figure this can stop alot of traffic from people who do just
+     come on to see whether or not they have unread s-mail.
+- Removed the csay, and cemote commands, now they are all in one function called
+     clone_exec, which can now make the clone execute any command. even socials.
+     ie: .cexec cove .hug squirt  Would make the clone use the social 'hug' on
+     the user 'squirt'.. figured that would make clones funner ;)
+- Added a '~RD' colour command. It isn't defined in the main header file tho,
+     so you can change this value to whatever you want, I chose ~RD, because it
+     suits what it does, which generates a random colour out of the char *rcolour
+     which ARE defined in the config. Tiz pretty cool if ya ask me ;-)
+- Added a few more shortcut keys such as ` for say, etc, etc, when i get around
+     to it I'll write a .text shortcuts for the users. (wrote it)
+- Had to go through each .c file with a fine tooth comb, because I found an
+     interesting bug with the .cexec, they could execute ANY command.. so I
+     had to limit which commands they could/could not use.
+- Added 3 new room accesses, INV_MALE, INV_FEM, INV_ALL. INV_MALE lets only
+     male users have access to the room, toggled w/ .invite male, INV_FEM does
+     the same thing, except instead of male, does it with female, INV_ALL lets
+     all users in. Upon inviting with the -male, female and all flags, it will
+     set the users access to the room to the proper one.
+- Added a list_users() function which just lists all the users who have accounts
+     on the talker.
+- Added an all option for the bank, so they can deposit/withdrawal, all their
+     money or chips.
+- Totally fucked around with room accesses til I got it the way I like it.
+- Added a battle ship game. Play it, it kicks ass :-)
+- Added a replace_string() function that would take inpstr, and locate 'find'
+     and replace it with 'replace'. syntax, would be:
+     inpstr=replace_string(inpstr,"%s",user->recap) Which would find instances
+     of %s and replace it with user->recap. Used for room descriptions, and 
+     profiles so far...
+- Added REAL macros. (changed the old macros to aliases) what these allow is
+     a user to set one, and upon typing anything that deals with speech, then
+     it takes user->fmacro[i] and replaces it with user->rmacro[i]. Key note,
+     don't fuck with the replace_macros() function.
+     Syntax for macros:
+         .macro 1 squ = ~RDS~FMquir~RDT <defines squ to be SquirT w/ colours>
+         .macro 1 -delete <deletes the 1st macro>
+         .macro <lists out all the users macros>
+     I personally think these kick ass *shrugs* you may feel different
+- Added an alarm clock so users can set it, and upon it going off, it'll let
+     them know that their alarm has gone off!
+- Re-did the way that game_stats() looks, figured the way it looked was ugly
+     so i just redid the way it was done. Looks much better now :-)
+- Added a toss game, so users can flip the coin, and randomly win.
+- Went through the main source file and cleaned it up quite a bit.
+- Removed .connreset, and .ticreset, no more point for these functions I hope.
+     If a problem does arise, then upon starting a game just quit right away and
+     it *should* reset.
+- Added a smiley_type() function to check the end of a string and replace it
+     with the proper type of speech ie, user->recap smiles/winks/frowns.
+- Found a bug that was corrupting user files, if they set their description to
+     more then 81 characters, with the colour coms, quickly stomped that bug!
+- Located a minor bug in ban_user() that was thinking one of the greater values
+     was actually the user level.. forgot to convert this file over when I
+     converted the userfiles.
+- started using the replace_string() function for more things... added a new
+     speech type :-)
+- Went through the login() function and made it look nicer.
+- Updated .promote so you can promote to a specific level, same with demote.
+- Fixed a small bug in .wiztell, and .wemote.
+- Added a .ignore and .listen swears, so users can ignore swear words if they
+     wish.
+- Made time a 12 hour clock instead of a 24 hour.
+- Noticed a bug with review buffers...
+- Changed around the destruct_room(), it was crashing.. dono if the change
+     will have any major affect, here's hoping..
+- Added a .toemote, does the same thing as .to, except directs it as an emote.
+- Added .revchan, and .chcbuff.
+- Added a guessit game where users try to guess the random number that was
+     chosen for them.
+
+.-------.
+| 1.1.2 | * First major alpha release* (Distribution copy) [1.1.3 = my copy]
+`-------'
+- Fixed a minor bug with the .netsex... if a user tried to netsex themself it
+     used to read (null) tried to netsex themself.
+- Fixed another bug with the .time +/- options (I think, don't want to reboot,
+     and ruin my run of so far total uptime of 6 days ;) )
+- Added a redo_time() function which I obtained from Reddawg (from stairways
+     code.. was just going to add it ONLY to stairways code, but well, I figured
+     I was going to base the dist. copy from this code...
+- Added a shout ban too, if it's on, then it pretty much disables users from
+     shouting period.
+- Added gender types for socials, so a socials can now be gender specific.
+- General bug fixes with the get_user() function, and hidden rooms.
+- Re-did the way macros were done... Think that was causing a bug that was
+     totally fucking up users speeches.. Still undetermined if I'm going to be
+     putting macros in the distribution copy.
+- Went through rooms.c again and fixed up alot of bugs that I noticed when I
+     was converting Stairway To Heaven's code to RaMTITS.
+- Took out my old replace_string function, seems that it was screwing up more
+     then it was before... decided also to re-do certain functions.
+- Took out hidden rooms completely, until I decide how I want to do them again,
+     they were causing to many crashes.
+- Added more comments throughout the code, in hopes that it'll be easier for
+     people who don't know how to code to know whats actually going on.
+- Removed the following commands: topen, tsay, tphone, tlist, mtell, bship,
+                                  chess, macros, session, comment, trivia,
+                                  lynx
+     Figured those were the major ones I didn't want to go out in the dist.
+     copy quite yet. (Made an exception for Stairway, kinda cuz i'm the coder
+                    there ;-) )
+- Went and fixed up the load_user_details() a bit.. hopefully that'll fix
+     some bugs as well.
+- Fixed another bug, with the creating of users rooms.. was doing an array
+     overflow when creating the users room.
+- Had to go through and customize somewhat the way it looks, so it looks more
+     like a generic talker rather then either DC, or S2H.
+- Had to make a check_sockets() function that will cycle through the sockets
+     every half hour and close any dead ones. For more info on this bug, see
+     the file 'known_bugs'
+- Added a block so users can't type '.q' instead of '.w' by mistake. Instead
+     unless they are in command_mode, they will have to type at LEAST '.qu'
+     In my own personal version I added something that fucks up the users
+     totally if they try and just '.q' hehe I find it pretty funny ;-)
+- Added more documentation to ~/ramtits/documents, hopefully it will help out
+     users a fair bit.
+- Added the sysv_signal().... actually did more then this if compiled via
+     the compile script and the -DGLIBC207 is uncommented then it will 
+     use the sysv_signal() otherwise it'll just use the signal() function.
+- Sent out a patches.c file which had the following changes:
+	- Put the following user structures in memory:
+		-user->friends,user->enemies,user->allowcom,user->denycom
+	  I did this in order to see if that will fix a problem I've been
+	  having with Stairways code. (Thanks to Andy for showing how I should
+	  put it into arrays properly.
+	- Put the following stuff in structures for the talker:
+		-staffmember,member,and disabled.
+	  Did this for the same reason as above.
+	- Re-did the way .friends and .enemies worked, much like that way
+	  Andy does it in Amnuts now.
+	- Re-did the way that disable_com works.
+	- Took out the .unenemy, and .unfriend commands.
+	- Changed MAX_BLOCKS to MAX_ENEMIES.
+	- Changed the way it searches for enemies if a user tries to .t
+	  someone.
+	- updated friend_who, friend_tell, friend_emote so they all work with
+	  the new way friends are done.. Thanks again to Andy.
+	- updated the load_user_details, and save_user_details (took out the
+	  old user->friends and user->enemies in there.)
+	- Fixed something in smail(user,inpstr,done_editing).. dono if this
+	  was helping to contribute the problems I've had with sockets.
+- Updated the helpfiles for friend and enemy.
+
+NOTE: I put everything into arrays with much reluctance because I hate consuming
+      memory, but if this goes as it's supposed to, then well, it'll be worth
+      it because another thing I noticed with the way I was doing it before,
+      is that it could really bog down the talker if lots of people were online.
+      I'm also going to be renaming patches.c to module2.c once I finish the
+      module.

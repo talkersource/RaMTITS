@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS femote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .femote [message]
+  
+Synopsis:
+  Like .ftell, this command sends the message to all the people in the
+  users friend list, except this displays it as an emotion. Also like the
+  .ftell command, people may ignore these messages by ignoring friends
+  with the '.ignore' command.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

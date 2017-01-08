@@ -1,0 +1,22 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS cbuff
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .cbuff -tells
+Command Usage: .cbuff -shouts
+Command Usage: .cbuff -channels
+Command Usage: .cbuff -wiz            [For level GOD and above]
+Command Usage: .cbuff [<room name>]
+  
+Synopsis:
+  ~CR.cbuff -tells~RS will clear your personal tell buffer.
+  ~CR.cbuff -shouts~RS will clear up the shout buffer.
+  ~CR.cbuff -channels~RS will clear up the channel buffer.
+  ~CR.cbuff -wiz~RS will clear the wiz buffer if you are of level GOD
+  and above. If not, you'll be told you can't use this option.
+  Using .cbuff by itself will clear the buffer of the room that you are
+  currently in. If you specify a room and your level is lower then ADMIN,
+  then chances are you'll only clear the review buffer of the room
+  that you're currently in. (Actually there are no chances of this..
+  that is what actually will happen :p)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS nofight
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .nofight
+  
+Synopsis:
+  Allows a user to ignore fighting requests, so that other users may not
+  .fight them.  If they are currently ignoring the fighting requests, then
+  this command may be used to allow them to listen to fight requests
+  again, and be challenged to fights.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

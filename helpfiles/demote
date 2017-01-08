@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS demote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .demote [user] [<level>]
+  
+Synopsis:
+  If a level name isn't specified, then it will lower the given users
+  level by one, otherwise it will lower the users level to the specified
+  level.  If the given users level is that of a staff level, and the
+  level being demoted to is lower than a staff level then it will prompt
+  the user who is using the command if they wish to remove the given
+  user from the staff list.  If the user chooses yes, then the user
+  will lose any staff ranks that they had. If the user says no, then
+  when the user gets re-promoted, they won't have to be added to the
+  staff list again.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

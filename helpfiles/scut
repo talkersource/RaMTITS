@@ -1,0 +1,28 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS scut
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .scut
+Command Usage: .scut [character] [command to execute]
+  
+Synopsis:
+  If the command is used by itself, then this command will show the user
+  a list of shortcuts that they already have set. (If you're a new user
+  the talker defines 'default' shortcuts to you.)
+  
+  To set a shortcut, just type:
+    .scut [character] [command to execute]
+  The character can be anything except for alphabetical letters.. so
+  anything such as !@#$%^&*(, etc. A user is only allowed 28 of their
+  own shortcuts. (Which is virtually all of the special characters on
+  the keyboard)
+  
+  To remove a shortcut, just type:
+    .scut [character]
+  The character just has to be a shortcut that has already been set.
+  So say I have a shortcut for ';' to execute '.emote' and were to type:
+    .scut ;
+  That would remove my shortcut for the ';' character.  You can also
+  change shortcuts on the fly by typing '.scut [char] [new command]' and
+  it will change it accordingly.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,112 @@
+#!/bin/sh
+
+# Define this as the location of your home directory, and uncomment ONLY
+# if your *nix flavour doesn't pre-define this for you.. but it should.
+
+#HOME=/home/login
+
+# Define this as where your talker files are located ($HOME is pre-defined
+# or at least it should be.. if your not sure, type $HOME on the command
+# prompt and it should give you something like:
+# bash: /home/squirt: is a directory
+
+TALKERDIR=$HOME/ramtits-2.2
+
+# The location of tar, the archiver we use.  Please note that the version of
+# tar you use must have the ability to use gzip in the command line (-z)
+# Tested on GNU tar version 1.13 (to check if your tar can handle the '-z'
+# flag, try 'tar --help | grep gzip' and if nothing comes up, your copy of
+# tar can't handle the -z flag. If this is the case, comment out these options
+# and use the zip option below this one.
+
+COMPRESS="/bin/tar -zvcf"
+COMPEXT=tar.gz
+
+# If you disabled the option above, or you would rather use 'zip' to backup
+# your files, make sure that the tar line above is commented out and this one
+# is commented. You must specify the proper path to the zip executable.
+
+#COMPRESS="/usr/bin/zip -v9r"
+#COMPEXT=zip
+
+# Define this to where you want your files saved to.
+
+BACKUPDIR=$HOME/rt2.backup
+
+# Define this to what you want to name the backup file.
+
+BACKUPFILE=rt2backup
+
+MYDIR=$PWD
+
+cd $TALKERDIR
+mkdir tmpbakdir
+echo "-- Backup started on: `date`" > ./Backuplog
+
+echo " |--- Userfiles backup starts." >> ./Backuplog
+$COMPRESS userfiles.$COMPEXT userfiles >> ./Backuplog
+echo " |--- Userfiles backup ends." >> ./Backuplog
+
+echo " |--- Source code backup starts." >> ./Backuplog
+mkdir tmpsrc
+cd src
+cp *.c ../tmpsrc
+cp -r include ../tmpsrc
+cp Makefile* ../tmpsrc
+cd ../tmpsrc
+mkdir src
+mv *.c Makefile* src
+mv include src
+$COMPRESS src.$COMPEXT src >> ../Backuplog
+mv src.$COMPEXT ../tmpbakdir
+cd ..
+rm -rf tmpsrc
+echo " |--- Source code backup ends." >> ./Backuplog
+
+echo " |--- Social backup starts." >> ./Backuplog
+$COMPRESS socials.$COMPEXT socials >> ./Backuplog
+echo " |--- Social backup ends." >> ./Backuplog
+
+echo " |--- Banned list backup starts." >> ./Backuplog
+$COMPRESS banned.$COMPEXT banned >> ./Backuplog
+echo " |--- Banned list backup ends." >> ./Backuplog
+
+echo " |--- Lottery backup starts." >> ./Backuplog
+$COMPRESS lottery.$COMPEXT lottery >> ./Backuplog
+echo " |--- Lottery backup ends." >> ./Backuplog
+
+echo " |--- Datafiles backup starts." >> ./Backuplog
+$COMPRESS datafiles.$COMPEXT datafiles >> ./Backuplog
+echo " |--- Datafiles backup ends." >> ./Backuplog
+
+echo " |--- Screen backup starts." >> ./Backuplog
+$COMPRESS screens.$COMPEXT screens >> ./Backuplog
+echo " |--- Screen backup ends." >> ./Backuplog
+
+echo " |--- Roomfiles backup starts." >> ./Backuplog
+$COMPRESS roomfiles.$COMPEXT roomfiles >> ./Backuplog
+echo " |--- Roomfiles backup ends." >> ./Backuplog
+
+echo " |--- Utility backup starts." >> ./Backuplog
+$COMPRESS utils.$COMPEXT utils >> ./Backuplog
+echo " |--- Utility backup ends." >> ./Backuplog
+
+echo " |--- Miscfile backup starts." >> ./Backuplog
+$COMPRESS miscfiles.$COMPEXT miscfiles >> ./Backuplog
+echo " |--- Miscfile backup ends." >> ./Backuplog
+
+mv *.tar.gz tmpbakdir
+mv tmpbakdir $BACKUPFILE
+$COMPRESS $BACKUPFILE.$COMPEXT.new $BACKUPFILE >> ./Backuplog
+mv $BACKUPFILE.$COMPEXT.new $BACKUPDIR
+rm -rf $BACKUPFILE
+cd $BACKUPDIR
+if [ -f $BACKUPFILE.$COMPEXT ]; then
+  mv $BACKUPFILE.$COMPEXT $BACKUPFILE.old.COMPEXT
+fi
+mv $BACKUPFILE.$COMPEXT.new $BACKUPFILE.$COMPEXT
+if [ -f $BACKUPFILE.$COMPEXT ]; then
+  echo "-- Backup finished at: `date`" >> $TALKERDIR/Backuplog
+else
+  echo "-- Backup failed." >> $TALKERDIR/Backuplog
+fi

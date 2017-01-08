@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS fold
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .fold [<words to fold by>]
+  
+Synopsis:
+  Lets a user fold from poker.  Used mainly if the user has a crappy
+  hand, or just wants to sit out of the current game.  They can specify
+  what they want to say when they fold by typing in some text after
+  the command.  If they don't enter any text, it just uses the default
+  fold message.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

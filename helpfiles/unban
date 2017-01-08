@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS unban
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .unban -site [site to unban]
+Command Usage: .unban -new  [site to unban]
+Command Usage: .unban -who  [site to unban]
+Command Usage: .unban -user [name of user to unban]
+  
+Synopsis:
+  This does the opposite of what the '.ban' command does. Instead of
+  denying a site/user access to the talker, providing that they are
+  currently banned, then this command will remove the ban.  If you're
+  not sure which site(s) to unban, use the '.listban' command to see
+  a list of all the current bans.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

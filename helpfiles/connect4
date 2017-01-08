@@ -1,0 +1,24 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS connect4
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .connect4 [user]
+Command Usage: .connect4 [-accept|-reject]
+  
+Synopsis:
+  When a user is specified at the command line, it offers a challenge
+  to the user providing that they are logged on. After they are offered
+  the challenge, they can accept or reject the offer with the appropriate
+  flags, and informs the challenger the decision.
+
+  Once the game has been accepted, a grid is laid out, and gives the
+  first player a prompt where they can view their status by typing
+  ~CW'~CRboard~CW'~RS, quit playing the game by typing ~CW'~CRquit~CW'~RS
+  or entering a number corresponding to the column they want to drop
+  a piece down.  The point of the game is to connect 4 of the same
+  pieces, represented by ~CW'~CRX~CW'~RS and ~CW'~CRO~CW'~RS on the grid.
+
+  The game continues until four pieces are together, either vertical,
+  horizontal, or diagonal.  Or one of the users quit, or all the pieces
+  on the grid are filled.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

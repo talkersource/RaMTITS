@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS edit
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .edit
+  
+Synopsis:
+  This command will only work if you are a staff member, or you own your
+  own personal room. This command basically just allows you to enter a
+  description to your room, allowing you to customize it and make it feel
+  more homey.  When used, it brings the user into the editor, where they
+  have a certain amount of lines to enter their description.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

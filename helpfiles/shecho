@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS shecho
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .shecho [text to echo]
+  
+Synopsis:
+  Echoes something to the screen of every user on the talker. Users names
+  cannot be echoed, and staff members, providing they are monitoring
+  can see which user is doing the echo.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

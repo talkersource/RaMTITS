@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS gstat
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .gstat [<user>]
+  
+Synopsis:
+  If a user is specified, then this prints out the gaming stats of the
+  specified user.  Gaming stats include the number of wins, losses or
+  ties in tic tac toe games, connect 4 games, hangman games, as well
+  as a few other of the games.  If no user is specified, then it just
+  gives the user their own gaming stats.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

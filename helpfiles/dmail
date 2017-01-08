@@ -1,0 +1,26 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS dmail
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .dmail -all
+Command Usage: .dmail -top [# of messages]
+Command Usage: .dmail -bottom [# of messages]
+Command Usage: .dmail #
+Command Usage: .dmail # - #
+Command Usage: .dmail # # # ... (up to 5 numbers)
+  
+Synopsis:
+  
+  When the ~CW'~CR-all~CW'~RS option is used, it deletes all of the s-mail in your mailbox.
+  It's a good idea to use this after using the ~CW'~CR.fsmail~CW'~RS command. If the ~CW'~CR-top~CW'
+  option is used with a corresponding number, and the number is less than the
+  amount of messages in your mailbox, it deletes all of your messages,
+  starting from the top and going to the specified number.  The ~CW'~CR-bottom~CW'
+  option is used pretty much the same way, except it goes from the bottom up.
+  If a single number is given, it will delete the specified mail message from
+  your mailbox.  You can find the message numbers using the ~CW'~CR.from~CW'~RS command.
+  You can also delete from a certain number to another number by using the
+  ~CW'~CR.dmail # - #~CW'~RS option which will delete all mail in between the two numbers
+  specified, including the two numbers.  You can also just specify up to 5
+  message numbers by using the ~CW'~CR.dmail # # # # #~CW'~RS option.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

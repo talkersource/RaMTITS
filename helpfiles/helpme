@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS helpme
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .helpme
+  
+Synopsis:
+  Sends a distress (help) call to the staff members of the talker,
+  providing that there is at least one logged on. If there are no
+  staff members online however, it will let the user know that there
+  isn't.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

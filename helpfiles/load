@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS load
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .load
+  
+Synopsis:
+  This command basically just forces a reload of all the variables in the
+  talker (staff, disabled commands, etc). The talker should reload the
+  variables automatically after promoting a staff member and adding them
+  to the staff file, but you just might want to use this command to be
+  sure.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

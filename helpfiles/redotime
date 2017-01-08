@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS redotime
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .redotime [user] [# of days] [# of hours]
+  
+Synopsis:
+  This command allows you to change the total login time of a particular
+  user. Please be aware, that if you only want to change the number of
+  hours, you have to specify the original number of days, or a zero (0)
+  and then the number of hours.  This command is good in case an old user
+  happened to get deleted and you feel they deserve their original login
+  time back.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

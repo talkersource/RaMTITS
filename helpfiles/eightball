@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS eightball
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .eightball [question to ask]
+  
+Synopsis:
+  Asks a question to the mystical eightball. From there, the eightball
+  will give an answer to the question. But in order for it to work, the
+  question must actually be in the form of a question, otherwise you
+  won't get a response.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

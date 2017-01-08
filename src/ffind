@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Enter the location of grep here.. usually found in /usr/bin
+GREP=/usr/bin/grep
+
+if [ "$*" == "" ]; then
+  echo "Usage: ./ffind [name of function]"
+  exit 1
+fi
+
+printf "\nPlease wait.. searching for function...\n\n";
+$GREP -n "int $*(" *.c
+$GREP -n "char \*$*(" *.c
+$GREP -n "void $*(" *.c
+$GREP -n "User $*(" *.c
+$GREP -n "Room $*(" *.c
+$GREP -n "Pgame $*(" *.c
+$GREP -n "Pplayer $*(" *.c
+$GREP -n "Bjack $*(" *.c
+$GREP -n "Convbuff $*(" *.c
+$GREP -n "Commands $*(" *.c
+$GREP -n "Bship $*(" *.c
+$GREP -n "Bans $*(" *.c
+exit 0

@@ -1,0 +1,6 @@
+~CT%s ~FThas a screw loose in $G1 head... someone should tighten it!
+~CT%s~FT keeps screwing $G2self over and over again... what a shame!
+~CB::~CT %s ~FTtosses you a screw and winks at you!
+~CB::~FT You toss ~CT%s~FT a screw and wink at $G5!
+~CT%s~FT tosses ~CT%s~FT a screw and winks at $G5!
+

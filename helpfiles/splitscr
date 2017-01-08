@@ -1,0 +1,19 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS splitscr
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .splitscr
+  
+Synopsis:
+  Allows a user to toggle on/off a "split screen" which will enable
+  them to see their input in one *window* and the output shows up in
+  the top part of the screen. This is handy for those people who like
+  having their input seperated from their output, but don't have a telnet
+  application that seperates these things by default. If you toggle it
+  on, and notice that your screen is behaving in a wierd way, this may
+  be because your rows/columns weren't '.set' properly. (Use .set rows
+  and .set columns to set these.)  Or your telnet client might not
+  support this feature.  Clients such as gMUD, zMUD, and tinyfugue should
+  NOT be used with this feature as it has some very undesirable affects
+  on the users terminal, so consider this a warning.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

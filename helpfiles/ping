@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ping
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ping [<user>]
+  
+Synopsis:
+  If a user isn't specified, then it will display the ping listings for
+  all the users currently logged onto the talker. Showing how fast/slow
+  their connection appears to be.  If a user is specified, then it shows
+  that users ping times, which show how long it takes for the talker
+  to communicate with the user. This is good in case you want to see why
+  your friend is taking so long to reply to you.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

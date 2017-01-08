@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS socials
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .socials
+  
+Synopsis:
+  Shows a listing of all the socials that the talker has to offer.  To use
+  a social is just like using a normal command.  Socials send different
+  things if: a) The user uses the social by itself; b) the user uses the
+  social on themself; c) the user uses the social on another user in a
+  different room; and d) the user uses the social on another user who is
+  in the same room.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

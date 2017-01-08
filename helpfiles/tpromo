@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS tpromo
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .tpromo [user]
+  
+Synopsis:
+  Allows a user to temporarily promote another user to the next highest
+  level of that user.  If a user is already temporary promoted, then it
+  will temp promote them to the next highest level of their temp promoted
+  level.  The temporary promotion ends when the user logs off of the
+  talker.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

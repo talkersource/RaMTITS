@@ -1,0 +1,42 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS bank
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .bank [<option>] [<arguments>]
+  
+Synopsis:
+  If used alone, and the user is using the RaMTITS menu system, the user
+  will then be brought into the bank menu where they will be prompted for
+  what they want to do.  You can get a general idea on what the different
+  choices do by reading below what the different command line options are.
+  If you aren't using the menu system, then you will be given a list of
+  options to use:
+
+  ~CW'~CRdmoney  ~CW'~CB: ~CRUsage~CB:~CR .bank dmoney ~CB[~CRamount to deposit~CB]
+                This option lets the user deposit however much they want
+                into the bank. If they want to deposit all their money, just
+                enter '1' for the amount.
+
+  ~CW'~CRwmoney  ~CW'~CB: ~CRUsage~CB:~CR .bank wmoney ~CB[~CRamount to withdrawal~CB]
+                This option lets the user withdrawal however much they want
+                from the bank. If they want to withdrawal all their money,
+                just enter '1' for the amount.
+
+  ~CW'~CRdchips  ~CW'~CB: ~CRUsage~CB:~CR .bank dchips ~CB[~CRamount to deposit~CB]
+                This option lets the user deposit however much they want
+                into the bank. If they want to deposit all their chips, just
+                enter '1' for the amount.
+
+  ~CW'~CRwchips  ~CW'~CB: ~CRUsage~CB:~CR .bank wchips ~CB[~CRamount to withdrawal~CB]
+                This option lets the user withdrawal however much they want
+                from the bank. If they want to withdrawal all their chips,
+                just enter '1' for the amount.
+
+  ~CW'~CRtransfer~CW'~CB:~CR Usage~CB:~CR .bank transfer ~CB[~CRuser~CB] [~CRmoney~CW|~CRchips~CB] [~CRamount~CB]
+                This option lets the user transfer however much money or
+                chips into the user of their choice bank account. In order
+                for this to work, the specified user must be online, and
+                they must have the amount of money or chips that they
+                specified.
+
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

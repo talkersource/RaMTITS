@@ -1,0 +1,19 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS finduser
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .finduser [<search pattern|level name>]
+  
+Synopsis:
+  If no extra arguments are given at the command line, then this command
+  will display a listing of all the users who currently have an account
+  on the talker.  If a search pattern is specified, it will go through
+  all the names of users who have an account on the talker and display
+  a list of the users who have the search pattern in their name. For
+  example, typing ~CW'~CR.finduser t~CW'~RS would list all the users who have a ~CW'~CRt~CW'
+  anywhere in their name.  Also.. you can now enter a level name and
+  it will display all the users who have that level. So if I wanted a
+  list of all the users at ~CW'~CRuser~CW'~RS level I would type: ~CW'~CR.finduser user~CW'~RS
+  and it would print out a list of user names that are at that level.
+  For a listing of your talker's levels, type: ~CW'~CR.levels~CW'~RS.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

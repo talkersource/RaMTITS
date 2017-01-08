@@ -1,0 +1,39 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS pet
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .pet [-name] [a name for your pet]
+Command Usage: .pet [-list]
+Command Usage: .pet [-trade] [# of new pet]
+Command Usage: .pet [-train] [action] = [trigger]
+Command Usage: .pet [-untrain] [action]
+Command Usage: .pet [action] [any extra arguments]
+
+Synopsis:
+  When the -name flag is used, it renames your pet to the specified name.
+  The name cannot contain colour characters, and is limited to 12
+  characters.
+  
+  When the -list flag is used, it lists the current triggers that you
+  have set for your pet.
+  
+  When using the -trade flag, you can change the type of pet that you
+  have, so instead of having a dog, you could trade it for a cat.
+  
+  To train your pet, you need to use the -train flag, followed by an
+  action name, the equals (=) sign, and the trigger to execute.
+  For example:
+    .pet -train lick = licks $1's nose
+  And when using ~CW'~FR.pet lick squirt~CW'~RS it will execute the trigger
+  as: <pet name> licks squirt's nose
+  You can use $1, $2, $3, in the trigger, and when performing the trigger
+  it will replace them with the appropriate command line options.
+  i.e: .pet [action] [argument1] [argument2] [etc]
+  
+  To untrain your pet, you just need to specify the -untrain flag at
+  the command line, followed by action you want your pet to no longer
+  be trained to execute.
+  
+  Otherwise, you can use .pet <action> and if your pet has <action> set to
+  execute a trigger, then it will execute the trigger that corresponds
+  with the action.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--

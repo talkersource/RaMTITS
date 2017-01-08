@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS minlogin
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .minlogin [level name|none]
+  
+Synopsis:
+  If a level name is specified, then it will set the talker's minimum
+  login level to that level, meaning that noone who is below the specified
+  level may log into the talker.  If the 'none' option is used, then
+  it will remove the talker's minimum login level, and allow all users
+  to be able to connect and log into the talker.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

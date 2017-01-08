@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS wake
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .wake [user]
+  
+Synopsis:
+  Allows a user to send a wake up call to the specified user. Unlike
+  beeps (which a user may ignore) this will be sent to the specified user
+  whether or not they are ignoring beeps.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

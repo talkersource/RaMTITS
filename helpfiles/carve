@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS carve
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .carve [<message>]
+  
+Synopsis:
+  
+  If used alone, places the user in the talker's editor to write a message
+  on the message board that the user is in.  If a message is included, posts
+  the specified message on the message board for the room that the user is in.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

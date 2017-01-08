@@ -1,0 +1,14 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS kill
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .kill [user] [<# of kill message>]
+Command Usage: .kill -list
+  
+Synopsis:
+  When the '-list' flag is given it displays the different kill phrases
+  for when you use the command on a specified user.  If you specify
+  a user, then it disconnects that user from the talker, and displays
+  the # of the kill message that was specified. If no kill message
+  was specified, then it will randomly pick one.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

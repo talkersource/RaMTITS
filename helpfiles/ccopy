@@ -1,0 +1,23 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS ccopy
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .ccopy # [user]
+Command Usage: .ccopy -del [# of carbon copy to delete|all]
+  
+Synopsis:
+  This command allows you to send carbon copies of your s-mail to more
+  then one user. To set a carbon copy use ~CW'~CR.ccopy # ~CB[~CRusername~CB]~CW'~RS where
+  the number can be between 0 to 5. So you can send out a maximum of
+  6 carbon copies of your s-mail. When you have carbon copies set, all
+  the users who are in your carbon copy list will receive a copy of any
+  s-mail you send out. So if you want to keep your s-mail private, make
+  sure noone is in your carbon copy list. (To check, you can type
+  ~CW'~CR.ccopy~CW'~RS by itself. If you just get the usage, then noone but the person
+  you s-mail will get the s-mail. If you want to delete someone from your
+  carbon copy list, then use ~CW'~CR.ccopy -del #~CW'~RS or ~CW'~CR.ccopy -del all~CW'~RS where the
+  number sign is replaced by the number of the user you don't want to
+  receive any carbon copies. If you don't want anyone to receive any
+  copies of your s-mail, simply type ~CW'~CR.ccopy -del all~CW'~RS as that will
+  clear your carbon copies list.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS topic
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .topic [<-lock> <a new topic>]
+  
+Synopsis:
+  When the command is used by itself, it shows the topic of the room
+  that the user is currently used.  If the -lock option is used, then
+  the topic becomes 'locked' at the level of the user using the command.
+  So only someone greater or equal to that level may change it.  To
+  just change the topic, just enter in the topic you want.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

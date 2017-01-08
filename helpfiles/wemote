@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS wemote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .wemote [<staff level>] [message]
+  
+Synopsis:
+  If a staff level isn't specified, then the command will default to
+  the WIZ level.  This command basically does the same that .wiztell does
+  except it displays it in an emoted message.  So it displays an emoted
+  message to anyone of the given level or above, the specific message.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

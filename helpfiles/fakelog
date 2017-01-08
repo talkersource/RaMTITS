@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS fakelog
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .fakelog
+  
+Synopsis:
+  If the user is already fake logged off, this command makes it look as
+  tho the user is logging back into the talker. It moves the user back to
+  the main room, and generally makes it look like an original login.
+  Otherwise, it stages a phony log off so that all the users think that
+  the user has left the talker.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

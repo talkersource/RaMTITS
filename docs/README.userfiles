@@ -1,0 +1,148 @@
+--==--                                                                    --==--
+ 
+  README : userfiles
+
+  OUTLINE:
+    This readme is to better familiarize the talker coder/owner with what
+    files are used by users.  As well as give a brief outline as to what
+    each of the files do, What it contains, and miscellaneous crap like
+    that.
+
+--==--                                                                    --==--
+
+	The following files are used and created by each user:
+
+	~/ramtits-2.x/userfiles/
+		username.dat
+
+	~/ramtits-2.x/userfiles/usermesg/
+		username.M
+		username.S
+		username.NM
+		username.P
+
+	~/ramtits-2.x/userfiles/usermisc/
+		username.R
+
+	A brief explaining of what each of these files are for:
+
+--==--                                                                    --==--
+
+~/ramtits-2.x/userfiles/username.dat:
+------------------------------------
+	This is the main userfile, and should NEVER EVER be edited manually.
+Doing so will corrupt the file, and render that users account unusable. All
+of his/her stats will be lost, etc.  This file holds every single item that
+the user set's via .set, as well as other things (macros, pets, etc).  If
+you were to open this file with your average text editor, the file would make
+little or no sense, that's because these files are saved in a binary format.
+I did this because I figured that it would allow me to lump everything all
+into one big userfile, as well as I was hoping it might be a little faster
+on loading the userfiles.  It is faster, and more efficient, and I have yet
+to see a file being corrupte by the talker, so I figure I'm going to be
+sticking with this format for any future releases of RaMTITS.  If you are
+wanting to use RaMTITS, but have a large userbase, and that is what is
+preventing you from switching over, please see:
+~/ramtits-2.x/utils/uconvert-1.1uconvert.c and
+read the header.  I was going to have a bunch of different formats, but
+the authors I contacted about sending me their load_user_details, etc
+decided not to send them off to me afterall. I may work on downloading these
+codes myself, but it is not a priority for me right now.  I did anticipate
+that the majority of you may want to add things to the user structure
+yourselves, which is why there are a few things you can use. (There are 10 
+int's and 10 char's that are nullified, and for your use. WHATEVER YOU DO,
+DO NOT CHANGE THE NAME OF THE VARIABLES!) they are saved as
+(user->myint1 - user->myint10, and user->mychar1 - user->mychar10).  Fairly 
+easy to remember :) One thing I didn't add tho were arrays in which you
+could use... I figured not many people would have a need for these, and
+well... I still feel that way.. but if you want.. just look at the way that
+the userfiles work, and you should be able to figure out how to convert in no
+time.
+
+	Also, please be aware that it took a while to get the userfiles to
+work properly.  The talker won't boot if there is a corrupt userfile.  (It
+goes through them at startup, loads them and checks to see if everything is
+all hunky dory.. well.. does a couple other things too to allow the ease of
+storing everything, and faster access to everything.)
+
+	If you want to see how the userfiles work somewhat, go look at
+the sources in ~/ramtits-2.2/utils/uconvert-1.1/ and that should help enlighten
+you somewhat.  I would at this point like to thank Wookey (Tim van der Leeuw)
+for allowing me to see how this was done, and for contributing sources to get
+this to work.
+
+--==--                                                                    --==--
+
+~/ramtits-2.x/userfiles/usermesg/username.P:
+-------------------------------------------
+	This is the user's profile, that other users see when they .examine
+the user. It gets saved every time a user uses .entpro.
+
+
+--==--                                                                    --==--
+
+~/ramtits-2.x/userfiles/usermesg/username.M:
+-------------------------------------------
+	This is the user's s-mail box file. This is the one thing that you
+should wipe if you are converting your old userfiles. Otherwise wierd bugs
+may occur.  Please note, that if you like reading other users s-mail, then
+nuke this code now, or if I catch you, or hear about you examining other
+people's s-mail boxes, I *can* and *will* nuke the code. I believe in total
+privacy of the users, and despise talker owners who do this sort of thing.
+
+	As of RaMTITS version 2, the new license states that this sort of use
+is prohibited.  Meaning that if your caught doing such a thing, you can
+be taken to court for breech of privacy.
+
+--==--                                                                    --==--
+
+~/ramtits-2.x/userfiles/usermisc/username.NM:
+--------------------------------------------
+	As of RaMTITS version 2, users can now read their new s-mail seperately
+then older messages with '.rmail -new'.  To enable this, I had to have this
+file created whenever a user gets s-mailed, and whenever a user normally
+reads their s-mail, this file will be appended to the top of it.  Yes, that's
+another new thing, all boards, message, bug, staff, messages get appended
+to the TOP of the file, rather then the bottom of it. I did this because I
+got sick of scrolling to find new messages, and figure people should get the
+*new* messages first.
+
+--==--                                                                    --==--
+
+~/ramtits-2.x/userfiles/usermesg/username.S:
+-------------------------------------------
+
+	Whenever a user sends a s-mail message, what they sent gets put into
+this file, so they can view it with .rsent. I do plan for the future, making
+a limit on this file, like I have done with the users s-mail box. The same
+rules apply with reading these files through the shell with the users s-mail
+box.
+
+--==--                                                                    --==--
+
+~/ramtits-2.x/userfiles/usermisc/username.R:
+-------------------------------------------
+
+	This file can be viewed with .record [user] and displays the users
+history record, ie, if they've been promoted, demoted, killed, arrested,
+and any manual history that has been added to the file.
+
+
+--==--                                                                    --==--
+
+   If you have any questions or concerns reguarding this README, please feel
+   free to contact me at:
+
+	squirt@ramtits.ca
+
+   Or if you're have a problem configuring something, please be sure to check
+   the RaMTITS help forum at:
+
+	http://forum.ramtits.ca
+
+   There is also a talker made for talker coders, and talker owners. If you
+   would like to visit it, it can be found at:
+
+        ramtits.ca 6980
+
+--==--                                                                    --==--

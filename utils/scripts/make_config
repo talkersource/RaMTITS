@@ -1,0 +1,310 @@
+#!/bin/sh
+
+# This script is Copyright 2000-2001 Rob Melhuish, unless you know what
+# you're doing, please don't modify this script as it can screw your
+# talker up if you mess something up.  Thanks to Dean Brissinger for
+# providing me with fixes for this shell script that wouldn't have it
+# work on older versions of bash.
+
+echo "Welcome to RaMTITS version 2.2, this small script is just to basically"
+echo "let you configure your talker for the first time.  RaMTITS version 2"
+echo "no longer comes with a pre-made config file, it's meant for you to"
+echo "start your customizing here. I'm just gonna ask you a few questions,"
+echo "and well, just answer them as best you know.. I promise, they won't"
+echo "be too hard."
+echo
+
+echo -n "Did you read the README? [y|n]: "
+read READ_README1
+
+if [ -z $READ_README1 ]; then
+    echo "You're not sure.. better go read it then."
+    exit
+elif [ $READ_README1 != "y" ] && [ $READ_README1 != "yes" ] \
+  && [ $READ_README1 != "Y" ] && [ $READ_README1 != "YES" ]; then
+    echo "You better go read it then."
+    exit
+fi
+
+echo -n "Did you read everything in ~/ramtits-2.2/docs? [y|n]: "
+read READ_README2
+
+if [ -z $READ_README2 ]; then
+    echo "If you're not sure.. better go read everything."
+    exit
+elif [ $READ_README2 != "y" ] && [ $READ_README2 != "yes" ] \
+  && [ $READ_README2 != "Y" ] && [ $READ_README2 != "YES" ]; then
+    echo "Then you better go read everything."
+    exit
+fi
+
+echo
+echo "Alright, starting the configuration of the talker"
+echo "--------------------------------------------------"
+echo
+
+echo -n "Enter a user port  [3333]: "
+read PORT1
+if [ -z $PORT1 ]; then
+    PORT1="3333"
+fi
+
+echo -n "Enter a staff port [3334]: "
+read PORT2
+if [ -z $PORT2 ]; then
+    PORT2="3334"
+fi
+
+echo -n "Enter the minimum login level [NONE]: "
+read MINLOGIN
+if [ -z $MINLOGIN ]; then
+    MINLOGIN="NONE"
+fi
+
+echo -n "Enter the maximum amount of users allowed on at once [50]: "
+read MAX_USERS
+if [ -z $MAX_USERS ]; then
+    MAX_USERS="50"
+fi
+
+echo -n "Echo passwords at login prompt? Y/[N]: "
+read PASSWORD_ECHO
+if [ -z $PASSWORD_ECHO ]; then
+    PASSWORD_ECHO="NO"
+elif [ $PASSWORD_ECHO = "y" ]; then
+    PASSWORD_ECHO="YES"
+elif [ $PASSWORD_ECHO = "n" ]; then
+    PASSWORD_ECHO="NO"
+else
+    PASSWORD_ECHO="NO"
+fi
+
+echo -n "Would you like to set prompts on or [off]:"
+read PROMPT_DEF
+if [ -z $PROMPT_DEF ]; then
+    PROMPT_DEF="OFF"
+elif [ $PROMPT_DEF = "on" ]; then
+    PROMPT_DEF="ON"
+elif [ $PROMPT_DEF = "off" ]; then
+    PROMPT_DEF="OFF"
+else
+    PROMPT_DEF="OFF"
+fi
+
+echo -n "How many clones MAX should a user have? [3]: "
+read MAX_CLONES
+if [ -z $MAX_CLONES ]; then
+    MAX_CLONES="3"
+fi
+
+echo -n "Ban Swearing? yes or [no]: "
+read BAN_SWEARING
+if [ -z $BAN_SWEARING ]; then
+    BAN_SWEARING="NO"
+elif [ $BAN_SWEARING = "yes" ]; then
+    BAN_SWEARING="YES"
+elif [ $BAN_SWEARING = "no" ]; then
+    BAN_SWEARING="NO"
+else
+    BAN_SWEARING="NO"
+fi
+
+echo -n "Crash action? reboot, shutdown or [sreboot]: "
+read CRASH_ACTION
+if [ -z $CRASH_ACTION ]; then
+    CRASH_ACTION="SREBOOT"
+elif [ $CRASH_ACTION = "reboot" ]; then
+    CRASH_ACTION="REBOOT"
+elif [ $CRASH_ACTION = "shutdown" ]; then
+    CRASH_ACTION="SHUTDOWN"
+else
+    CRASH_ACTION="SREBOOT"
+fi
+
+echo -n "Would you like to time out people who are AFK? [yes] or no: "
+read TIME_OUT_AFKS
+if [ -z $TIME_OUT_AFKS ]; then
+    TIME_OUT_AFKS="YES"
+elif [ $TIME_OUT_AFKS = "yes" ]; then
+    TIME_OUT_AFKS="YES"
+else
+    TIME_OUT_AFKS="NO"
+fi
+
+echo -n "Would you like the character mode client echoing [off] or on?: "
+read CHARECHO_DEF
+if [ -z $CHARECHO_DEF ]; then
+    CHARECHO_DEF="OFF"
+elif [ $CHARECHO_DEF = "on" ]; then
+    CHARECHO_DEF="ON"
+else
+    CHARECHO_DEF="OFF"
+fi
+
+echo -n "Would you like to backup the talker files daily? yes or [no]: "
+read BACKUP_TALKER
+if [ -z $BACKUP_TALKER ]; then
+    BACKUP_TALKER="OFF"
+elif [ $BACKUP_TALKER = "no" ]; then
+    BACKUP_TALKER="OFF"
+else
+    BACKUP_TALKER="ON"
+fi
+
+echo -n "Would you like the talker to make html files for users? [yes] or no: "
+read WEBPAGE_ON
+if [ -z $WEBPAGE_ON ]; then
+    WEBPAGE_ON="ON"
+elif [ $WEBPAGE_ON = "no" ]; then
+    WEBPAGE_ON="OFF"
+else
+    WEBPAGE_ON="YES"
+fi
+
+echo -n "Would you like to arrest people who swear? yes or [no]: "
+read ARREST_SWEARERS
+if [ -z $ARREST_SWEARERS ]; then
+    ARREST_SWEARERS="NO"
+elif [ $ARREST_SWEARERS = "yes" ]; then
+    ARREST_SWEARERS="YES"
+else
+    ARREST_SWEARERS="NO"
+fi
+
+echo -n "Would you like the talker to give rooms away for free? yes or [no]: "
+read FREE_ROOMS
+if [ -z $FREE_ROOMS ]; then
+    FREE_ROOMS="NO"
+elif [ $FREE_ROOMS = "yes" ]; then
+    FREE_ROOMS="YES"
+else
+    FREE_ROOMS="NO"
+fi
+
+echo -n "Would you like the talker to promote ppl automatically? [yes] or no: "
+read AUTO_PROMOTE
+if [ -z $AUTO_PROMOTE ]; then
+    AUTO_PROMOTE="YES"
+elif [ $AUTO_PROMOTE = "no" ]; then
+    AUTO_PROMOTE="NO"
+else
+    AUTO_PROMOTE="YES"
+fi
+
+echo -n "Would you like the talker to perform auth lookups on users? [yes] or no: "
+read AUTO_AUTH
+if [ -z $AUTO_AUTH ]; then
+    AUTO_AUTH="ON"
+elif [ $AUTO_AUTH = "no" ]; then
+    AUTO_AUTH="OFF"
+else
+    AUTO_AUTH="ON"
+fi
+echo
+echo "Please note, for the next 3 things, they will be the talker's main rooms"
+echo "meaning the only rooms that are ALWAYS loaded in memory. Upon starting"
+echo "the talker for the first time, the talker will create the room details,"
+echo "and you can create any other rooms you want with the '.rmadmin' command."
+echo "NOTE: If one of the room names has a space in it, put a '_' in place of"
+echo "      the space, it'll remove the space when booting up. (IE: in case"
+echo "      you wanted the room name to be 'Main Room' you name it 'main_room')"
+echo
+echo -n "Enter the name of your main room [main]: "
+read MAIN_ROOM
+if [ -z "$MAIN_ROOM" ]; then
+    MAIN_ROOM="main"
+fi
+echo -n "Enter the name of the idle room [idle_room]: "
+read IDLE_ROOM
+if [ -z "$IDLE_ROOM" ]; then
+    IDLE_ROOM="idle_room"
+fi
+echo -n "Enter the name of the jail [jail]: "
+read JAIL_ROOM
+if [ -z "$JAIL_ROOM" ]; then
+    JAIL_ROOM="jail"
+fi
+echo
+echo "Alright.. that's it.. below is the information you gave me, if you"
+echo "want to save the config file, type 'save', or just hit enter where it"
+echo "prompts you, otherwise type 'abort' or hit ctrl-c to abort."
+echo
+echo "mainport           $PORT1"
+echo "wizport            $PORT2"
+echo "minlogin_level     $MINLOGIN"
+echo "prompt_def         $PROMPT_DEF"
+echo "max_users          $MAX_USERS"
+echo "password_echo      $PASSWORD_ECHO"
+echo "max_clones         $MAX_CLONES"
+echo "ban_swearing       $BAN_SWEARING"
+echo "crash_action       $CRASH_ACTION"
+echo "time_out_afks      $TIME_OUT_AFKS"
+echo "charecho_def       $CHARECHO_DEF"
+echo "backup_talker      $BACKUP_TALKER"
+echo "webpage_on         $WEBPAGE_ON"
+echo "arrest_swearers    $ARREST_SWEARERS"
+echo "free_rooms         $FREE_ROOMS"
+echo "auto_promote       $AUTO_PROMOTE"
+echo "auto_auth          $AUTO_AUTH"
+echo "main_room          $MAIN_ROOM"
+echo "idle_room          $IDLE_ROOM"
+echo "jail_room          $JAIL_ROOM"
+echo
+echo -n "Would you like to [save] or abort?: "
+read SAVE_OR_ABORT
+if [ -z $SAVE_OR_ABORT ]; then
+    SAVE_OR_ABORT="save"
+elif [ $SAVE_OR_ABORT = "save" ]; then
+    SAVE_OR_ABORT="save"
+elif [ $SAVE_OR_ABORT = "abort" ]; then
+    echo "Config file creation aborted."
+    exit;
+fi
+
+echo -n "# Config file generated on: " > ./config
+echo `date` >> ./config
+echo "# Main config file, this config file was generated by the 'mkconfig.sh'" >> ./config
+echo "# found in ~/ramtits-2.2/src/  Please do not change anything manually" >> ./config
+echo "# in this file.  If you wish to change anything, please use the .change" >> ./config
+echo "# command on the talker, or run the 'mkconfig.sh' script again." >> ./config
+echo "" >> ./config
+echo "mainport           $PORT1" >> ./config
+echo "wizport            $PORT2" >> ./config
+echo "minlogin_level     $MINLOGIN" >> ./config
+echo "mesg_life          7" >> ./config
+echo "wizport_level      WIZ" >> ./config
+echo "prompt_def         $PROMPT_DEF" >> ./config
+echo "gatecrash_level    OWNER" >> ./config
+echo "min_private        2" >> ./config
+echo "ignore_mp_level    GOD" >> ./config
+echo "max_users          $MAX_USERS" >> ./config
+echo "heartbeat          2" >> ./config
+echo "mesg_check_time    01:00" >> ./config
+echo "login_idle_time    180" >> ./config
+echo "user_idle_time     3600" >> ./config
+echo "password_echo      $PASSWORD_ECHO" >> ./config
+echo "ignore_sigterm     NO" >> ./config
+echo "max_clones         $MAX_CLONES" >> ./config
+echo "ban_swearing       $BAN_SWEARING" >> ./config
+echo "crash_action       $CRASH_ACTION" >> ./config
+echo "time_out_afks      $TIME_OUT_AFKS" >> ./config
+echo "charecho_def       $CHARECHO_DEF" >> ./config
+echo "time_out_maxlevel  WIZ" >> ./config
+echo "backup_talker      $BACKUP_TALKER" >> ./config
+echo "debug_talker       ON" >> ./config
+echo "webpage_on         $WEBPAGE_ON" >> ./config
+echo "arrest_swearers    $ARREST_SWEARERS" >> ./config
+echo "free_rooms         $FREE_ROOMS" >> ./config
+echo "auto_promote       $AUTO_PROMOTE" >> ./config
+echo "auto_auth          $AUTO_AUTH" >> ./config
+echo "main_room          $MAIN_ROOM" >> ./config
+echo "idle_room          $IDLE_ROOM" >> ./config
+echo "jail_room          $JAIL_ROOM" >> ./config
+
+cp ./config ../datafiles/config
+rm ./config
+echo -n "Configuration saved to "
+cd ..
+echo -n $PWD
+echo "/datafiles/config"
+exit

@@ -1,0 +1,29 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS riddle
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .riddle -submit [your answer]
+Command Usage: .riddle [-results]                                   [ WIZ ]
+Command Usage: .riddle [-clear]                                     [ADMIN]
+Command Usage: .riddle [-add]                                       [ADMIN]
+
+Synopsis:
+  When the command is used alone, it will display the current riddle
+  if their is one. You can submit an answer to the riddle by using the
+  -submit option followed by your answer. Feel free to answer the
+  question as many times as you like.
+  
+  Staff members may check the answers at any time by passing the -results
+  flag at the command line.
+  
+  If you use the ~CW"~CR-clear~CW"~RS option, it will clear out the current riddle
+  files, this should only be used in conjunction with the ~CW"~CR-add~CW"~RS option,
+  which allows a user to add a new riddle.  You MUST clear out the old
+  files before entering a new riddle.  These two options are restricted
+  to level ADMIN and above.
+
+  To view the results of past riddles, it should be in the textfiles
+  directory. Which you can see by using the .text command.  It is up to
+  the owner of the talker to modify this file manually tho, so it may
+  or may not exist.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

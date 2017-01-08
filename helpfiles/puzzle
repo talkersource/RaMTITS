@@ -1,0 +1,26 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS puzzle
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .puzzle
+  
+Synopsis:
+  This command allows you to play a puzzle game, where it's up to you
+  to put the numbers in numerical order (from right to left, down to
+  up. For a completed puzzle, see below).  When the command is used,
+  it brings the user to a prompt where they control the blank space in
+  the puzzle. It is up to them to rearrange the puzzle so that it
+  looks like the one below:
+                         ~FM -------------
+                         ~FM |~CR 1~FM|~CR 2~FM|~CR 3~FM|~CR 4~FM|
+                         ~FM -------------
+                         ~FM |~CR 5~FM|~CR 6~FM|~CR 7~FM|~CR 8~FM|
+                         ~FM -------------
+                         ~FM |~CR 9~FM|~CR10~FM|~CR11~FM|~CR12~FM|
+                         ~FM -------------
+                         ~FM |~CR13~FM|~CR14~FM|~CR15~FM|  |
+                         ~FM -------------
+  In order to do this you must move the blank space from left to right and
+  up and down.  At any time you may quit the game by typing ~CW'~CRQ~CW'~RS at the
+  prompt.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

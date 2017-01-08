@@ -1,0 +1,71 @@
+--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--
+-		     Legal Information For RaMTITS v2.2		 	 -
+--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--
+
+	At first I was going to release RaMTITS v2.2 under the GNU General
+Public License, but I was plagued with the fact that I would have had to
+contact to many other authors to in fact agree with the license. One
+author in particular, I know would not have approved of the GPL, hence
+this is the License for RaMTITS v2.2 and any upcoming versions.
+
+	This license is based on the PGPlus (http://pgplus.ewtoo.org)
+license, (which in turn is based loosely on the licenses for SensiSummink,
+PG96, and NUTS) as I found that it covered more or less what should be
+covered in a good license. If you don't agree with the license, then you
+should NOT use this code.
+
+	1) The files/commands '.text credits' and '.text nuts' must
+remain as they are, if you wish to add your own credits, I'd suggest you
+create a file under the textfiles directory, and modify it to your own
+liking (not under the name of 'credits' or 'nuts' as those names are
+already taken [perhaps 'talker_name' would be a suitable file name]).
+
+	2) You may re-distribute EXACT copies of the program's source
+code as it was received, as long as the copy that you re-distribute
+contains this license and a notice of the absence of any warranty. The
+only time that you may charge a fee for this source is if the fee
+will cover the shipping/handling costs of sending the source code.
+Charging for the code/program itself is NOT permitted.
+
+	3) You may modify your copy/copies of the program's source code
+and re-distribute such modifications or work under section 2 above,
+PROVIDED that you do not remove the original credits, and if a seperate
+license exists, it must comply with this license.
+
+	4) You may not add any commands that would allow you to 'snoop'
+or infringe on another users privacy. This includes, but is not limited
+to: Viewing users private messages (.tell, .pemote, etc); Reading other
+users s-mail; Creating a command that will allow you to see another
+users password; Or anything that would be taking away a users privacy.
+
+	5) I have no problems with you charging users for an account
+on your talker, say a 'VIP level' but you may NOT charge for the actual
+code itself. No matter if someone offers you money for a copy that
+you have modified, or for a copy that is still bare-bones.
+
+	6) The '.version' command must remain in tact, if you wish to
+modify this at all, perhaps with your own copy of the code's name,
+then after the line:
+writeus(user,"~CW  - ~FY %s ~FTtalker running version ~FM%s\n",TalkerRecap,VERSION);
+add in your own credentials. (Leave the VERSION variable AS IT IS!)
+There is nothing a programmer dislikes more than seeing their credits
+removed due to the lack of consideration from some people thinking
+that because they downloaded the source code, they can do whatever
+they wish to it.
+
+	7) The Ident daemon has a different license, and you
+must follow the guidelines of that license if you wish to use them.
+They can be found in the docs directory, under the names of:
+~/ramtits-2.2/docs/LICENSE.ident
+
+	8) If you would like to attempt to rip code out of this source
+for your personal talker, you're more then welcome to, providing that you
+GIVE CREDIT WHERE CREDIT IS DUE! A simple: "Thanks to such and such for
+providing such and such command/function" in a credits file is enough.
+I will not help you port the function(s) over though.. if you want to port
+a function over, that is completely up to you to do.
+
+	9) You agree to follow this license, and any subsequent versions
+of this license that may follow.
+
+--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--

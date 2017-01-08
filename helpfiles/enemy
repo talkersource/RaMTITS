@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS enemy
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .enemy [<user>]
+  
+Synopsis:
+  If a user isn't specified, then this command will print out a list of
+  the user's current enemies.  Otherwise, if the specified user isn't on
+  the user's enemy list, it will add that user to the list.  Otherwise,
+  if the specified user is in the user's enemy list, then it will
+  remove that user from their enemy list. Once a user is in your enemy
+  list, you will basically ignore everything from that user, that includes
+  normal says, tells, shouts, etc.  This is a good command if you don't
+  want to associate with anyone who is being harassive towards you.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

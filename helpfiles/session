@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS session
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .session [<-who|a session to set>]
+  
+Synopsis:
+  When used by itself, it allows the user to see what the current session
+  is, as well as all the comments that have been posted to it. When used
+  with the ~CW'~CR-who~CW'~RS option, it allows the user to see who set the current
+  session, and how long ago they set it.  A user may enter a new session
+  by typing whatever they want on the command line. For example:
+~CR  .session What does everyone think about the talker North America
+  Once the session is set, users may make comments on it with the
+  ~CW'~CR.comment~CW'~RS command.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

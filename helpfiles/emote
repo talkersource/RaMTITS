@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS emote
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .emote [message]
+  
+Synopsis:
+  Sends the message as an emotion.  For example, if Squirt were to type
+  ~CW'~FR.emote sighs~CW'~RS it would be written to the room that the user is in as:
+  ~CW'~FRSquirt sighs~CW'~RS
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

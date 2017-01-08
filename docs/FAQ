@@ -1,0 +1,156 @@
+Q:	HELP!!!! I just set up my talker for the first time, and the test
+	user was shackled when I first logged on.. how did this happen?!?!
+
+A:	I honestly don't know... I think it might have occurred in a .mkuser
+	bug, but it should have been fixed... anyway, you can .unshackle
+	yourself, as I did this when I found out that I got shackled... This
+	happened to me once, so I added it to this FAQ just in case...
+--------
+Q:	I want to use the webpage generator, but I don't know what directory
+	on my server the webspace is in.
+
+A:	I don't know either, your best bet would be to contact your servers
+	system administrator. Normally tho it can be found in
+	/home/yourname/public_html. Try e-mailing: support@yourserver.whatever
+	and ask which directory you need/any relevant permissions of the
+	directory in order for you to create a webpage.
+--------
+Q:	Will you code my talker for me?
+
+A:	No, I currently am busy working on my own talker as well as two
+	others.  I don't have the time to work on yours for you.
+--------
+Q:	The code won't compile?  Am I doing anything wrong?
+
+A:	Probably not, other then the fact that you have to go through the
+	Makefile, and uncomment/comment out the flags that your operating
+	system requires.  As of this writing, the code has only been compiled
+	on a Linux glibc2 system, but it will compile on libc5 system. As
+	for *BSD, Solaris, and other flavours of *nix, I don't have access
+	to those types of servers, so I'm not able to test them on them,
+	Although I'm sure they should compile fine, just a few extra
+	compile time flags may be needed.
+--------
+Q:	HELP! I just booted my talker, and everything went fine, but now
+	I don't know how to log on/who to log on with in order to promote
+	myself!
+
+A:	Login	: Test
+	Password: tester (all lower case)
+	I couldn't believe how many times I was asked this question, it just
+	goes to show that noone does read the opening MOTD's.  The openscreen
+	for RaMTITS 1.1.x showed this information. As of this point forth, if
+	something is answered in the documents, don't expect a reply from me.
+	I don't spend roughly 2-3 weeks writing these documents just so people
+	can e-mail me asking me something that is covered in these documents.
+--------
+Q:	I just promoted someone with the 'Test' account, and suicided with
+	the test character right after. Now after I logged off and back on
+	with the user that I created, I'm just a normal user again.
+
+A:	In RaMTITS 1.1.x after you promoted someone, you needed to add them
+	to '~/ramtits/datafiles/staff_file' otherwise the user would get
+	demoted back to a normal user the next time they logged in.  If you
+	did add them to that file, then after you add them, you need to type
+	'.load' as this would re-load all variables in memory.  In RaMTITS
+	2.x after you promote someone > the WIZ level, it will prompt you
+	if you would like to add them to this file. If you choose yes, it
+	will add them, save the file, and reload the variables.  Why do I do
+	this you ask?  Because I've been to a couple of talkers where somehow
+	someone got ahold of an admin account and was just promoting people
+	while the owners were away doing some other thing. I tried to make
+	this as secure as possible.. but if you can't trust your staff,
+	they shouldn't be staff on your talker.  If you made a mistake and
+	the test character is deleted, go to the RaMTITS download page
+	and click on the userfile that you need.  The 'test' account
+	password is always the same (tester).
+
+--------
+Q:	What's the difference between this code, Amnuts, Moenuts, TalkerOS,
+	EWToo, PGPlus, ncohafmuta, Iforms, and other talker codes?
+
+A:	The way I see it.. Amnuts is more of a continuing saga from the
+	original NUTS 3.3.3 series, and I commend Andy on a job well done.
+	It's a fairly powerful code that has alot of good features in it..
+	but (no offence Andy) lacks quite abit at the same time. Moenuts,
+	is another variation based off of the NUTS 3.3.3 series, as most
+	'base' codes are nowadays, with exception of the EWToo derived
+	talkers. But again, (and no offence Moe) I feel as though it's
+	lacking in certain aspects.  TalkerOS.. in my opinion.. is just
+	more or less a NUTS 3.3.3 derived talker which just adds huge
+	support for the telnet client known as Pueblo.
+	The EWToo, and PGPlus type base codes.. when I first looked at them
+	I was completely overwhelmed by the code.. I found it too complex
+	and really didn't understand a thing about it when I was first
+	learning to program. Now tho I've looked at it.. and I've seen
+	how the inner structure of it works somewhat and I like how it
+	was done.. but still felt it too overwhelming for beginning
+	programmers. (I also don't like how they use their commands :p)
+	Ncohafmuta, and Iforms again are too fairly powerful codes, based
+	off of Neil Robertson's earlier NUTS releases, and just overwent
+	massive rehauls.. they don't have the complexity of the PGPlus/EWToo
+	codes, but aren't exactly the easiest to read. They do have some
+	great features tho, and are extremely powerful, and take up very
+	few system resources.  Now the answer.. what does RaMTITS have
+	in difference with these codes.  What I've done with RaMTITS 2,
+	is that I've tried to combine the best features of all of these
+	base codes, plus added lots of extra perks, such as games and
+	what not.. just to make talkers a more enjoyable place to go
+	to.  NUTS Talker coders are usually very hush hush about their
+	code, and aren't really into sharing with anyone else. So what
+	my goal was, was to try and work in all the extra commands and
+	everything, so all that's really left for the talker owner to
+	do is basically customize it so that it suits their theme. It
+	appears I've captured that aspect fairly well with RaMTITS 2,
+	and I give credit to all the original coders, for their work, and
+	their help in making RaMTITS 2.
+
+--------
+Q:	Somethings not working.. what do I do?
+
+A:	Read the README, and all other files in the ~/ramtits-2.x/docs/
+	directory, and see if your problem can be figured out that way.
+	I won't respond to any e-mails that are addressed to in any of
+	the files, and if you persist, chances are I'll just block your
+	site from sending my server any e-mail.  If you have a problem with
+	something that isn't covered in the readme's, then goto the RaMTITS
+	forum, (http://forum.ramtits.ca) and post it there.. someone else
+	might be able to help you with your problem before me.
+
+--------
+Q:	When's the next version of RaMTITS coming out?
+
+A:	Don't ask... the more I get asked, the less I want to work on it,
+	when I'm constantly bothered for a new version, it makes this
+	feel like real work.. and I don't like work as much as the next
+	person, so I just put it off.. SO DON'T ASK.... EVER.. the
+	moment someone asks..they will be pointed directly to this FAQ.
+
+--------
+Q:	Did you write all this code?
+
+A:	No, when I found certain things I liked, or was stuck writing
+	a particular function, I did what any sane person would and asked
+	for help.  But I am the only person who has done any work on porting
+	any of the code over to the new RaMTITS 2 style. I don't claim to
+	have written everything.. for a list of the people who have
+	contributed to the RaMTITS project, see the AUTHORS file in this
+	directory.
+
+--------
+Q:	I'm using RaMTITS 1.1.x.. and I'm having problems.. what do I do?
+
+A:	Upgrade to RaMTITS 2. I no longer support RaMTITS 1.1.x as I find
+	it was too hastily written. I was bothered for a release for it, so
+	I sent it out with too many bugs in it, and I'm too ashamed of it.
+	This is the reason it took so long for RaMTITS 2 to be released, I
+	wanted it to be stable, easy to use, and have alot of extra features.
+
+-------------------------------------------------------------------------------
+If you have a question, comment, or anything like that.. e-mail it to
+squirt@ramtits.ca, and I may or may not get back to it.. if it's one
+of them nasty type letters.. I won't bother responding, so don't bother
+sending it.  Unless I'm in a frisky mood, it all depends how I feel, but I may
+do something to you to make you regret you ever used your computer to say such
+naughty things to me ;)
+-------------------------------------------------------------------------------

@@ -1,0 +1,53 @@
+   Changing Linux Password
+
+I was in my linux shell when I thought it's about time I change my password.
+Then, I was just a Linux begginer and my knowledge in the system was very
+little.  So, I called the root who was near by, and asked him how to change
+my password, which was "12ab12a" at the time.
+He told me to just type "passwd" and follow the simple instructions.
+I, as a obedient humble user, followed what the root said and typed it.
+The computer prompted me for my old password, so I looked at my wrinkled
+piece of paper my password was written on in red pen, and slowly typed:
+"12ab12a".
+The computer then prompted me for the new password i would like.
+Then i thought to my self: boy, these instructions ARE simple and easy to
+follow (man, was i wrong!)... I typed slowly my new password:
+"predecessors&successors in telecommuncations"
+(that was a subject i was very interested in).
+The computer said: "password too simple. try again"  
+I said: "ok. if it's too simple, i'll try something a little more
+complicated..."
+I typed: "02abbc8878966_xx=\-w" - which is made of my social security
+number, my phone number, my address and a lot of random encryptions I
+put in the middle.
+Naturally - the LINUX computer repeated: "TOO SIMPLE! try again."
+I said: "That's it, I'm setting it like it was before."
+I typed: "12ab12a"
+The computer said: "TOO SIMILAR! try again."
+I typed: "12ab12b"
+Again: "TOO SIMILAR! try again."
+I said: "that's it - now let's see it sais too simple"...
+I typed in the intire theory of relativity...
+It said: "TOO LONG! try again."
+I typed in my sister's name.
+It said: "TOO MANY USERS HAVE THAT PASSWORD TOO! try again."
+***thought*** OK, i have to have a little talk with my sis...
+I typed in four words each about a different subject - hoping that the
+Linux system will finally give in and let me change my password.
+After a very long time of procedural 'thinking' the computer made -
+it said: "A USER ON A LINUX SYSTEM IN PLANET SIRIUS X##442 is using that
+password. try again."
+Then I stopped trying!
+I hit ctrl-c, and logged out of my account.
+
+Then the root came in, entered his account to change HIS password.
+he typed passwd (as fast as lightning - unlike me), and typed his old
+password. The same messages appeared.
+Except for this one - when he typed a password that looked really simple
+the computer added: "WARNING! password too simple, allowing root override"
+   O -override and continue 
+   C -cancel
+He pressed override and continue, logged out and left the room...
+
+Since that incident, i have never EVER touched a linux system again!
+

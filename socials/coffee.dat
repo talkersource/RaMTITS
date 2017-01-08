@@ -1,0 +1,5 @@
+~CT%s ~FTpasses out from being overtired, but gets revived with a cup of coffee!
+~CT%s~FT starts feeling drowsy so $G3 pours $G2self a HUGE cup of coffee!
+~CB::~CT %s ~FTnotices that your feeling tired, so $G3 hands you a cup of coffee.
+~CB::~FT You notice that ~CT%s~FT is feeling tired, so you hand $G5 a cup of coffee.
+~CT%s~FT notices that ~CT%s~FT is feeling tired, so $G3 hands $G5 a cup of coffee.

@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS nofollow
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .nofollow
+  
+Synopsis:
+  Makes it so that noone can follow the user via the '.follow' command
+  If the user currently isn't allowing people to follow them and they
+  use this command, then it allows users to be able to follow them.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

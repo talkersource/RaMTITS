@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS money
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .money [<user>]
+  
+Synopsis:
+  If a user is not specified, then this shows how much money and chips
+  that you have on you, as well as in the bank.  If a user is specified,
+  then it displays the amount of chips and money that the specified user
+  has on hand and in the bank.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

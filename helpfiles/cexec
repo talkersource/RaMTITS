@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS cexec
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .cexec [room clone is in] [command to execute] [args]
+  
+Synopsis:
+   This command allows users to have more control over their clone then
+   just sending normal speech, and emotes. This command allows clones to
+   execute almost all speech commands, and socials.  So in order to
+   get your clone to say something, you would have to type something like:
+   '.cexec main say hi there'  And the clone would say "hi there" in the
+   main room. (providing that the user actually has a clone in that
+   room.)
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

@@ -1,0 +1,24 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS hangman
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .hangman -play
+Command Usage: .hangman [user] [# of rounds to play]
+Command Usage: .hangman [-accept|-reject]
+  
+Synopsis:
+  When the ~CW'~CR-play~CW'~RS option is used, it brings the user into a prompt, where
+  they are to guess letters of a word that has been randomly selected for
+  them.  If they challenge another user, they have to specify the user's
+  name and the number of rounds they want to play (between 1 and 15).
+  Once the challenge has been issued, then the challenged user may accept
+  the challenge by typing ~CW'~CR.hangman -accept~CW'~RS or reject it by typing
+  ~CW'~CR.hangman -reject~CW'~RS. If the game is accepted, then the user who
+  challenged is prompted to enter a word for the person that they
+  challenged. The word can be a minimum of 5 letters and a maximum of 30.
+  After the word is entered, the person who was challenged is then
+  prompted to guess the word letter by letter, or once they have an idea
+  what it is, they can guess the actual word at the prompt. Also at the
+  prompt, ~CW'~CRstatus~CW'~RS and ~CW'~CRquit~CW'~RS can be used. The status option displays the
+  current hangman status, and the quit option quits the game.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

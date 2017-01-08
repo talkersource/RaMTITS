@@ -1,0 +1,12 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS home
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .home
+  
+Synopsis:
+  This command basically just moves the user into their home room. The
+  user tho will only have a home room if the talker owner has set personal
+  rooms to be free, or if not, then the user must buy a personal room
+  from the store.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

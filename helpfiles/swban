@@ -1,0 +1,19 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS swban
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .swban [-ban|-arrest]
+  
+Synopsis:
+   If the '-ban' option is used, and the swearing ban is currently off,
+   then this command will toggle it on, blocking any user from using
+   swear words in normal speech, and shouts.  If however the swearing
+   ban is currently on, then this will toggle it back off, allowing
+   users to swear to their hearts content.  If the '-arrest' option is
+   used, and the arrest swearers flag is off, then this will toggle it
+   to on, and whenever a user swears in a public room, or in a shout,
+   it will place the user under arrest, and throw them into the jail.
+   If the arrest swearers flag is on, then this will simply toggle it
+   to off.  You cannot have both the arrest swearers flag, and the ban
+   swearing flag on.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

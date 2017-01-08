@@ -1,0 +1,23 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS smail
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .smail [user] [<message>]
+Command Usage: .smail [-friends]
+Command Usage: .smail [-staff]
+Command Usage: .smail [-all]
+  
+Synopsis:
+  
+  If a user is specified with no message, it brings the user into an editor
+  where they are allowed to write 25 lines of whatever they want.  Upon
+  leaving the editor, the message is then delivered to the specified user's
+  mailfile.  If a message is included, then it send the message to the
+  specified user's mailfile.
+  When the '-friends' option is used, it will send a message to all of the
+  people the user has specified in their friends list.
+  If the '-staff' (Wiz+ level only) option is used, this will allow a wizard
+  to send a mail message to the rest of the staff.
+  If the '-all' (again, Wiz+ level only) option is used, this will allow a
+  wizard to send mail to ALL of the users on the talker, off-line OR on-line.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

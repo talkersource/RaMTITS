@@ -1,0 +1,16 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS mkuser
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .mkuser [new user name] [password]
+  
+Synopsis:
+  Allows a user to create a new user manually. This is useful if you have
+  a site banned for new users, and a user who you know won't be a problem
+  but doesn't have an account on the talker.  The username can have a
+  mixture of letters and numbers (it has to start with a letter tho). All
+  names are valid, seeing as how a staff member is creating the account,
+  they should know what is acceptible, and what isn't.  Once the account
+  is created, you should tell the user (after they log on) to change their
+  password right away.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

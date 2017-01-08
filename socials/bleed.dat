@@ -1,0 +1,6 @@
+~CT%s ~FTis bleeding rather profusely... playing with knives I see!
+~CT%s~FT cuts $G2self and watches $G2self bleed!
+~CB::~CT %s ~FTsees that you are bleeding, so $G3 comes to your aid right away!
+~CB::~FT You see that ~CT%s~FT is bleeding, so you come to $G4 aid right away!
+~CT%s~FT sees that ~CT%s~FT is bleeding, so $G3 comes to $G4 aid right away!
+

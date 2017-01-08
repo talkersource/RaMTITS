@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS nobuff
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .nobuff
+  
+Synopsis:
+   Allows a user to toggle the review buffer of the room that they are
+   currently in on or off.  This is good if you're having a conversation,
+   and you're one of those people (like myself) who always forget to do
+   a '.cbuff' after an intense conversation, that you would rather not
+   have others seeing by entering that room and doing a '.rev'.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

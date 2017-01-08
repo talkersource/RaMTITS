@@ -1,0 +1,27 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS dsent
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .dsent -all
+Command Usage: .dsent -top [# of messages]
+Command Usage: .dsent -bottom [# of messages]
+Command Usage: .dsent #
+Command Usage: .dsent # - #
+Command Usage: .dsent # # # ... (up to 5 numbers)
+  
+Synopsis:
+  
+  When the ~CW'~CR-all~CW'~RS option is used, it deletes all of the sent s-mail in your
+  sent s-mailbox. If the ~CW'~CR-top~CW'~RS option is used with a corresponding number,
+  and the number is less than the amount of messages in your sent mailbox,
+  it deletes all of your messages, starting from the top and going to the
+  specified number.  The ~CW'~CR-bottom~CW'~RS option is used pretty much the same way,
+  except it goes from the bottom up.
+
+  If a single number is given, it will delete the specified sent mail message
+  from your mailbox.  You can find the message numbers using the ~CW'~CR.sfrom~CW'
+  command. You can also delete from a certain number to another number by
+  using the ~CW'~CR.dsent # - #~CW'~RS option which will delete all mail in between the
+  two numbers specified, including the two numbers.  You can also just specify
+  up to 5 message numbers by using the ~CW'~CR.dsent # # # # #~CW'~RS option.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

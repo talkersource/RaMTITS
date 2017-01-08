@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS follow
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .follow [user|-reset]
+  
+Synopsis:
+  This command allows a user to start following another user from room
+  to room. If the specified user isn't allowing follows, or is shackled,
+  the it will give the user using the command the appropriate message.
+  Once the user starts following the specified user, wherever the
+  specified user goes, the user will go there as well.  When the '-reset'
+  option is used, it will reset it so that the user is no longer
+  following anyone.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

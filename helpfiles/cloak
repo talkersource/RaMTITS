@@ -1,0 +1,18 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS cloak
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .cloak [level name]
+Command Usage: .cloak |-reset]
+  
+Synopsis:
+  If a level is specified, then it will show that user's level to all
+  other users as the specified level (providing that the level specified
+  is below that of the user's normal level).
+  
+  If the -reset flag is used, then it will reset the users cloaked level
+  back to their normal level.
+  
+  This is mostly helpful in just pointing annoying users to your level
+  in case they ask who staff members are, and what not.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

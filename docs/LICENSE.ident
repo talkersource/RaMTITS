@@ -1,0 +1,32 @@
+ The majority of the code contained herein is Copyright 1995-2000 by
+ Neil Peter Charley.
+ Portions of the code (notably that for Solaris 2.x and BSD compatibility)
+ are Copyright 1996 James William Hawtin. Thanks also goes to James
+ for pointing out ways to make the code more robust.
+ ALL code contained herein is covered by one or the other of the above
+ Copyright's.
+
+ Permission to use this code authored by the above persons is given
+ provided:
+
+   i) Full credit is given to the author(s).
+
+  ii) The code is not re-distributed in ANY form to persons other than
+     yourself without the express permission of the author(s).
+     (i.e. you can transfer it from account to account as long as it is
+      to yourself)
+       NB: Special permission has been given to the maintainer(s) of the
+	  package known as 'SensiSummink' AND to the maintainer(s) of
+	  the package known as 'PG+' (later version of PG96) AND to the
+	  maintainer(s) of the package known as 'RaMTITS' to make use of
+	  this code in that.  Anyone using this package automatically
+	  gets the right to USE this code.  You are *NOT*, however,
+	  given permission to redistribute it in other forms other
+	  than passing on the package that you yourself recieved.
+
+ iii) You make reasonable effort to forward bugfixes to the author(s)
+     NB: Neil is co-ordinating any bugfixes that go into this program, so
+         please try and send them to him first.  The current best email
+         address for contacting him is:
+
+		    ident_daemon@miggy.org

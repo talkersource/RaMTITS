@@ -1,0 +1,13 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS games
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .games [<poker game name>]
+  
+Synopsis:
+  If a game name is specified, then it lists the players in the game,
+  the game's state, and the number of chips that each player has on
+  hand.  If a game name isn't specified, and you are currently playing
+  a game, or are in a room where a game is being played, then it lists
+  the same stats as above for that game.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

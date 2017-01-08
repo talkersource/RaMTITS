@@ -1,0 +1,15 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS nbomb
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .nbomb [<seconds to countdown>]
+  
+Synopsis:
+  If used with no time is specified, the default countdown is 20 seconds,
+  and that's what it will set the timer to.  If a time limit is specified,
+  then users will have that amount of time to get to a safe shelter, or
+  risk being disconnected.  If you specify a time limit you must be
+  specifying it between 20 seconds and 600 seconds.  In order to use this
+  command, you must purchase a nuclear bomb from the store (and they don't
+  come cheap).
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

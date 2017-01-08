@@ -1,0 +1,29 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS wipe
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .wipe -all
+Command Usage: .wipe -top [number of messages]
+Command Usage: .wipe -bottom [number of messages]
+Command Usage: .wipe [number]
+Command Usage: .wipe [number - number]
+Command Usage: .wipe [Number Number Number ... (up to 5 numbers)]
+  
+Synopsis:
+  
+  When the ~CW'~CR-all~CW'~RS option is used, it wipes ALL of the messages on the message
+  board on the room that the user is in.  If the ~CW'~CR-top~CW'~RS option is used, with
+  a corresponding number, and the number is less than the amount of messages
+  on the message board, it deletes the messages, starting at the top all the
+  way down to the specified message number.  The ~CW'~CR-bottom~CW'~RS option is used
+  pretty much the same way, but instead of deleting from the top, it deletes
+  from the bottom.  If a sole number is given, it deletes that 1 message from
+  the board.
+  You can find the numbers of messages via the ~CW'~CR.bfrom~CW'~RS command.  You can also
+  delete from a certain number to another certain number using this option:
+  ~CR.wipe ~CB[~CRnumber - number~CB]~RS.  This deletes all of the messages, including the
+  two specified numbers, between the two specified numbers.  You can also
+  specifiy up to 5 messages you would like deleted by using the following:
+  ~CR.wipe ~CB[~CRnumber number number~CB]~RS (include spaces between the message numbers)
+  which will delete those specific messages from the message board.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

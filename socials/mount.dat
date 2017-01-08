@@ -1,0 +1,6 @@
+~CT%s ~FTmounts the bucking bronco and rides it like a natural!
+~CT%s~FT tries mounting $G2self, but finds that things don't work that way!
+~CB::~CT %s ~FTclimbs on top of you, mounting you!
+~CB::~FT You climb on top of ~CT%s~FT and mount $G5!
+~CT%s~FT climbs on top of ~CT%s~FT mounting $G5!
+

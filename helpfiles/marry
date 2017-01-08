@@ -1,0 +1,17 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS marry
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .marry [user] [<your personal vows>]
+  
+Synopsis:
+  Allows a user to ask another user to marry them, to which the specified
+  user will be asked if they want to marry you, and are given a choice
+  of answering yes or no. If they choose yes, then the marriage begins.
+  Both parties may enter their own vows, the specified user gets asked
+  if they would like to enter their own vows, and the user using the
+  command must specify their vows at the command line.
+  
+  The marriage must be done in the talker's wedding room, in front of at
+  least one witness.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

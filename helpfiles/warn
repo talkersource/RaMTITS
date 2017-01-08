@@ -1,0 +1,11 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS warn
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .warn [user] [why you're warning them]
+  
+Synopsis:
+  Prints out the specified message to the user, as well as an alert
+  saying that they are being warned. Also writes out to every staff
+  member logged on, the given user's name, and why they are being warned.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+

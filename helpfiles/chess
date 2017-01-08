@@ -1,0 +1,21 @@
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+~FYCommand Name~CB:~RS chess
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+Command Usage: .chess [user]
+Command Usage: .chess [-accept|-reject]
+Command Usage: .chess [-board|-gs|-quit]
+  
+Synopsis:
+  If a user is specified, then it offers a game of chess to the specified
+  user.  The user who was offered a game must either accept the game
+  with the ~CW'~CR-accept~CW'~RS flag, or reject it with the ~CW'~CR-reject~CW'~RS flag.  Once a
+  game is accepted, then the two users begin a game of chess. If you're
+  not sure on how to play the game, consult the ~CW'~CR.text chessrules~CW'~RS text
+  file.  While in a game, at any time, one of the players may use the
+  ~CW'~CR-quit~CW'~RS flag if they want to quit the game.  If the ~CW'~CR-board~CW'~RS option is
+  used, it will re-draw the chess board for the user.  If the ~CW'~CR-gs~CW'~RS option
+  is used, then it will display the current chess game's summary. If you're
+  currently playing a game, and aren't sure on how to move your chess piece,
+  type ~CW'~CR.h cmove~CW'~RS.
+~FT--==--==--==->-==--==--==-<-==--==--==--==--==--==-<-==--==--==->-==--==--==--
+
